@@ -1,68 +1,23 @@
 import React from "react";
 import "../index.css";
+import Logo from "../assets/img/ck.jpg"
 const Footer = () => {
   return (
     <div>
       <footer className="sticky z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="-mx-4 p-3 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <a href="  " className="mb-6 inline-block max-w-[160px]">
+              <div className=" w-full">
+                <a href="  " className="mb-2 inline-block max-w-[160px]">
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                    // src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                   src={Logo}
                     alt="logo"
-                    className="max-w-full"
+                    className="w-28"
                   />
                 </a>
-                <p className="text-body-color mb-7 text-base">
-                CreditKlick does not sell any loans on our own and do not charge any fee from any customers/viewers. We advise customers/viewers to choose from best offers from Banks and its advertisers. We do not guarantee any loans as loan sanction is as per Banks and Nbfcs. We suggest all users to never pay any upfront amount for any loan disbursal and if any person who call you as representative of CreditKlick and ask for any amount report the incident immediately via putting us a mail at <a href="mailto:support@creditklick.com">support@creditklick.com</a>
-                </p>
-               
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Resources
-                </h4>
-                <ul>
-                  <li>SaaS Development</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Company
-                </h4>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Quick Links
-                </h4>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
+                <h4 className="text-dark mb-1 text-lg font-semibold">
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
@@ -119,8 +74,56 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-                <p className="text-body-color text-base">
-                  &copy; 2025 TailGrids
+                <p className="text-body-color font-semibold text-base">
+                  &copy; 2023 CREDITKLICK
+                </p>
+               
+              </div>
+            </div>
+            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Resources
+                </h4>
+                <ul>
+                  <li>SaaS Development</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Company
+                </h4>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Quick Links
+                </h4>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+              <div className="mb-10 w-full">
+               
+                <p className="text-body-color mb-7 text-base">
+                CreditKlick does not sell any loans on our own and do not charge any fee from any customers/viewers. We advise customers/viewers to choose from best offers from Banks and its advertisers. We do not guarantee any loans as loan sanction is as per Banks and Nbfcs. We suggest all users to never pay any upfront amount for any loan disbursal and if any person who call you as representative of CreditKlick and ask for any amount report the incident immediately via putting us a mail at <a href="mailto:support@creditklick.com">support@creditklick.com</a>
                 </p>
               </div>
             </div>

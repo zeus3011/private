@@ -14,6 +14,7 @@ import {
 } from '@heroicons/react/24/outline'
 import {BsBookHalf} from "react-icons/bs"
 import { ChevronDownIcon,  PlayCircleIcon } from '@heroicons/react/20/solid'
+import Example from './testing'
 
 const products = [
   { name: 'AU Bank Credit Card', description: 'Get a better credit card', href: ' ', icon: ChartPieIcon },
@@ -31,7 +32,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header() {
+const  Header=()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -206,5 +207,9 @@ export default function Header() {
 
       
     </header>
+    // <>
+    // <Example/>
+    // </>
   )
 }
+export default Header
