@@ -3,12 +3,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './pages/Hero/Hero';
 import About from "./pages/About/About"
+import Creditcard from './pages/Cards/Creditcard';
+import Stripehead from './components/Stripehead';
 const Main = () => {
   return (
-    <div>
+    <div> 
+      {/* <Stripehead/> */}
         <Header/>
-<Hero/>
-
+{/* <Hero/> */}
+<Creditcard/>
     <Footer/>
     </div>
   )

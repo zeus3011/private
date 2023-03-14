@@ -1,6 +1,8 @@
 import { Fragment, useState } from 'react'
 import "../index.css"
 import Logo from "../assets/img/ck.jpg"
+import { BrowserRouter, Router,Route,Link } from 'react-router-dom'
+// import AU from "../pages/Cards/Creditcard"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -15,9 +17,10 @@ import {
 import {BsBookHalf} from "react-icons/bs"
 import { ChevronDownIcon,  PlayCircleIcon } from '@heroicons/react/20/solid'
 import Example from './testing'
+import Creditcard from '../pages/Cards/Creditcard'
 
 const products = [
-  { name: 'AU Bank Credit Card', description: 'Get a better credit card', href: ' ', icon: ChartPieIcon },
+  { name: 'AU Bank Credit Card', description: 'Get a better credit card', path:"/Creditcard",  icon: ChartPieIcon },
   { name: 'IDFC First Credit Card', description: 'Speak directly to your customers', href: ' ', icon: CursorArrowRaysIcon },
   { name: 'SBI Credit Cards', description: 'Your customers’ data will be safe and secure', href: ' ', icon: FingerPrintIcon },
   { name: 'YES Bank Credit Cards', description: 'Connect with third-party tools', href: ' ', icon: SquaresPlusIcon },
@@ -36,6 +39,7 @@ const  Header=()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
+    <BrowserRouter>
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
@@ -72,11 +76,13 @@ const  Header=()=> {
               
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen p-1 group-hover peer-hover:flex hover:flex max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            {/* <Router > */}
                 <div className="p-4">
+                 
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                      className="group  relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
@@ -90,7 +96,9 @@ const  Header=()=> {
                       </div>
                     </div>
                   ))}
+                 
                 </div>
+                {/* </Router> */}
                 <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
@@ -110,6 +118,7 @@ const  Header=()=> {
           <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
             Loans
           </a>
+          
           <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
              Check Cibil Score 
           </a>
@@ -207,6 +216,7 @@ const  Header=()=> {
 
       
     </header>
+    </BrowserRouter>
     // <>
     // <Example/>
     // </>
