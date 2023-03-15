@@ -154,20 +154,50 @@ const Creditcard = () => {
                 </div>
 {/* Credit card Table */}
 
-                <div className="mt-8 lg:mx-2 flex-col justify-start items-start">
-                 
+                <div className="mt-8  flex-col justify-start items-start">
+                <table    class=" lg:mx-48  md:mx-32 bg-white border-collapse">
+           
+           <tr>
+             <th class="bg-blue-100 border  px-8 py-4">Credit Card</th>
+             <th class="bg-blue-100 border text-left px-8 py-4">Category</th>
+           
+           </tr>
+           {credittable.map((item)=>(
+           <tr key={item}>
+             <td class="border text-left px-8 py-4">{item.creditcard}</td>
+             <td class="border text-left px-8 py-4">{item.category}</td>
+           
+           </tr>
+           
+           ))}
+         </table>
                  <div className="mt-2">
-                {credittable.map((item)=>(
-                       <table colspan={2}>
-                         {renderHeader()}
-                        <tbody >
-                          <tr  key={item}>
-                          <td className=''>{item.creditcard}</td>
-                          <td className='mx-5 text-grey-300'>{item.category}</td>
+
+                
+                       {/* <table >
+                        <thead> 
+                          <tr>
+                            <th>Credit Cards</th>
+                            <th>Credit Cards</th>
+                          </tr>
+                        </thead>
+                        {credittable.map((item)=>(
+                        <tbody key={item} colspan={4} >
+                          <tr >
+                          <td className='lg:m-28'>{item.creditcard}</td>
+                          <td className='lg:mx-46 text-grey-300'>{item.category}</td>
                           </tr>
                         </tbody>
-                       </table>
-                ))}
+                          
+                       </table> */}
+            
+           
+
+         
+
+
+
+
                  </div>
                </div>
 
