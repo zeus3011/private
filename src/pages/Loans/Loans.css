@@ -79,7 +79,7 @@
   .parallax-about{
     margin: 0;
     padding: 0;
-    background-image: url("../../assets/Images/about-2.jpg");
+    /* background-image: url("../../assets/Images/about-2.jpg"); */
     height: 100%;
     background-attachment:fixed;
     background-position: center;
@@ -89,7 +89,7 @@
   }
   
   .parallax-about2{
-    background-image: url("../../assets/Images/about-img1.jpg");
+    /* background-image: url("../../assets/Images/about-img1.jpg"); */
     background-color: (0,0,0,0.50);
     background-attachment: fixed;
     background-position: center;

@@ -1,11 +1,11 @@
 import { Fragment, useState } from 'react'
 import "../index.css"
 import Logo from "../assets/img/ck.jpg"
-import { BrowserRouter, Router,Route,Link } from 'react-router-dom'
+import { Route,Link, Routes } from 'react-router-dom'
 // import AU from "../pages/Cards/Creditcard"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
+  // ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
   CursorArrowRaysIcon,
@@ -16,11 +16,13 @@ import {
 } from '@heroicons/react/24/outline'
 import {BsBookHalf} from "react-icons/bs"
 import { ChevronDownIcon,  PlayCircleIcon } from '@heroicons/react/20/solid'
-import Example from './testing'
-import Creditcard from '../pages/Cards/Creditcard'
+// import Example from './testing'
+import Loans from '../pages/Loans/Loans'
+// import Creditcard from '../pages/Cards/Creditcard'
+// import Hero from '../pages/Hero/Hero'
 
 const products = [
-  { name: 'AU Bank Credit Card', description: 'Get a better credit card', path:"/Creditcard",  icon: ChartPieIcon },
+  { name: 'AU Bank Credit Card', description: 'Get a better credit card', path:"/Aucard",  icon: ChartPieIcon },
   { name: 'IDFC First Credit Card', description: 'Speak directly to your customers', href: ' ', icon: CursorArrowRaysIcon },
   { name: 'SBI Credit Cards', description: 'Your customers’ data will be safe and secure', href: ' ', icon: FingerPrintIcon },
   { name: 'YES Bank Credit Cards', description: 'Connect with third-party tools', href: ' ', icon: SquaresPlusIcon },
@@ -39,14 +41,14 @@ const  Header=()=> {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <BrowserRouter>
+    <>
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href=" " className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only ">Creditklick</span>
             <img className="h-20" src={Logo} alt="" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -114,17 +116,18 @@ const  Header=()=> {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
-            Loans
-          </a>
           
-          <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
+<Link to ="/Loans">
+          <div href="  " className="text-sm font-semibold leading-6 text-gray-900">
+            Loans
+          </div>
+          </Link>
+          <Link to="/CibilScore"  className="text-sm font-semibold leading-6 text-gray-900">
              Check Cibil Score 
-          </a>
-          <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link to="/Calculators" className="text-sm font-semibold leading-6 text-gray-900">
             Finance Calculator
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="  " className="text-sm font-semibold leading-6 text-gray-900">
@@ -136,11 +139,11 @@ const  Header=()=> {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="" className="-m-1.5 p-1.5">
+            <a href=" " className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src={Logo}
                 alt=""
               />
             </a>
@@ -181,24 +184,24 @@ const  Header=()=> {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href=" "
+                <Link to="/Loans"
+                  
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900  hover:bg-gray-50"
                 >
-                  Features
-                </a>
-                <a
-                  href=" "
+                  Loans
+                </Link>
+                <Link
+                  to="/CibilScore "
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
-                </a>
-                <a
-                  href=" "
+                 Check Cibil Score
+                </Link>
+                <Link
+                  to="/CalCulators "
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
-                </a>
+                  Finance Calculator
+                </Link>
               </div>
               <div className="py-6">
                 <a
@@ -216,7 +219,12 @@ const  Header=()=> {
 
       
     </header>
-    </BrowserRouter>
+
+    <Routes>
+   
+      <Route path='/Loans' element={<Loans/>}/>
+    </Routes>
+    </>
     // <>
     // <Example/>
     // </>

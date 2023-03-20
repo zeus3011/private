@@ -21,7 +21,7 @@ category:'Reward Points'
                                     },
                                     {
                                         creditcard:'Citi Rewards Card',
-                                        category:'Rewards '
+                                        category:'Rewards ',
                                             },
                                             {
                                                 creditcard:'IndianOil Citi Credit Card',
@@ -43,6 +43,7 @@ category:'Reward Points'
                                                                                 creditcard:'Kotak PVR Gold Credit Card',
                                                                                 category:'Movies'
                                                                                     },
+                                                                                    
 
                                                                     
 ]

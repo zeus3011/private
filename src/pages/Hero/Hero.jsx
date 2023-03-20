@@ -1,33 +1,54 @@
 import React from 'react'
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// import { useState } from 'react'
+// import { Dialog } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import "../../index.css"
 import Multi from './Multi'
 import Product from './Product'
 import Cibilstr from './Cibilstr'
 import Refinestr from './Refinestr'
 import Contactstr from './Contactstr'
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
+// import test from "../../assets/img/tets1.png"
+// const navigation = [
+//   { name: 'Product', href: '#' },
+//   { name: 'Features', href: '#' },
+//   { name: 'Marketplace', href: '#' },
+//   { name: 'Company', href: '#' },
+// ]
 
 const Hero = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <>
     
     <main className="isolate bg-white">
-
-        <div className="relative px-6 lg:px-8">
+    {/* <div className="">
+          <div className="relative inset-0 md:max-w-[744px]  lg:-py-28 mx-auto bg-white  md:px-6 px-4  md:py-12 ">
+            <div className="relative">
+              <img
+                src={test} alt=''
+                className="w-full object-cover h-auto lg:block md:hidden hidden"
+              />
+              <div className="w-full h-full bg-black opacity-50 absolute top-0 left-0" />
+              <img
+                src={test} alt=''
+                className="lg:hidden  md:block hidden"
+              />
+              <img
+                src={test} alt=''
+                className="lg:hidden w-96 h-auto shrink-0 md:hidden block"
+              />
+             
+            </div>
+          </div>
+        </div> */}
+        
+        {/* <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full py-1 px-3 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Announcing our next round of funding.{' '}
-                <a href="#" className="font-semibold text-indigo-600">
+                <a href=" " className="font-semibold text-indigo-600">
                   <span className="absolute inset-0" aria-hidden="true" />
                   Read more <span aria-hidden="true">&rarr;</span>
                 </a>
@@ -43,12 +64,12 @@ const Hero = () => {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href=" "
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Get started
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                <a href=" " className="text-sm font-semibold leading-6 text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -79,7 +100,7 @@ const Hero = () => {
               </defs>
             </svg>
           </div>
-        </div>
+        </div> */}
       </main>
       <Multi/>
 

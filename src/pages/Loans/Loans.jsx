@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../index.css"
-import random from "../../assets/Images/about-2.jpg"
+// import random from "../../assets/Images/about-2.jpg"
 import './Loans.css'
 
 
@@ -27,15 +27,15 @@ const Loans = () => {
     
   <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8 px-8">
     <div className=" m-4">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
+        <img src={''} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>PERSONAL LOAN</p>
     </div>
     <div className="m-4">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
+        <img src={''} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>HOME LOAN</p>
     </div>
     <div className="m-4">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
+        <img src={''} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-xl'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>BUSINESS LOAN</p>
     </div>
   </div>
