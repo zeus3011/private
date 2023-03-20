@@ -1,9 +1,9 @@
 // import React,{useState} from 'react'
 import Card from "../../assets/img/IDFC3.png";
-import Aucard from "./Aucard";
+// import Aucard from "./Aucard";
 import credittable from "./credittable";
 import char from "./fees";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 const Creditcard = () => {
   return (

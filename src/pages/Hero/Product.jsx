@@ -59,7 +59,7 @@ const Product = () => {
            we also helps you to rebuild yor cibil score
           </p>
         </div>
-        <ul role="list" className="grid bg-white gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <ul  className="grid bg-white gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
           {people.map((person) => (
             <li key={person.name}>
               <Link to={person.path}>
