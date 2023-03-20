@@ -1,21 +1,21 @@
-import React,{useState} from 'react'
-import Card from "../../assets/img/idfc3.png"
+// import React,{useState} from 'react'
+import Card from "../../assets/img/IDFC3.png"
 import credittable from './credittable'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 const Creditcard = () => {
 
-  const capitalize = (word) => {
-    return word[0].toUpperCase() + word.slice(1)
-  }
+  // const capitalize = (word) => {
+  //   return word[0].toUpperCase() + word.slice(1)
+  // }
 
-  const [users, setUsers] = useState(credittable)
+  // const [users, setUsers] = useState(credittable)
 
 
-  const renderHeader = () => {
-    return <tr>
-      {Object.keys(credittable[0]).map(key => <th>{capitalize(key)}</th>)}
-    </tr>
-  }
+  // const renderHeader = () => {
+  //   return <tr>
+  //     {Object.keys(credittable[0]).map(key => <th>{capitalize(key)}</th>)}
+  //   </tr>
+  // }
   return (
     <>
     
