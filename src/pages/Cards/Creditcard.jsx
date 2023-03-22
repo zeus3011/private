@@ -1,9 +1,9 @@
 // import React,{useState} from 'react'
 import Card from "../../assets/img/IDFC3.png";
-// import Aucard from "./Aucard";
+import Aucard from "./Aucard";
 import credittable from "./credittable";
 import char from "./fees";
-import { Link } from "react-router-dom";
+import { Link,Routes,Route } from "react-router-dom";
 // import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 const Creditcard = () => {
   return (
@@ -11,9 +11,9 @@ const Creditcard = () => {
       <div>
         <div className="dark:bg-gray-900">
           {/* Hero Start */}
-          <div className="lg:flex mx-5 lg:items-center lg:justify-between">
+          <div className="lg:flex w-screen  lg:items-center lg:justify-between">
             <div className="min-w-0 flex-1  ">
-              <h2 className="text-teal-900 rounded p-4 uppercase shadow-lg lg:mx-6 bg-teal-300 dark:text-white lg:text-4xl text-3xl font-extrabold leading-9">
+              <h2 className="text-blue-900 text-center rounded p-4 uppercase shadow-lg lg:mx-6 bg-gray-100 dark:text-white lg:text-4xl text-3xl font-extrabold leading-9">
                 Credit Card
               </h2>
             </div>
@@ -52,14 +52,14 @@ const Creditcard = () => {
 
           <div className="w-full bg-gray-200 dark:bg-gray-900 py-10">
             <div className="container mx-auto px-6 flex items-start justify-center">
-              <div className="w-full">
+              <div className="w-full animate ">
                 {/* Card is full width. Use in 12 col grid for best view. */}
                
                 {/* Card code block start */}
                 <div className="flex flex-col lg:flex-row mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-2xl">
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                     <Link to="/Aucards">
-                    <div className="mb-3 w-54 rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
+                    <div className="mb-3 w-54  rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={Card} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
@@ -107,10 +107,10 @@ const Creditcard = () => {
           </div>
 
           {/* Applying Card End */}
+          {/* <Link to="/aucards"> <h2>AUCARDS</h2></Link>
 
+<Routes>
 
-{/* <Routes>
-<Link to="/aucards"> <h2>AUCARDS</h2></Link>
 
   <Route path="/aucards" element={<Aucard/>}/>
 </Routes> */}

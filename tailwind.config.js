@@ -1,4 +1,6 @@
-module.exports = {
+// const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports =( {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   content:[
@@ -14,4 +16,4 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],
-}
+})

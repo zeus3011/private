@@ -8,20 +8,31 @@ import Product from './Product'
 import Cibilstr from './Cibilstr'
 import Refinestr from './Refinestr'
 import Contactstr from './Contactstr'
-// import test from "../../assets/img/tets1.png"
-// const navigation = [
-//   { name: 'Product', href: '#' },
-//   { name: 'Features', href: '#' },
-//   { name: 'Marketplace', href: '#' },
-//   { name: 'Company', href: '#' },
-// ]
+import CScore from "../../assets/Images/CScore.png"
+import Index from './Index'
+// import test from "../../assets/Images/CScore.png"
 
 const Hero = () => {
-    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  return (
-    <>
     
-    <main className="isolate bg-white">
+  return (
+    <div className=' w-full ' >
+     
+     <main className=" flex p-4 lg:hidden  bg-gray-100 rounded">
+  
+{/* Carousal start */}
+
+<div className='lg:h-96     ' >
+  <img className=' lg:mx-64 md:w-3/5  lg:h-full' src={CScore} alt=''/>
+</div>
+
+{/* Carousal End */}
+
+
+
+
+     
+      </main>
+    <main className=" flex p-4 hidden sm:flex bg-gray-100 rounded">
     {/* <div className="">
           <div className="relative inset-0 md:max-w-[744px]  lg:-py-28 mx-auto bg-white  md:px-6 px-4  md:py-12 ">
             <div className="relative">
@@ -43,6 +54,26 @@ const Hero = () => {
           </div>
         </div> */}
         
+{/* Carousal start */}
+
+{/* <div className='lg:h-96 hidden    ' >
+  <img className=' lg:mx-64 md:w-3/5  lg:h-full' src={CScore} alt=''/>
+</div>
+<div className='lg:h-96 ' >
+  <img className=' lg:mx-64 md:w-3/5  lg:h-full' src={CScore} alt=''/>
+</div>
+<div className=' w-2/5 mx-4 invisible collapse lg:visible my-4 py-28'>
+<h1  className=' lg:text-6xl  relative w-auto font-bold tracking-tight text-gray-500 sm:text-base '>Our Clients</h1>
+    
+  <h2 className='  fontbold'>ApplyNow</h2>
+  <h2>ApplyNow</h2>
+  <h2>ApplyNow</h2>
+</div> */}
+{/* Carousal End */}
+
+<Index/>
+
+
         {/* <div className="relative px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
@@ -102,7 +133,7 @@ const Hero = () => {
           </div>
         </div> */}
       </main>
-      <Multi/>
+      
 
       <Product/>
 
@@ -116,12 +147,12 @@ const Hero = () => {
 {/* Check Sum Cibil Score start */}
  <Refinestr/>
 {/* CheckSum Cibil Score End */}
-
+<Multi/>
 {/*  */}
 
 
             {/*  */}
-    </>
+    </div>
   )
 }
 

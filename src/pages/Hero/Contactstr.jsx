@@ -18,8 +18,8 @@ const Contactstr = () => {
 
           <div className="mt-10  flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
-                  className="rounded-md mb-10 p-3  w-48 bg-teal-600 text-md font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                  href=" "
+                  className="rounded-md mb-10 p-3  w-48 bg-teal-600 text-center font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
                 >
                  Contact Us 
                 </a>
