@@ -148,7 +148,7 @@ const  Header=()=> {
             Log in <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
-        <Transition appear show={isOpen} as={Fragment}>
+        {/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
@@ -205,7 +205,9 @@ const  Header=()=> {
             </div>
           </div>
         </Dialog>
-      </Transition>
+      </Transition> */}
+      
+    
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -297,6 +299,80 @@ const  Header=()=> {
    
       <Route path='/Loans' element={<Loans/>}/>
     </Routes>
+
+
+
+    <div
+          className={`${
+            isOpen ? "flex" : "hidden"
+          } lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] justify-center mx-auto bg-[#4C4C4C]  md:px-6 px-4  lg:py-24 md:py-12 py-9 relative`}
+        >
+          <div className="lg:px-5 md:px-6 px-4 py-5">
+            <div className="md:flex block justify-center">
+              <div className="bg-white flex justify-end items-center h-[50px] px-4 w-full md:hidden block">
+                <svg
+                  onClick={() => setIsOpen(false)}
+                  className="md:hidden block cursor-pointer z-10"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
+                    fill="#1F2937"
+                  />
+                </svg>
+              </div>
+              <div className="bg-gray-800 text-white text-center flex flex-col justify-center items-center lg:px-[66px] md:px-[50px] lg:max-w-[405px] max-w-[343px] w-full md:py-0 py-32">
+               <img className='rounded shadow-2xl' src={Logo} alt=''/>
+              </div>
+              <div className="lg:max-w-[373px] md:max-w-[696px] w-full bg-white lg:px-8 md:px-4 px-4 pt-5 md:pb-6 pb-4 relative">
+                <svg
+                  onClick={() => setIsOpen(false)}
+                  className="md:block hidden cursor-pointer right-4 top-4 absolute"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
+                    fill="#1F2937"
+                  />
+                </svg>
+                <p className="text-2xl text-gray-800 font-semibold text-center pt-16">
+                  Enter Your Registered Mobile Number
+                </p>
+               
+                <div className="text-center pt-8 w-full">
+                  <input
+                    type="Email"
+                    name
+                    id
+                    placeholder="Enter Phone here"
+                    className="border border-gray-200 placeholder:text-gray-600 focus:outline-none lg:max-w-[405px] w-full px-4 py-3"
+                  />
+                </div>
+                <div className="text-center pt-4 w-full">
+                  <button className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
+                   GET OTP
+                  </button>
+                </div>
+               
+                <p className="text-gray-600 text-center lg:pt-12 md:pt-10 pt-12">
+                  Be the first here to hear about your needs. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
     </>
     // <>
     // <Example/>

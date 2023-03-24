@@ -6,7 +6,7 @@ import Hero from './pages/Hero/Hero';
 import About from "./pages/About/About"
 import Creditcard from './pages/Cards/Creditcard';
 import Aucard from './pages/Cards/Aucard';
-import IdfcCards from './pages/Cards/IdfcCards';
+import IdfcCards from './pages/Cards/IdfcCards'; 
 import Sbicards from './pages/Cards/Sbicards';
 import YesCards from './pages/Cards/YesCards';
 // import Cibilstr from './pages/Hero/Cibilstr';
@@ -18,6 +18,7 @@ import Hloan from './pages/Loans/Hloan';
 import Ploan from './pages/Loans/Ploan';
 import Error from './components/Error';
 import Blogs from './pages/Blogs/Blogs';
+import Cibilher from "./pages/Cibil/Cibilhero"
 // import Stripehead from './components/Stripehead';
 const Main = () => {
   return (
@@ -41,6 +42,8 @@ const Main = () => {
   <Route path="/CreditklickFamily" exact element={<About/>}/>
   <Route path="/Blogs" exact element={<Blogs/>}/>
   <Route path='*' exact element={<Error/>}/>
+  <Route path="/report-analysis" exact element={<Cibilher/>}/>
+
 </Routes>
 </BrowserRouter>
 {/* <About/> */}

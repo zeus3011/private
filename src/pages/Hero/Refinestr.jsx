@@ -1,18 +1,12 @@
 import React  from 'react' 
-import ExpertImg from "../..//assets/img/expertp.png"
-
-
-
-
-
-
+import ExpertImg from "../../assets/Images/exp.png"
 
 
 
 const Refinestr = () => {
   return (
     <>
-    <div className="bg-white ">
+    <div className="bg-white flex-shrink ">
       <div className="mx-auto  max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
           <svg
@@ -49,14 +43,16 @@ Connect Me To Credit Consultant
               </a>
             </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
+          <div className="relative lg:mt-8 sm:h-96 lg:h-80 lg:mt-8">
             <img
-              className="absolute top-0 left-0 w-[57rem] max-w-none rounded-md bg-white/5 r"
+              className="absolute  shrink-0  sm:max-w-none rounded-md bg-white/5 "
               src={ExpertImg}
               alt="App screenshot"
-              // width={1824}
-              // height={1080}
+              width={550}
+              height={1080}
             />
+
+
           </div>
         </div>
       </div>

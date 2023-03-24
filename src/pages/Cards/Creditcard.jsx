@@ -51,10 +51,11 @@ const Creditcard = () => {
           {/* Applying Card  */}
 
           <div className="w-full bg-gray-200 dark:bg-gray-900 py-10">
+            
             <div className="container mx-auto px-6 flex items-start justify-center">
               <div className="w-full animate ">
                 {/* Card is full width. Use in 12 col grid for best view. */}
-               
+             
                 {/* Card code block start */}
                 <div className="flex flex-col lg:flex-row mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-2xl">
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
