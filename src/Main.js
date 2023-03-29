@@ -18,7 +18,9 @@ import Hloan from './pages/Loans/Hloan';
 import Ploan from './pages/Loans/Ploan';
 import Error from './components/Error';
 import Blogs from './pages/Blogs/Blogs';
-import Cibilher from "./pages/Cibil/Cibilhero"
+import Cibilhero from "./pages/Cibil/Cibilhero"
+import Contact from './pages/Contact';
+import Login from './pages/Hero/Login';
 // import Stripehead from './components/Stripehead';
 const Main = () => {
   return (
@@ -33,7 +35,7 @@ const Main = () => {
   <Route path='/IdfcCards' exact element={<IdfcCards/>}/>
   <Route path='/Sbicards' exact element={<Sbicards/>}/>
   <Route path='/Yescards' exact element={<YesCards/>}/>
-  <Route path='/CibilScore' exact element={<Cibil/>}/>
+  <Route path='/Credit-score' exact element={<Cibil/>}/>
   <Route path='/Calculators' exact element={<Calculators/>}/>
   <Route path="/Refine" exact element={<Refine/>}/>
   <Route path="/Businessloan" exact element={<Bloan/>}/>
@@ -42,12 +44,14 @@ const Main = () => {
   <Route path="/CreditklickFamily" exact element={<About/>}/>
   <Route path="/Blogs" exact element={<Blogs/>}/>
   <Route path='*' exact element={<Error/>}/>
-  <Route path="/report-analysis" exact element={<Cibilher/>}/>
+  <Route path="/Creditklick" exact element={<Login/>}/>
+  <Route path="/report-analysis" exact element={<Cibilhero/>}/>
+  <Route path="/connectwithus" exact element={<Contact/>}/>
 
 </Routes>
 </BrowserRouter>
 {/* <About/> */}
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   )
 }

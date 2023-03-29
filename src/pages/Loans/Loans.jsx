@@ -1,6 +1,7 @@
 import React from 'react'
-import "../../"
-import random from "../../assets/Images/about-2.jpg"
+import BL from "../../assets/Images/Loans/BL.png"
+import PL from "../../assets/Images/Loans/PL1.png"
+import HL from "../../assets/Images/Loans/HL1.png"
 import './Loans.css'
 import { useState } from 'react'
 import {Link} from "react-router-dom"
@@ -79,20 +80,28 @@ const Loans = () => {
   <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8 px-8">
    <Link to="/Personalloan">
     <div className=" m-4">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={PL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>PERSONAL LOAN</p>
-    </div>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>   </div>
     </Link>
     <div className="m-4">
       <Link to="/Homeloan">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={HL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>HOME LOAN</p>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
         </Link>
     </div>
     <div className="m-4">
     <Link to="/Businessloan">
-        <img src={random} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={BL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>BUSINESS LOAN</p>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
         </Link>
     </div>
   </div>

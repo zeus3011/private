@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Contactstr = () => {
   return (
@@ -17,12 +18,12 @@ const Contactstr = () => {
           </p>
 
           <div className="mt-10  flex items-center justify-center gap-x-6">
-                <a
-                  href=" "
+                <Link
+                  to="/connectwithus"
                   className="rounded-md mb-10 p-3  w-48 bg-teal-600 text-center font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
                 >
                  Contact Us 
-                </a>
+                </Link>
               
               </div>
         </div>

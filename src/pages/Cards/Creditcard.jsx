@@ -1,6 +1,7 @@
 // import React,{useState} from 'react'
-import Card from "../../assets/img/IDFC3.png";
-import Aucard from "./Aucard";
+import Card from "../../assets/Images/cards/idfcmillenia.png";
+import Aucard from "../../assets/Images/cards/litcard.jpg";
+
 import credittable from "./credittable";
 import char from "./fees";
 import { Link,Routes,Route } from "react-router-dom";
@@ -19,8 +20,8 @@ const Creditcard = () => {
             </div>
           </div>
 
-          <div className="mx-auto mt-6  container w-full flex items-center md:flex-row flex-col justify-between px-6 lg:px-0">
-            <div className="flex flex-col justify-start items-start lg:w-2/5 px-2 lg:px-0">
+          <div className="mx-auto mt-6   container w-full flex items-center md:flex-row flex-col justify-between px-6 lg:px-0">
+            <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-0">
               {/* <div>
                 <p className="lg:text-sm text-xs text-gray-600 dark:text-gray-300 font-medium leading-none">Creditklick</p>
               </div> */}
@@ -31,16 +32,13 @@ const Creditcard = () => {
               </div>
               <div className="md:mt-3">
                 <p className="lg:text-base text-sm leading-normal text-gray-600 dark:text-gray-300">
-                  credit score cards provide you with the benefit of making
-                  purchases, even when you don’t have the price range, not like
-                  a debit card. additionally they allow you an interest-loose
-                  duration, generally 15 to 50 days, to repay the dues.
-                  additionally, credit score playing cards offer advantages
-                  throughout classes like buying, fuel, tour, cashback, rewards
-                  and extra. if you are seeking out a brand new credit card,
-                  pick one that fits your spending behavior, so that you can get
-                  the fine value through your purchases.
+                At CreditKlick, you can search applications online for credit cards and choose the perfect one. By your eligibility, you can review pre-approved offers from top companies like Axis Bank, ICICI and SBI, as well as others. You can also get immediate approval.
                 </p>
+                <br/>
+                <p>Credit cards provide benefits in many categories, including fuel, shopping, and travel, with the help of rewards points, cashback and discounts. But you can reap the benefits offered by making an informed decision. Be aware that the most suitable choice for your credit score is one you select according to your habits and spending habits. To make it easier for you to choose the right one with this, we've covered essential details on credit card options on this webpage. Find out more about credit card options in India.</p>
+                <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mx-8 mt-8 py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
               </div>
             </div>
             <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
@@ -61,11 +59,14 @@ const Creditcard = () => {
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                     <Link to="/Aucards">
                     <div className="mb-3 w-54  rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
-                      <img src={Card} alt=" " />
+                      <img src={Aucard} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       AU BANK CREDIT CARDS
                     </h2>
+                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
                     </Link>
                   </div>
 
@@ -77,6 +78,9 @@ const Creditcard = () => {
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       IDFC FIRST CREDIT CARDS
                     </h2>
+                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
                     </Link>
                   </div>
 
@@ -88,16 +92,22 @@ const Creditcard = () => {
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       SBI CREDIT CARDS
                     </h2>
+                    <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
                     </Link>
                   </div>
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                  <Link to="/Yescards">
-                    <div className="mb-3 w-54 rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
+                    <div className="mb-3 w-54 animate-pulse rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={Card} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       YES BANK CREDIT CARDS
                     </h2>
+                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button>
                     </Link>
                   </div>
                 </div>

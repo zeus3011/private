@@ -4,6 +4,7 @@ import "../../styles.css"
 // import about1 from "../../assets/img/bg-map.png"
 import { Parallax } from "react-parallax";
 import about2 from "../../assets/img/about1.jpg"
+import Newsletter from "./Newsletter";
 // import aboutx from "../../assets/img/about1.jpg"
 
 
@@ -90,6 +91,8 @@ const insideStyles = {
       <p className="text-2xl uppercase pb-4 text-slate-800">More that 1.5 million businesses and organizations use CreditKlick</p>
     <button className="bg-sky-600 text-slate-800 hover:bg-blue-900 font-semibold hover:text-gray-200 rounded-lg shadow-xl p-2 mb-8">CONTACT US</button>
     </div>
+
+    <Newsletter/>
 </>
     )
   }

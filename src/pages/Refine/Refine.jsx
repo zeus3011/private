@@ -1,6 +1,12 @@
 import React,{useState} from 'react'
 import Exp from "../../assets/Images/exp.png"
-import Cnt from "../../assets/Images/cnt.jpg"
+// import Cnt from "../../assets/Images/cnt.jpg"
+import Analyse from "../../assets/Images/Refine/analyise.png"
+import Educate from "../../assets/Images/Refine/educate.png"
+import Karma from "../../assets/Images/Refine/karma.png"
+import login from "../../assets/Images/Refine/login.png"
+import form from "../../assets/Images/Refine/form.png"
+import navi from "../../assets/Images/Refine/navi.png"
 const Refine = () => {
   const [box1, setBox1] = useState(false);
   const [box2, setBox2] = useState(false);
@@ -23,13 +29,13 @@ const Refine = () => {
 <div className="uppercase text-4xl  font-extrabold text-blue-400 text-left ">FREE</div>
 
           <div className=' mt-6 mx-auto justify-center'>
-                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">apply now</button>
+                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect With Consultant</button>
             </div>
         </div>
 
 
         <div className="md:shrink-0 sm:shrink-0 p-5 lg:mx-15  mx-auto">
-          <img className=" object-cover  rounded-xl max-w-xs" src={Exp} alt="Modern building architecture"/>
+          <img className=" object-cover  rounded-xl lg:max-w-xl" src={Exp} alt="Modern building architecture"/>
         </div>
       </div>
       </div>
@@ -46,10 +52,10 @@ const Refine = () => {
       <div className="md:mt-24 f-f-p">
          
 
-      <div className="hidden  md:flex justify-center w-full">
+      <div className="  md:flex justify-center w-full">
           <div className="flex flex-col items-center md:items-end md:pr-12 md:border-r-4 border-gray-300 relative md:w-1/2">
             <div aria-label="sign up" role="img">
-              <img className="focus:outline-none mt-10" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg1.svg" alt="how it work" />
+              <img className="focus:outline-none mt-10" src={login} alt="how it work" />
             </div>
             <div aria-label={2} role="img">
               <img className="focus:outline-none mt-24" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg2.svg" alt />
@@ -59,7 +65,7 @@ const Refine = () => {
               <h2 className="focus:outline-none text-gray-500 mt-3 pl-3 text-center md:text-right text-base leading-6 tracking-wide">Book a slot to navigate your importance  </h2>
             </div>
             <div aria-label="transactions" role="img">
-              <img className="focus:outline-none mt-24" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg3.svg" alt />
+              <img className="focus:outline-none mt-24" src={navi} alt />
             </div>
             <img className="hidden md:block absolute right-0 top-0 -mt-2 -mr-1" src="https://cdn.tuk.dev/assets/components/111220/Fs7/line.png" alt />
           </div>
@@ -79,7 +85,7 @@ const Refine = () => {
 
                {/* Setp1 End */}
             <div aria-label="wallet" role="img">
-              <img className="focus:outline-none mt-32" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg5.svg" alt />
+              <img className="focus:outline-none mt-32" src={form} alt />
             </div>
             <div aria-label={3} role="img">
               <img className="focus:outline-none mt-20" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg" alt />
@@ -95,7 +101,7 @@ const Refine = () => {
           </div>
           
         </div>
-        <img className='flex -mt-48  flex-col max-w-2xl lg:mx-72 ' src={Exp} alt="" srcset="" />
+        <img className='flex mt-auto col hidden justify-center items-center w-6/12 md:w-8/12  max-w-full lg:mx-72 ' src={Karma} alt="" srcset="" />
 
 
 
@@ -127,10 +133,10 @@ const Refine = () => {
 
 {/* Contact Us Start  */}
 
-< div className = " 2xl:mx-auto 2xl:container md:px-20 px-4 md:py-12 py-9 " > 
-                < div className = " relative rounded-md " > 
-                    < img src = {Cnt} alt = " city view " className = "opacity-30 w-full h-full rounded-md object-center object-fill absolute sm:block hidden " />    
-                    < img src = " https://i.ibb.co/LQpxBsc/mobile.png " alt = " city view " className = " opacity-20 w-full h-full rounded-md absolute object-center object-fill sm:hidden " />    
+< div className = "  2xl:mx-auto 2xl:container md:px-20 px-4 " > 
+                < div className = "flex flex-cols rounded-md " > 
+                    {/* < img src = {Cnt} alt = " city view " className = "opacity-30 w-full h-full rounded-md object-center object-fill absolute sm:block hidden " />    
+                    < img src = " https://i.ibb.co/LQpxBsc/mobile.png " alt = " city view " className = " opacity-20 w-full h-full rounded-md absolute object-center object-fill sm:hidden " />     */}
                     < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-600 to-transparent   w-full h-full z-40 top-0 md:p-16 p-6 flex flex- col justify-between rounded-md " > 
                         <div> 
                             < h1 className = " md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64 " >Book a Call with Expert <span className='text-blue-800'>FREE</span> </h1> 
@@ -169,9 +175,9 @@ Talk to an Expert. </p>
                     <p className="font-normal text-base leading-6 text-gray-600 mt-6">To understand how bad accounts affect your credit score, <br/> we analyse your credit record. Our credit specialists will inform you of the repercussions of having a bad account and advise you on the best course of action. We also point out errors on your credit report and assist you in filing a dispute to get them corrected</p>
                 </div>
                 <div className="w-full lg:w-6/12">
-                    <img className="lg:block hidden lg:-mt-32 w-full" src={Exp} alt="people discussing on board" />
-                    <img className="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png" alt="people discussing on board" />
-                    <img className="sm:hidden block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png" alt="people discussing on board" />
+                    <img className="lg:block hidden lg:-mt-32 w-full" src={Educate} alt="people discussing on board" />
+                    <img className="lg:hidden sm:block hidden w-full" src={Educate} alt="people discussing on board" />
+                    <img className="sm:hidden block w-full" src={Educate} alt="people discussing on board" />
                 </div>
             </div>
               {/* Educate Ends */}
@@ -180,7 +186,7 @@ Talk to an Expert. </p>
             <div className="flex lg:flex-row  flex-col lg:gap-8 sm:gap-10 gap-12">
 
             <div className="w-full mt-4 lg:w-6/12">
-                    <img className="lg:block  hidden lg:-mt-32 w-full" src={Exp} alt="people discussing on board" />
+                    <img className="lg:block  hidden lg:-mt-32 w-full" src={Analyse} alt="people discussing on board" />
                     {/* <img className="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png" alt="people discussing on board" /> */}
                     {/* <img className="sm:hidden  block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png" alt="people discussing on board" /> */}
                 </div>
@@ -192,10 +198,10 @@ Talk to an Expert. </p>
 
 </p>
                 </div>
-                <div className="w-full lg:hidden sm:block hidden   lg:w-6/12">
+                <div className="w-full lg:hidden sm:block   lg:w-6/12">
                     {/* <img className="lg:block  hidden lg:-mt-32 w-full" src={Exp} alt="people discussing on board" /> */}
-                    <img className="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png" alt="people discussing on board" />
-                    <img className="sm:hidden  block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png" alt="people discussing on board" />
+                    <img className="lg:hidden sm:block hidden w-full" src={Analyse} alt="people discussing on board" />
+                    <img className="sm:hidden  block w-full" src={Analyse} alt="people discussing on board" />
                 </div>
             </div>
 
@@ -265,61 +271,7 @@ Talk to an Expert. </p>
                 </div>
             </div> */}
 
-            <div className="flex lg:flex-row flex-col md:gap-14 gap-16 justify-between  mt-16">
-                <div className="w-full lg:w-6/12">
-                    <h2 className="font-bold lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800">Our Mission</h2>
-                    <p className="font-normal text-base leading-6 text-gray-600 mt-6 w-full lg:w-10/12 xl:w-9/12">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
-                    <p className="font-normal text-base leading-6 text-gray-600 w-full lg:w-10/12 xl:w-9/12 mt-10">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.In the first place we have granted to God, and by this our present charter confirmed for us and our heirs forever that the English Church shall be free, and shall have her rights entire, and her liberties inviolate; and we will that it be thus observed; which is apparent from</p>
-                </div>
-                <div className="w-full lg:w-6/12">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10">
-                        {/* <!-- Team Card --> */}
-                        <div className="flex p-4 shadow-md">
-                            <div className="mr-6">
-                                <svg className="mr-6" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M18 15C20.4853 15 22.5 12.9853 22.5 10.5C22.5 8.01472 20.4853 6 18 6C15.5147 6 13.5 8.01472 13.5 10.5C13.5 12.9853 15.5147 15 18 15Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M25.5 28.5C27.9853 28.5 30 26.4853 30 24C30 21.5147 27.9853 19.5 25.5 19.5C23.0147 19.5 21 21.5147 21 24C21 26.4853 23.0147 28.5 25.5 28.5Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M10.5 28.5C12.9853 28.5 15 26.4853 15 24C15 21.5147 12.9853 19.5 10.5 19.5C8.01472 19.5 6 21.5147 6 24C6 26.4853 8.01472 28.5 10.5 28.5Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <div className="">
-                                <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">Team</p>
-                                <p className="mt-2 font-normal text-base leading-6 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                            </div>
-                        </div>
-
-                        {/* <!-- Board Card --> */}
-                        <div className="flex p-4 shadow-md">
-                            <div className="mr-6">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.5 10.5C12.1569 10.5 13.5 9.15685 13.5 7.5C13.5 5.84315 12.1569 4.5 10.5 4.5C8.84315 4.5 7.5 5.84315 7.5 7.5C7.5 9.15685 8.84315 10.5 10.5 10.5Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M7.5 33V25.5L6 24V18C6 17.6022 6.15804 17.2206 6.43934 16.9393C6.72064 16.658 7.10218 16.5 7.5 16.5H13.5C13.8978 16.5 14.2794 16.658 14.5607 16.9393C14.842 17.2206 15 17.6022 15 18V24L13.5 25.5V33" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M25.5 10.5C27.1569 10.5 28.5 9.15685 28.5 7.5C28.5 5.84315 27.1569 4.5 25.5 4.5C23.8431 4.5 22.5 5.84315 22.5 7.5C22.5 9.15685 23.8431 10.5 25.5 10.5Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M22.5 33V27H19.5L22.5 18C22.5 17.6022 22.658 17.2206 22.9393 16.9393C23.2206 16.658 23.6022 16.5 24 16.5H27C27.3978 16.5 27.7794 16.658 28.0607 16.9393C28.342 17.2206 28.5 17.6022 28.5 18L31.5 27H28.5V33" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <div className="">
-                                <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">Board</p>
-                                <p className="mt-2 font-normal text-base leading-6 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                            </div>
-                        </div>
-
-                        {/* <!-- Press Card --> */}
-                        <div className="flex p-4 shadow-md">
-                            <div className="mr-6">
-                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.5 7.5H7.5C5.84315 7.5 4.5 8.84315 4.5 10.5V25.5C4.5 27.1569 5.84315 28.5 7.5 28.5H28.5C30.1569 28.5 31.5 27.1569 31.5 25.5V10.5C31.5 8.84315 30.1569 7.5 28.5 7.5Z" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M4.5 10.5L18 19.5L31.5 10.5" stroke="#1F2937" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <div className="">
-                                <p className="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800">Press</p>
-                                <p className="mt-2 font-normal text-base leading-6 text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
 
 

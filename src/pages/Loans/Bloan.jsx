@@ -1,17 +1,27 @@
 import React from 'react'
 import bsloan from "../../assets/Images/businessloan.png"
-// import leftpic from "../../assets/Images/ploan.png"
 import { useState } from 'react'
-import eligibility from './loaneligibility'
+// import eligibility from './loaneligibility'
 import rupee from "../../assets/Images/bloan/rupee.png"
 import approved from "../../assets/Images/bloan/approved.jpg"
 import percentage from "../../assets/Images/bloan/percentage.png"
 import time from "../../assets/Images/bloan/time.png"
+import Loanform from "./Loanform"
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
+import HowtoApply from './HowtoApply'
+import eligibility from './loaneligibility'
+import fees from "./feesandcharges"
+import { Disclosure } from '@headlessui/react'
+import { ChevronUpIcon } from '@heroicons/react/20/solid'
+import ListBulletIcon from '@heroicons/react/20/solid'
 
 
 const currentLoaninterest=[{
  Ltype:"Interest Rate Type",
-  BLoan:"Floating"
+  BLoan:"Floating",
+  
 },
 {
  Ltype:"For Salaried Applicants",
@@ -47,14 +57,14 @@ const Bloan = () => {
     <div className="mx-auto container shadow-md bg-blue-100 rounded-lg">
     <div class=" overflow-hidden ">
   <div class="md:flex">
-    <div class="p-8">
+  <div class="md:shrink-0 p-5 mx-auto">
+      <img class=" object-cover rounded-xl max-w-xs" src={bsloan} alt="Modern building architecture"/>
+    </div>
+    <div class="p-8 my-auto">
       <div class="uppercase text-xl font-semibold text-blue-900">business loan</div>
-      <p className='text-semibold text-base text-blue-900 my-2'>Looking for a Loan that helps you Grow your Business?</p>
-      <p class="mt-2 text-justify">Business loan is a credit facility offered by Banks/NBFCs to meet the financial requirements of self-employed customers and enterprises. It can be availed by individuals, MSMEs, business owners, entrepreneurs, professionals (CAs/Doctors), and several other business entities.Business loans are majorly classified into two types, such as secured loans and unsecured loans. Secured loans are types of loans that require collateral/security, that borrowers need to deposit with the lender to avail business loans. However, in the case of unsecured loans, there is no need to submit any collateral/security with the Bank, NBFC, or any other lender.Banks/NBFCs offer both secured and unsecured business loans, including Term Loans (Short-term/Intermediate-term/Long-term), Working Capital Loans, Cash Credit, Overdraft, Letter of Credit, Bill/Invoice Discounting, Equipment Finance, Machinery Loans, Point-of-Sale (POS) Loans/Merchant Cash Advance, Fleet Finance, Loans under Bank Guarantee (BG), Loan under Govt. schemes, etc.. </p>
+      <p className='text-semibold text-base text-blue-900 my-2'>Small businesses and entrepreneurs can get business loans to meet their capital needs. Over 20 financial institutions offer tailored business loans at attractive rates to meet your financial needs.</p>
     </div>
-    <div class="md:shrink-0 ">
-      <img class=" object-cover rounded-xl max-w-sm mr-6 p-3" src={bsloan} alt="Modern building architecture"/>
-    </div>
+    
   </div>
 </div>
 </div>
@@ -63,60 +73,35 @@ const Bloan = () => {
 
 
 {/* apply here starts */}
-<div className="mx-2 my-8">
-<div className="bg-blue-100  mx-auto container justify-between rounded-xl shadow-md ">
-  <div className="flex flex-row">
-  {/* <img src={leftpic} alt="" className='max-w-xs' /> */}
-      <p className='text-center mx-auto my-auto text-indigo-900'>Apply for a home loan</p>
-    <div className=' text-center mx-auto my-auto flex flex-col '>
-      <form class="w-full max-w-sm">
-        <div class="flex items-center border-b border-teal-500 py-2">
-          <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight text-center focus:outline-none" type="text" placeholder="Your mobile number" aria-label="Full name"/>
-        </div>   
-        </form>
-        <div className="flex flex-col my-4">
-          <span>
-        <input type="radio" />
-        <label htmlFor="salaried" className='text-base font-semibold mx-1'> SALARIED</label>
-        </span>
-        <span>
-        <input type="radio" />
-        <label htmlFor="salaried" className='text-base font-semibold mx-1'> SELF EMPLOYED</label> </span>
-        </div>
-    </div>
-  <div className='mx-auto my-auto'>
-    <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl w-auto">GO</button>
-  </div>
-  </div>
-</div>
-</div>
+
+<Loanform />
 
 {/* apply here ends */}
 
 
-{/* features area stsrts */}
+{/* features area starts */}
 
 
 <div className="mx-auto container">
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 px-8 bs-gray-100 mx-6">
-  <div className='hover:shadow-xl m-3 p-4 rounded-xl'>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 px-8 bs-gray-100 mx-auto">
+  <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
     <img src={time} alt="" className='w-20' />
-    <p className="text-semibold text-md">Apply in just 5 minutes</p>
+    <p className="text-semibold text-lg text-purple-600 my-2">Apply in just 5 minutes</p>
     <p>Now a days, it is not difficult to apply for a loan in 5 minutes. Since money lending and loan applications started online, applying for instant loans became easy</p>
   </div>
-  <div className='hover:shadow-xl m-3 p-4 rounded-xl'>
+  <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
     <img src={approved} alt="" className='w-20'/>
-    <p className="text-semibold text-md">Get approved within 72 hours</p>
+    <p className="text-semibold text-lg text-purple-600 my-2">Get approved within 72 hours</p>
     <p>The path to achieving your life goals may be often hindered by financial hurdles that may seem too steep to skip. Now with 72 hours Loans you can avail instant offers for a range of uses</p>
   </div>
-  <div className='hover:shadow-xl m-3 p-4 rounded-xl'>
+  <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
     <img src={rupee} alt="" className='w-16' />
-    <p className="text-semibold text-md">Get loans up to Rs. 50 lakhs</p>
+    <p className="text-semibold text-lg text-purple-600 my-2">Get loans up to Rs. 50 lakhs</p>
     <p>Avail Business Loan of up to Rs.50 Lakh at attractive interest rates to meet personal urgencies that can crop up anytime in life.</p>
   </div>
-  <div className='hover:shadow-xl m-3 p-4 rounded-xl' > 
+  <div className='hover:shadow-xl m-2 p-4 rounded-xl' > 
     <img src={percentage} alt="" className='w-16'/>
-    <p className="text-semibold text-md">Competitive interest rates</p>
+    <p className="text-semibold text-lg text-purple-600 my-2">Competitive interest rates</p>
     <p>Interest for loans with similar terms charged by private lending institutions in the same area to borrowers of equivalent creditworthiness and access to alternative credit.</p>
   </div>
 </div>
@@ -151,8 +136,23 @@ const Bloan = () => {
      ))
     }
   </table>
-   
+
+
 </div>
+   <div className='container mx-auto my-8 bg-gray-100 p-4'>
+  <p className='text-xl font-semibold text-indigo-800 text-center'>Document required for a Business Loan</p>
+  <p  className='text-teal-800 my-3 mx-4 text-md'>Keep the following documents on hand when filling the online application form</p>
+   
+  <li className='mx-5 list-disc my-1 text-md'> <b >KYC Documents - </b>
+  Aadhar card, PAN card, voter ID card, driving licence or any other government-approved KYC document</li>
+      <li className='mx-5 list-disc my-1 text-md'> <b >Address Proof - </b>
+      Documents such as your electricity bill, rent agreement, or passport may be used as proof of address
+      </li>
+      <li className='mx-5 list-disc my-1 text-md'> <b >Financial Documents - </b>
+      Copy of your GST returns, bank account statement and other financial documents</li>
+ <li className='mx-5 list-disc my-1 text-md'> <b >Proof of Business Ownership - </b>
+ The registration documents for your business</li>
+  </div>
 </div>
 
 {/* eligibility area ends */}
@@ -211,6 +211,174 @@ const Bloan = () => {
 </div>
 
 {/* interest rate area ends */}
+
+
+{/* fees and charges area starts */}
+
+    <div className=" mx-auto">
+      <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white">
+        <Disclosure>
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 my-3 text-left text-sm font-medium text-purple-900 hover:bg-blue-200 focus:outline-none ">
+                <span>Business Loan Rates & Charges</span>
+                <ChevronDownIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className=" pb-4 text-sm text-gray-500">
+                <div className="w-lg flex-auto overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-lg ">
+          <table className='table-auto mx-auto'  >
+            <thead className='border bg-blue-200 text-blue-900'>
+              <tr>
+                <th className='border p-3 w-60'>Type Of Fees</th>
+                <th className='border p-3'>Applicable Charges</th>
+              </tr>
+            </thead>
+          {fees.map((itemcr)=>(
+            <tbody className='border' key={itemcr}>
+              <tr>
+                <td className='border p-3'>{itemcr.typeoffees}</td>
+                <td className='border p-3'>{itemcr.appcharges}</td>
+              </tr>
+            </tbody>
+            ))
+          }
+          </table>
+          </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+        
+
+
+        <Disclosure >
+          {({ open }) => (
+            <>
+               <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 my-3 text-left text-sm font-medium text-purple-900 hover:bg-blue-200 focus:outline-none ">
+                <span>Annual Maintenance Charges</span>
+                <ChevronDownIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="pb-2 text-sm text-gray-500">
+                <div className="w-lg flex-auto overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <table className='table-auto mx-auto'  >
+            <thead className='border bg-blue-200 text-blue-900 '>
+              <tr>
+                <th className='border p-3 w-40'>Loan Variant</th>
+                <th className='border p-3'>Charges</th>
+              </tr>
+            </thead>
+            <tbody className='border'>
+              <tr>
+                <td className='border p-3'>Flexi Term loan	</td>
+                <td className='border p-3'>0.25% plus applicable taxes of the total withdrwable amount (as per the repayment schedule)</td>
+              </tr><tr>
+                <td className='border p-3'>Flexi Hybrid loan	</td>
+                <td className='border p-3'>1% plus applicable taxes of the total withdrawable amount during the initial tenor. 0.25% plus applicable taxes of the total withdrawable amount during subsequent tenor.</td>
+              </tr>
+
+            </tbody>
+          </table>
+          </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+
+
+
+        <Disclosure >
+          {({ open }) => (
+            <>
+               <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 my-3 text-left text-sm font-medium text-purple-900 hover:bg-blue-200 focus:outline-none ">
+                <span>Foreclosure Charges</span>
+                <ChevronDownIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="pb-2 text-sm text-gray-500">
+                <div className="w-lg flex-auto overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <table className='table-auto mx-auto'  >
+            <thead className='border bg-blue-200 text-blue-900'>
+              <tr>
+                <th className='border p-3'>Loan Variant</th>
+                <th className='border p-3'>Charges</th>
+              </tr>
+            </thead>
+            <tbody className='border'>
+              <tr>
+                <td className='border p-3'>Loan (term loan/ advance EMI/ step-up structured monthly instalments/ step-down structured monthly instalment)	</td>
+                <td className='border p-3'>4%+ applicable taxes on the outstanding loan amount payable by the borrower on the date of such full pre-payment</td>
+              </tr>
+              <tr>
+                <td className='border p-3'>Flexi Term loan</td>
+                <td className='border p-3'>4% plus applicable taxes of the total withdrawable amount as per the repayment schedule, on the date of such full pre-payment</td>
+              </tr>
+              <tr>
+                <td className='border p-3'>Flexi Hybrid loan</td>
+                <td className='border p-3'>4% plus applicable taxes of the total withdrawable amount as per the repayment schedule, on the date of such full pre-payment
+</td>
+              </tr>
+
+            </tbody>
+          </table>
+          </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+
+
+
+        <Disclosure >
+          {({ open }) => (
+            <>
+               <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-2 my-3 text-left text-sm font-medium text-purple-900 hover:bg-blue-200 focus:outline-none ">
+                <span>Part-Payment Charges</span>
+                <ChevronDownIcon
+                  className={`${
+                    open ? 'rotate-180 transform' : ''
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="pb-2 text-sm text-gray-500">
+                <div className="w-lg flex-auto overflow-hidden rounded-xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <table className='table-auto w-full'  >
+            <thead className='border bg-blue-200 text-blue-900'>
+              <tr>
+                <th className='border p-3 w-2/4'>Time Period</th>
+                <th className='border p-3'>Charges</th>
+              </tr>
+            </thead>
+            <tbody className='border'>
+              <tr>
+                <td className='border p-3'>More than 1 month from the date of loan disbursal</td>
+                <td className='border p-3'>2% plus taxes on the amount part-prepaid</td>
+              </tr>              
+            </tbody>
+          </table>
+          </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+      </div>
+    </div>
+
+{/* fees and charges area ends */}
+
+{/* how  to apply starts */}
+<HowtoApply />
+{/* how to apply ends */}
     </>
   )
 }

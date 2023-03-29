@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import "../index.css"
 import Logo from "../assets/img/ck.jpg"
+import Login from "../assets/Images/login.png"
 import { Route,Link, Routes } from 'react-router-dom'
 // import AU from "../pages/Cards/Creditcard"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
@@ -135,8 +136,8 @@ const  Header=()=> {
             Loans
           </div>
           </Link>
-          <Link to="/CibilScore"  className="text-sm font-semibold leading-6 text-gray-900">
-             Check Cibil Score 
+          <Link to="/Credit-score"  className="text-sm font-semibold leading-6 text-gray-900">
+             Check Credit Score 
           </Link>
           <Link to="/Calculators" className="text-sm font-semibold leading-6 text-gray-900">
             Finance Calculator
@@ -148,7 +149,10 @@ const  Header=()=> {
             Log in <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
-        {/* <Transition appear show={isOpen} as={Fragment}>
+
+{/* Login Modal */}
+
+        <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
@@ -167,7 +171,7 @@ const  Header=()=> {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-center justify-evenly p-4 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -177,38 +181,78 @@ const  Header=()=> {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="lg:w-3/5    transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
-                  </Dialog.Title>
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Your payment has been successfully submitted. We’ve sent
-                      you an email with all of the details of your order.
-                    </p>
-                  </div>
+                  
+                    <div className="lg:max-w-[373px] md:max-w-[696px] w-full bg-white lg:px-8 md:px-4 px-4 pt-5 md:pb-6 pb-4 relative">
+               Log In  <svg
+                  onClick={() => setIsOpen(false)}
+                  className="md:block  cursor-pointer right-4 top-4 absolute"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
+                    fill="#1F2937"
+                  />
 
-                  <div className="mt-4">
-                    <button
-                      type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                      onClick={closeModal}
-                    >
-                      Got it, thanks!
-                    </button>
-                  </div>
+
+                </svg>
+               
+              </div>
+                  </Dialog.Title>
+                  <div className="lg:px-5  md:px-6 px-4 py-5">
+            <div className="md:flex mx-auto w-md block justify-center">
+              
+              <div className=" w-auto mx-16  text-center flex flex-col justify-center items-center max-w-md ">
+               <img className='' src={Login} alt=''/>
+              </div>
+              <div className="lg:max-w-[373px] md:max-w-[696px] lg:mt-16 w-full bg-white lg:px-8 md:px-4 px-4 pt-5 md:pb-6 pb-4 relative">
+            
+                <p className="text-2xl text-gray-800 font-semibold text-center pt-16">
+                  Enter Your Registered Mobile Number
+                </p>
+               
+                <div className="text-center pt-8 w-full">
+                  <input
+                    type="number"
+                    name
+                    id
+                    placeholder="Enter Phone here"
+                    className="border border-gray-200 placeholder:text-gray-600 focus:outline-none lg:max-w-[40px] w-full lg:w-96 px-4 py-3"
+                  />
+                </div>
+                <div className="text-center pt-4 w-full">
+                  <button className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full lg:w-96 py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
+                   GET OTP
+                  </button>
+                </div>
+               
+                <p className="text-gray-600 text-center lg:pt-12 md:pt-10 pt-12">
+                  Be the first here to hear about your needs. 
+                </p>
+              </div>
+            </div>
+          </div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>
           </div>
         </Dialog>
-      </Transition> */}
-      
+      </Transition>
+      {/* Close Modal */}
     
       </nav>
+
+      {/* Mobile View */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -291,7 +335,7 @@ const  Header=()=> {
         </Dialog.Panel>
       </Dialog>
 
-
+{/* Mobile View End */}
       
     </header>
 
@@ -302,77 +346,7 @@ const  Header=()=> {
 
 
 
-    <div
-          className={`${
-            isOpen ? "flex" : "hidden"
-          } lg:max-w-[1440px] md:max-w-[744px] max-w-[375px] justify-center mx-auto bg-[#4C4C4C]  md:px-6 px-4  lg:py-24 md:py-12 py-9 relative`}
-        >
-          <div className="lg:px-5 md:px-6 px-4 py-5">
-            <div className="md:flex block justify-center">
-              <div className="bg-white flex justify-end items-center h-[50px] px-4 w-full md:hidden block">
-                <svg
-                  onClick={() => setIsOpen(false)}
-                  className="md:hidden block cursor-pointer z-10"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
-                    fill="#1F2937"
-                  />
-                </svg>
-              </div>
-              <div className="bg-gray-800 text-white text-center flex flex-col justify-center items-center lg:px-[66px] md:px-[50px] lg:max-w-[405px] max-w-[343px] w-full md:py-0 py-32">
-               <img className='rounded shadow-2xl' src={Logo} alt=''/>
-              </div>
-              <div className="lg:max-w-[373px] md:max-w-[696px] w-full bg-white lg:px-8 md:px-4 px-4 pt-5 md:pb-6 pb-4 relative">
-                <svg
-                  onClick={() => setIsOpen(false)}
-                  className="md:block hidden cursor-pointer right-4 top-4 absolute"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M7.28033 6.21967C6.98744 5.92678 6.51256 5.92678 6.21967 6.21967C5.92678 6.51256 5.92678 6.98744 6.21967 7.28033L10.9393 12L6.21967 16.7197C5.92678 17.0126 5.92678 17.4874 6.21967 17.7803C6.51256 18.0732 6.98744 18.0732 7.28033 17.7803L12 13.0607L16.7197 17.7803C17.0126 18.0732 17.4874 18.0732 17.7803 17.7803C18.0732 17.4874 18.0732 17.0126 17.7803 16.7197L13.0607 12L17.7803 7.28033C18.0732 6.98744 18.0732 6.51256 17.7803 6.21967C17.4874 5.92678 17.0126 5.92678 16.7197 6.21967L12 10.9393L7.28033 6.21967Z"
-                    fill="#1F2937"
-                  />
-                </svg>
-                <p className="text-2xl text-gray-800 font-semibold text-center pt-16">
-                  Enter Your Registered Mobile Number
-                </p>
-               
-                <div className="text-center pt-8 w-full">
-                  <input
-                    type="Email"
-                    name
-                    id
-                    placeholder="Enter Phone here"
-                    className="border border-gray-200 placeholder:text-gray-600 focus:outline-none lg:max-w-[405px] w-full px-4 py-3"
-                  />
-                </div>
-                <div className="text-center pt-4 w-full">
-                  <button className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
-                   GET OTP
-                  </button>
-                </div>
-               
-                <p className="text-gray-600 text-center lg:pt-12 md:pt-10 pt-12">
-                  Be the first here to hear about your needs. 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+   
     </>
     // <>
     // <Example/>

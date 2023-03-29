@@ -6,25 +6,34 @@ const Error = () => {
     <>
     
     
-<main className="relative h-screen overflow-hidden bg-white">
+<main className="relative h-auto  bg-white">
   
-    <div className="container z-10 flex items-center justify-between h-screen px-6 pt-32 mx-auto md:pt-0">
-        <div className="container relative flex flex-col-reverse items-center justify-between px-6 mx-auto lg:flex-row">
-            <div className="w-full mb-16 text-center md:mb-8 lg:text-left">
-                <h1 className="mt-12 font-sans text-5xl font-light text-center text-gray-700 lg:text-left lg:text-8xl md:mt-0">
-                    Sorry, this page isn& x27;t available
-                </h1>
-                <Link to="/">
-                <button  className="px-2 py-2 mt-16 text-lg font-light transition duration-200 ease-in bg-yellow-300 border-2 border-gray-700 w-36 hover:bg-yellow-400 focus:outline-none">
-                    Go back home
-                </button>
-                </Link>
-            </div>
-            <div className="relative block w-full max-w-md mx-auto md:mt-0 lg:max-w-2xl">
-                <img src="/images/illustrations/1.svg" alt=''/>
+<div>
+            <div className=" lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+                <div className=" w-full xl:w-1/2 relative pb-12 lg:pb-0">
+                    <div className="relative">
+                        <div className="absolute">
+                        <div className='lg:-mt-28'>
+                            <img src="https://i.ibb.co/G9DC8S0/404-2.png" alt='' />
+                        </div>
+                            <div className>
+                                <h1 className="my-2 space-y-10 text-gray-800 font-bold text-2xl">
+                                    Looks like you've found the
+                                    doorway to the great nothing
+                                </h1>
+                                <p className="my-2 text-gray-800">Sorry about that! Please visit our hompage to get where you need to go.</p>
+                              <Link to="/"> <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Take me there!</button>
+                              </Link>        </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/ck1SGFJ/Group.png" alt='' />
+                </div>
             </div>
         </div>
-    </div>
+
 </main>
 
     

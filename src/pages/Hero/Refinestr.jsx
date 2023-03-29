@@ -1,5 +1,6 @@
 import React  from 'react' 
 import ExpertImg from "../../assets/Images/exp.png"
+import { Link } from 'react-router-dom'
 
 
 
@@ -32,15 +33,15 @@ const Refinestr = () => {
 </p>
 <h1 className=' text-3xl text-white'> Talk to an Expert <span className='text-blue-600'> FREE</span></h1>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
+              <Link
+                to="Refine"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
 Connect Me To Credit Consultant
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              </Link>
+              <Link to="/Credit-score" className="text-sm font-semibold leading-6 text-white">
                 Check Cibil Now <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative lg:mt-8 sm:h-96 lg:h-80 lg:mt-8">
@@ -59,7 +60,7 @@ Connect Me To Credit Consultant
     </div>
 
     
-    
+  
     </>
   )
 }

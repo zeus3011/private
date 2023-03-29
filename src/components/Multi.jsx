@@ -30,7 +30,7 @@ const Multi = () => {
 
 
         
-    <div className="parent ">
+    {/* <div className="parent ">
         <div className=' bg:bg-pink-800 '></div>
         <h1  className='text-4xl mx-2 relative w-50 focus-within:shadow-lg   font-bold tracking-tight text-gray-500 sm:text-6xl bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 '>Our Clients</h1>
       <Carousel
@@ -53,7 +53,7 @@ const Multi = () => {
           );
         })}
       </Carousel>
-    </div>
+    </div> */}
     {/* <About/> */}
 
 

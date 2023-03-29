@@ -1,12 +1,13 @@
 import React from "react";
 import "../index.css";
 import Logo from "../assets/img/ck.jpg"
+import {Link}from "react-router-dom"
 const Footer = () => {
   return (
     <div>
-      <footer className="sticky z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+      <footer className="sticky z-10 bg-white  ">
         <div className="container mx-auto">
-          <div className="-mx-4 p-3 flex flex-wrap">
+          <div className=" p-3 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className=" w-full">
                 <a href="  " className="mb-2 inline-block max-w-[160px]">
@@ -23,7 +24,7 @@ const Footer = () => {
                 <div className="mb-6 flex items-center">
                   <a
                     href="  "
-                    className="text-dark hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
+                    className="text-dark hover:bg-blue-300 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
                   >
                     <svg
                       width="8"
@@ -75,51 +76,63 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-body-color font-semibold text-base">
-                  &copy; 2023 CREDITKLICK
+                  &copy; 2022-2023 CREDITKLICK
                 </p>
                
               </div>
             </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Resources
-                </h4>
-                <ul>
-                  <li>SaaS Development</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Company
-                </h4>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
+            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
               <div className="mb-10 w-full">
                 <h4 className="text-dark mb-9 text-lg font-semibold">
                   Quick Links
                 </h4>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                <ul className="text-gray-600 font-bold">
+                  <li>Help</li>
+                  <li > DSA LOGIN</li>
+                  <li>EMI Calculator</li>
+                  <li>AU VALUE CALCULATOR</li>
+                  <li>IDFC FIRST VALUE CALCULATOR</li>
+                  <li>SBI SCLICK VALUE CALCULATOR</li>
+                  <li>YES BANK VALUE CALCULATOR</li>
+                  {/* <li>Gst Calulator</li> */}
                 </ul>
               </div>
             </div>
-            <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+      
+            <div className="w-full lg:mx-36  sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Company
+                </h4>
+                <ul className="text-gray-600 font-bold">
+                  <li>About us</li>
+                  <li>Careers</li>
+                  <li>Contact us</li>
+                  <li>Terms of Use</li>
+                  <li>Privacy Policy</li>
+                  {/* <li>Investors</li>
+                   */}
+                <li>Blogs</li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Resources
+                </h4>
+                <ul className="text-gray-600 font-bold">
+                  <li>Credit Score</li>
+                  <li>Credit Card</li>
+                  <li>Credit Refine</li>
+                  <li>Personal Loan</li>
+                  <li>Buiness Loan</li>
+                  <li>Home Loan</li>
+                </ul>
+              </div>
+            </div>
+         
+            <div className="w-full   sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
                
                 <p className="text-body-color mb-7 text-base">

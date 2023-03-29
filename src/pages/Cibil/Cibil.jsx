@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
-import SideImg from "../../assets/Images/exp.png"
+import SideImg from "../../assets/Images/Cibil/credit.png"
+import { Link } from 'react-router-dom'
 
 
 function classNames(...classes) {
@@ -11,18 +12,18 @@ const Cibil = () => {
   const [agreed, setAgreed] = useState(false)
   return (
     <>
-     <div className="flex h-full   w-full">
-            <div className="flex flex-col lg:flex-row w-full items-start lg:items-center rounded bg-white shadow">
+     <div className="flex h-full  sm:flex-row  w-auto">
+            <div className="flex lg:px-36 flex-col lg:flex-row w-full items-start lg:items-center rounded bg-white shadow">
                 <div className="w-full lg:w-2/3 h-auto  dark:bg-gray-800">
 <img src={SideImg} alt='sideImage'/>
                 </div>
                 <div >
 
-                <form action="#" method="POST" className="mx-auto  ">
-        <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
+                <form  className="mx-auto  ">
+        <div className="grid grid-cols-1 px-8 gap-y-6 gap-x-8 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              First name
+            Full Name
             </label>
             <div className="mt-2.5">
               <input
@@ -36,7 +37,7 @@ const Cibil = () => {
           </div>
           <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              Last name
+            Gender
             </label>
             <div className="mt-2.5">
               <input
@@ -50,7 +51,7 @@ const Cibil = () => {
           </div>
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              First name
+            Date Of Birth
             </label>
             <div className="mt-2.5">
               <input
@@ -64,8 +65,8 @@ const Cibil = () => {
           </div>
           <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              Last name
-            </label>
+            Pincode
+                        </label>
             <div className="mt-2.5">
               <input
                 type="text"
@@ -78,7 +79,7 @@ const Cibil = () => {
           </div>
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              First name
+            PAN
             </label>
             <div className="mt-2.5">
               <input
@@ -92,7 +93,7 @@ const Cibil = () => {
           </div>
           <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-              Last name
+            Mobile Number
             </label>
             <div className="mt-2.5">
               <input
@@ -135,12 +136,13 @@ const Cibil = () => {
           </Switch.Group>
         </div>
         <div className="mt-10">
+          <Link to="/report-analysis">
           <button
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Let's talk
-          </button>
+          Check Credit Score Now</button>
+          </Link>
         </div>
       </form>
 

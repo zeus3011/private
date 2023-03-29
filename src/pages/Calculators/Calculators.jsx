@@ -1,5 +1,10 @@
 import React from 'react'
-
+import EMI from "../../assets/Images/calci/EMIcalc.png"
+import Au from "../../assets/Images/calci/AUcalc.png"
+import Idfc from "../../assets/Images/calci/IBcalc.png"
+import Save from "../../assets/Images/calci/SScalc.png"
+import Clicks from "../../assets/Images/calci/SCLcalc.png"
+import YesB from "../../assets/Images/calci/YBcalc.png"
 const Calculators = () => {
   return (
     <>
@@ -27,10 +32,10 @@ const Calculators = () => {
                         <div className="px-6 xl:px-0">
                             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="bg-white p-5 rounded-md relative h-full w-full">
-                                        {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
-                                        <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/27R6nk5/home-1.png" alt="home-1" />
+                                    <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
+                                        {/*className="shadow-lg w-28  p-2 mb-5 rounded-full" class="absolute inset-0 object-center object-cover h-full w-full"  */}
+                                        <span >
+                                            <img className='w-36' src={EMI} alt="home-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">EMI Calculators</h1>
                                         <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
@@ -47,10 +52,10 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="bg-white p-5 rounded-md relative h-full w-full">
+                                    <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/bdGyLYk/pricetags-1.png" alt="pricetags-1" />
+                                            <img className="w-36" src={Au} alt="pricetags-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">au value Calculator</h1>
                                       
@@ -68,10 +73,10 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="bg-white p-5 rounded-md relative h-full w-full">
+                                    <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/GT4KHvJ/card-1.png" alt="home-1" />
+                                            <img className="w-36" src={Idfc} alt="home-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">idfc first value Calculator</h1>
                                        
@@ -89,10 +94,10 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="bg-white p-5 rounded-md  h-full relative w-full">
+                                    <div className="bg-white  hover:shadow-lg p-5 rounded-md  h-full relative w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/rG4r6NJ/notifications-1.png" alt="home-1" />
+                                            <img className="w-36" src={Save} alt="home-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">sbi simply save value Calculator</h1>
                                       
@@ -110,10 +115,10 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="relative bg-white p-5 rounded-md relative h-full w-full">
+                                    <div className="relative  hover:shadow-lg bg-white p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/HFC1hqn/people-1.png" alt="home-1" />
+                                            <img className="w-36" src={Clicks} alt="home-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">Sbi simply click value Calculator</h1>
                                     
@@ -130,11 +135,11 @@ const Calculators = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div role="cell" className="bg-gray-100">
-                                    <div className="relative bg-white p-5 rounded-md relative h-full  w-full">
+                                <div role="cell" className="bg-gray-100 ">
+                                    <div className="relative hover:shadow-lg bg-white p-5 rounded-md relative h-full  w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
-                                            <img className="bg-gray-200 p-2 mb-5 rounded-full" src="https://i.ibb.co/QX80fYm/lock-closed-1.png" alt="home-1" />
+                                            <img className="w-36 rounded" src={YesB} alt="home-1" />
                                         </span>
                                         <h1 className="pb-4 text-2xl uppercase font-semibold">yes bank value Calculator</h1>
                                      
