@@ -97,3 +97,15 @@
   background-size: contain;
   overflow: hidden;
 }
+
+.tempPic{
+  /* height: 200px; */
+  /* width: 200px; */
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px){
+  .tempPic{
+    display: none;
+  }
+}

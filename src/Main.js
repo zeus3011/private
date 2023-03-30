@@ -21,6 +21,15 @@ import Blogs from './pages/Blogs/Blogs';
 import Cibilhero from "./pages/Cibil/Cibilhero"
 import Contact from './pages/Contact';
 import Login from './pages/Hero/Login';
+import Privacy from './pages/Privacy/Privacy';
+import StepFirst from './pages/Auth/StepFirst';
+import StepSecond from './pages/Auth/StepSecond';
+import StepThird from './pages/Auth/StepThird';
+import AuGrid from './pages/Blogs/GridBlogs/AuGrid';
+import SbiGrid from './pages/Blogs/GridBlogs/SbiGrid';
+import IdfcGrid from './pages/Blogs/GridBlogs/IdfcGrid';
+import YesGrid from './pages/Blogs/GridBlogs/YesGrid';
+import CreditCardBlogs from './pages/Blogs/GridBlogs/AuGrid';
 // import Stripehead from './components/Stripehead';
 const Main = () => {
   return (
@@ -47,6 +56,22 @@ const Main = () => {
   <Route path="/Creditklick" exact element={<Login/>}/>
   <Route path="/report-analysis" exact element={<Cibilhero/>}/>
   <Route path="/connectwithus" exact element={<Contact/>}/>
+  <Route path="/Privacy-policies" exact element={<Privacy/>}/>
+
+  {/* Auth Routing */}
+
+  <Route path="/Personal-Information" exact element={<StepFirst />}/>
+  <Route path="/Adress" exact element={<StepSecond/>}/>
+  <Route path="/Working-Information" exact element={<StepThird/>}/>
+  {/* Auth Routing End */}
+
+
+{/* Blogs Grid */}
+<Route path="/All-about-Cards-Blogs" exact element={<CreditCardBlogs />}/>
+  <Route path="/All-about-Loans-Blogs" exact element={<SbiGrid/>}/>
+  <Route path="/All-about-IdfcBlogs" exact element={<IdfcGrid/>}/>
+  <Route path="/All-about-YesBlogs" exact element={<YesGrid/>}/>
+{/* Blogs Grid End */}
 
 </Routes>
 </BrowserRouter>

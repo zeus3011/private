@@ -5,6 +5,7 @@ import {Link}from "react-router-dom"
 const Footer = () => {
   return (
     <div>
+      <hr/>
       <footer className="sticky z-10 bg-white  ">
         <div className="container mx-auto">
           <div className=" p-3 flex flex-wrap">
@@ -81,14 +82,14 @@ const Footer = () => {
                
               </div>
             </div>
-            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
+            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
                 <h4 className="text-dark mb-9 text-lg font-semibold">
                   Quick Links
                 </h4>
-                <ul className="text-gray-600 font-bold">
-                  <li>Help</li>
-                  <li > DSA LOGIN</li>
+                <ul className="text-gray-600 ">
+                  {/* <li>Help</li> */}
+                  {/* <li > DSA LOGIN</li> */}
                   <li>EMI Calculator</li>
                   <li>AU VALUE CALCULATOR</li>
                   <li>IDFC FIRST VALUE CALCULATOR</li>
@@ -104,11 +105,11 @@ const Footer = () => {
                 <h4 className="text-dark mb-9 text-lg font-semibold">
                   Company
                 </h4>
-                <ul className="text-gray-600 font-bold">
+                <ul className="text-gray-600 ">
                   <li>About us</li>
                   <li>Careers</li>
                   <li>Contact us</li>
-                  <li>Terms of Use</li>
+                  {/* <li>Terms of Use</li> */}
                   <li>Privacy Policy</li>
                   {/* <li>Investors</li>
                    */}
@@ -121,7 +122,7 @@ const Footer = () => {
                 <h4 className="text-dark mb-9 text-lg font-semibold">
                   Resources
                 </h4>
-                <ul className="text-gray-600 font-bold">
+                <ul className="text-gray-600 d">
                   <li>Credit Score</li>
                   <li>Credit Card</li>
                   <li>Credit Refine</li>

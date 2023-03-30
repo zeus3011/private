@@ -1,10 +1,10 @@
 import React from 'react'
-import CCpic from "../../assets/Images/auimg/Credit-Card.png"
-import altura from "../../assets/Images/auimg/altura.png"
-import alturaplus from "../../assets/Images/auimg/alturaplus.png"
-import lit from "../../assets/Images/auimg/litcard.jpg"
+import CCpic from "../../assets/Images/cards/yesm.png"
+import plus from "../../assets/Images/cards/prosp.png"
+import edge from "../../assets/Images/cards/edge.png"
+import Premia from "../../assets/Images/cards/premia.png"
 import Product from '../Product'
-
+import { Link } from 'react-router-dom'
 
 const YesCards = () => {
   
@@ -21,8 +21,9 @@ const YesCards = () => {
           <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">YES BANK CREDIT CARDS</div>
           <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
           <div className=' mt-6 mx-auto justify-center'>
-                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">apply now</button>
-            </div>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>   </div>
         </div>
       </div>
       </div>
@@ -33,7 +34,7 @@ const YesCards = () => {
     <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
-      <img className="h-full w-56 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={altura} alt="Modern building architecture"/>
+      <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={plus} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">Yes Rewards Plus Credit Card</div>
@@ -46,8 +47,9 @@ const YesCards = () => {
     </div>
     <div className="grid grid-cols-1">
         <div className='mx-auto p-2'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
@@ -55,7 +57,7 @@ const YesCards = () => {
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
-      <img className="h-full w-56 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={alturaplus} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={edge} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">YES Prosperity Edge Credit Card</div>
@@ -73,8 +75,9 @@ const YesCards = () => {
     </div>
     <div className="grid grid-cols-1">
         <div className='p-2 mx-auto'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
@@ -83,7 +86,7 @@ const YesCards = () => {
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3">
-      <img className="h-full w-56 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={lit} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={Premia} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">YES Bank Premia Card</div>
@@ -97,8 +100,9 @@ const YesCards = () => {
     </div>
     <div className="grid grid-cols-1 ">
         <div className='p-2 mx-auto'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>

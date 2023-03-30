@@ -1,10 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineVerticalRight, AiOutlineVerticalLeft } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import CScore from "../../assets/Images/CScore.png"
+// import Ccard from "../../assets/Images/Ccard.png"
 
 const featuredProducts = [
-  "/images/hero_1.png",
-  "/images/hero_2.png",
-  "/images/hero_3.png",
+  "/images/CScore.png",
+  "/images/Ccard.png",
+
 ];
 
 let count = 0;
@@ -25,7 +28,7 @@ export default function Slider() {
 
     startSlider();
     return () => {
-      pauseSlider();
+      pauseSlider(false);
     };
     // eslint-disable-next-line
   }, []);
@@ -33,7 +36,7 @@ export default function Slider() {
   const startSlider = () => {
     slideInterval = setInterval(() => {
       handleOnNextClick();
-    }, 3000);
+    }, 2000);
   };
 
   const pauseSlider = () => {
@@ -53,12 +56,13 @@ export default function Slider() {
   };
 
   return (
-    <div ref={slideRef} className="w-full select-none relative">
-      <div className="aspect-w-16 aspect-h-9">
+    <div ref={slideRef} className="w-full shadow-lg select-none relative">
+      <Link to="/Personal-Information">
+      <div className="w-8/12  mx-auto  ">
         <img src={featuredProducts[currentIndex]} alt="" />
       </div>
-
-      <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
+      </Link>
+      {/* <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
         <button
           className="bg-black text-white p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition"
           onClick={handleOnPrevClick}
@@ -71,7 +75,7 @@ export default function Slider() {
         >
           <AiOutlineVerticalLeft size={30} />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

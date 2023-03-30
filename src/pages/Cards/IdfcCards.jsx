@@ -1,10 +1,10 @@
 import React from 'react'
-import CCpic from "../../assets/Images/idfcimg/Credit-Card.png"
+import CCpic from "../../assets/Images/cards/idfcm.png"
 import classic from "../../assets/Images/idfcimg/idfcclassic.png"
 import millenia from "../../assets/Images/idfcimg/idfcmillenia.png"
 import select from "../../assets/Images/idfcimg/idfcselect.png"
 import wealth from "../../assets/Images/idfcimg/idfcwealth.png"
-
+import { Link } from 'react-router-dom'
 import Product from '../Product'
 
 const IdfcCards = () => {
@@ -21,8 +21,9 @@ const IdfcCards = () => {
           <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">IDFC BANK CREDIT CARDS</div>
           <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
           <div className=' mt-6 mx-auto justify-center'>
-                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">apply now</button>
-            </div>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link></div>
         </div>
       </div>
       </div>
@@ -46,8 +47,9 @@ const IdfcCards = () => {
     </div>
     <div className="grid grid-cols-1">
         <div className='mx-auto p-2'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
@@ -69,8 +71,9 @@ const IdfcCards = () => {
     </div>
     <div className="grid grid-cols-1">
         <div className='p-2 mx-auto'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
@@ -99,8 +102,9 @@ const IdfcCards = () => {
     </div>
     <div className="grid grid-cols-1 ">
         <div className='p-2 mx-auto'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
@@ -122,8 +126,9 @@ const IdfcCards = () => {
     </div>
     <div className="grid grid-cols-1">
         <div className='mx-auto p-2'>
+        <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
-       
+            </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>

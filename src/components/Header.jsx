@@ -1,4 +1,6 @@
 import { Fragment, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import "../index.css"
 import Logo from "../assets/img/ck.jpg"
 import Login from "../assets/Images/login.png"
@@ -22,6 +24,8 @@ import Loans from '../pages/Loans/Loans'
 // import Creditcard from '../pages/Cards/Creditcard'
 // import Hero from '../pages/Hero/Hero'
 
+
+
 const products = [
   { name: 'AU Bank Credit Card', description: 'Get a better credit card', path:"/Aucards",  icon: ChartPieIcon },
   { name: 'IDFC First Credit Card', description: 'Speak directly to your customers',  path:"/IDFCcards", icon: CursorArrowRaysIcon },
@@ -31,7 +35,7 @@ const products = [
 ]
 const callsToAction = [
   { name: 'Connect Youtube', href: ' ', icon: PlayCircleIcon },
-  { name: 'Read Blogs',path:'Blogs', icon: BsBookHalf },
+  { name: 'Read Blogs',path:'All-about-Cards-Blogs', icon: BsBookHalf },
 ]
 
 function classNames(...classes) {
@@ -51,15 +55,57 @@ const  Header=()=> {
   function openModal() {
     setIsOpen(true)
   }
+  const notify = () =>{ 
 
+  toast.warn('Check Your Mobile number', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+    toast.success('Login Succesfull', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
+      toast.error('OTP INVALID', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+        toast.info('OTP SENT', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+};
   return (
     <>
     <header className="bg-white">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only ">Creditklick</span>
-            <img className="h-20" src={Logo} alt="" />
+            <img className="h-28" src={Logo} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -74,7 +120,7 @@ const  Header=()=> {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center  gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center   gap-x-1 text-lg font-semibold leading-6 text-gray-900">
               Credit Cards
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -132,20 +178,20 @@ const  Header=()=> {
           </Popover>
           
 <Link to ="/Loans">
-          <div href="  " className="text-sm font-semibold leading-6 text-gray-900">
+          <div href="  " className="text-lg font-semibold leading-6 text-gray-900">
             Loans
           </div>
           </Link>
-          <Link to="/Credit-score"  className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/Credit-score"  className="text-lg animate-bounce font-semibold leading-6 text-red-700">
              Check Credit Score 
           </Link>
-          <Link to="/Calculators" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link to="/Calculators" className="text-lg font-semibold leading-6 text-gray-900">
             Finance Calculator
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button  type="button"
-          onClick={openModal}  className="text-sm font-semibold leading-6 text-gray-900">
+          onClick={openModal}  className="text-lg font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
@@ -231,9 +277,10 @@ const  Header=()=> {
                   />
                 </div>
                 <div className="text-center pt-4 w-full">
-                  <button className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full lg:w-96 py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
+                  <button onClick={notify} className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full lg:w-96 py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
                    GET OTP
                   </button>
+                
                 </div>
                
                 <p className="text-gray-600 text-center lg:pt-12 md:pt-10 pt-12">
@@ -242,6 +289,7 @@ const  Header=()=> {
               </div>
             </div>
           </div>
+          <ToastContainer />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -258,9 +306,9 @@ const  Header=()=> {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href=" " className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Creditklick</span>
               <img
-                className="h-8 w-auto"
+                className="h-28 w-auto"
                 src={Logo}
                 alt=""
               />

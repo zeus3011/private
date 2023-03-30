@@ -1,5 +1,5 @@
 import React from 'react'
-import BL from "../../assets/Images/Loans/BL.png"
+import BL from "../../assets/Images/Loans/BL2.png"
 import PL from "../../assets/Images/Loans/PL1.png"
 import HL from "../../assets/Images/Loans/HL1.png"
 import './Loans.css'
@@ -72,37 +72,37 @@ const Loans = () => {
     </div>
 
 {/* Loans' card area start */}
-<div className="w-4/5 mx-auto h-auto mt-4 rounded-lg text-center font-semibold uppercase bg-gradient-to-b from-gray-200 to-gray-100">
+<div className="w-4/5 mx-auto h-auto mt-4 pt-3 rounded-lg text-center font-semibold uppercase bg-gradient-to-b from-gray-200 to-gray-100">
         <p className='text-blue-900 text-lg'>we are here to  help you. <br /> choose the kind of loan</p>
     </div>
 <div className="bg-gray-100 rounded-lg mx-auto w-4/5">
     
-  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-8 px-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-6 px-8">
+    <div className=" m-4 grid ">
    <Link to="/Personalloan">
-    <div className=" m-4">
         <img src={PL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>PERSONAL LOAN</p>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+    </Link>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
   Apply Now
 </button>   </div>
-    </Link>
-    <div className="m-4">
+    <div className="m-4 grid">
       <Link to="/Homeloan">
         <img src={HL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>HOME LOAN</p>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+        </Link>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
   Apply Now
 </button>
-        </Link>
     </div>
-    <div className="m-4">
+    <div className="m-4 grid">
     <Link to="/Businessloan">
         <img src={BL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>BUSINESS LOAN</p>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+        </Link>
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
   Apply Now
 </button>
-        </Link>
     </div>
   </div>
 </div>
@@ -110,11 +110,7 @@ const Loans = () => {
 
 
 {/* apply button area starts */}
-<div className='flex flex-col  items-center my-6'>
-<button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
-  Apply Now
-</button>
-</div>
+
 {/* Apply button area ends */} 
 
 {/* loan content start */}
@@ -144,7 +140,12 @@ With so many loan options available, it can be overwhelming to choose the right 
     </ul>
   ))
 }
-
+<div className='flex flex-col  items-center my-6'>
+<Link to="/Personal-Information">    
+                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button></Link> 
+</div>
 <h3 className='text-2xl text-gray-700 font-semibold mt-4'>How to get a Loan in India through CreditKlick?</h3>
 
 <p>Loans have become a widely used financial tool in India, whether for buying a home, car, education or personal expenses. But choosing the right loan option can be daunting with so many loan options available on the market. That's where CreditKlick comes into play - an online platform that simplifies loan applications and assists users in making informed decisions.</p> 
@@ -168,6 +169,12 @@ step.map((items)=>(
 </div>
 
 {/* loan content end */}
+<div className='flex flex-col  items-center my-6'>
+<Link to="/Personal-Information">    
+                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button></Link> 
+</div>
 </div>
     </>
   )

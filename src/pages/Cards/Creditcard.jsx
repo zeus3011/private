@@ -1,7 +1,10 @@
 // import React,{useState} from 'react'
-import Card from "../../assets/Images/cards/idfcmillenia.png";
-import Aucard from "../../assets/Images/cards/litcard.jpg";
-
+import ccmain from "../../assets/Images/cards/ccmain.png"
+import ccmain2 from "../../assets/Images/cards/ccmain2.png"
+import idfcm from "../../assets/Images/cards/idfcm.png";
+import aum from "../../assets/Images/cards/aum.png";
+import sbim from "../../assets/Images/cards/sbim.png";
+import yesm from "../../assets/Images/cards/yesm.png";
 import credittable from "./credittable";
 import char from "./fees";
 import { Link,Routes,Route } from "react-router-dom";
@@ -36,13 +39,13 @@ const Creditcard = () => {
                 </p>
                 <br/>
                 <p>Credit cards provide benefits in many categories, including fuel, shopping, and travel, with the help of rewards points, cashback and discounts. But you can reap the benefits offered by making an informed decision. Be aware that the most suitable choice for your credit score is one you select according to your habits and spending habits. To make it easier for you to choose the right one with this, we've covered essential details on credit card options on this webpage. Find out more about credit card options in India.</p>
-                <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mx-8 mt-8 py-2 px-4 rounded-2xl w-auto">
+        <Link to="/Personal-Information">       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mx-8 mt-8 py-2 px-4 rounded-2xl w-auto">
   Apply Now
-</button>
+</button></Link> 
               </div>
             </div>
             <div className="flex justify-center items-center lg:w-2/5 mt-10 md:mt-0">
-              <img className="w-full " src={Card} alt="laptops" />
+              <img className="w-full " src={ccmain} alt="laptops" />
             </div>
           </div>
           {/* Hero End */}
@@ -59,56 +62,64 @@ const Creditcard = () => {
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                     <Link to="/Aucards">
                     <div className="mb-3 w-54  rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
-                      <img src={Aucard} alt=" " />
+                      <img src={aum} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       AU BANK CREDIT CARDS
-                    </h2>
-                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
-  Apply Now
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+ Check Now
 </button>
+                    </h2>
+                  
                     </Link>
+                 
                   </div>
 
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                <Link to="/IdfcCards">
                     <div className="mb-3 w-54 rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
-                      <img src={Card} alt=" " />
+                      <img src={idfcm} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       IDFC FIRST CREDIT CARDS
-                    </h2>
-                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
-  Apply Now
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+ Check Now
 </button>
+                    </h2>
+                  
                     </Link>
+                   
                   </div>
 
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                   <Link to="/Sbicards">
                     <div className="mb-3 w-54 rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
-                      <img src={Card} alt=" " />
+                      <img src={sbim} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       SBI CREDIT CARDS
-                    </h2>
-                    <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
-  Apply Now
+                      <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+ Check Now
 </button>
+                    </h2>
+                    
                     </Link>
+                   
                   </div>
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                  <Link to="/Yescards">
                     <div className="mb-3 w-54 animate-pulse rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
-                      <img src={Card} alt=" " />
+                      <img src={yesm} alt=" " />
                     </div>
                     <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       YES BANK CREDIT CARDS
-                    </h2>
-                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
-  Apply Now
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+ Check Now
 </button>
+                    </h2>
+                  
                     </Link>
+                   
                   </div>
                 </div>
                
@@ -141,7 +152,7 @@ const Creditcard = () => {
 
 
           <div className="mx-auto container w-full flex xl:flex-row flex-col justify-between items-start mt-12 px-6 lg:px-0">
-            <div className="flex flex-col justify-start shadow-xl items-start xl:w-3/4">
+            <div className="flex flex-col justify-start shadow-xl items-start ">
               {/* <div>
                 <h2 className="text-gray-800 dark:text-white lg:text-3xl text-2xl font-bold leading-7">The details</h2>
               </div> */}
@@ -157,13 +168,18 @@ const Creditcard = () => {
                   associate Banks.
                 </p>
               </div>
-              <div className="mt-8 w-full">
+              <div className="mt-8 mx-auto w-full lg:w-8/12">
                 <img
-                  className="w-full rounded shadow-2xl"
-                  src={Card}
+                  className="w-max items-center lg:mx-72 rounded-xl shadow-lg"
+                  src={ccmain2}
                   alt="office"
                 />
+                <Link to="/Personal-Information">    
+                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button></Link> 
               </div>
+              
               <div className="mt-8  flex justify-start items-start flex-col">
                 <div className="mt-8 lg:mx-2 flex-col justify-start items-start">
                   <div className="mt-2">
@@ -188,7 +204,7 @@ const Creditcard = () => {
                 </div>
                 {/* Credit card Table */}
 
-                <div className="mt-8  flex-col justify-start items-start">
+                <div className="mt-8 mx-auto flex-col justify-start items-start">
                   <table class=" lg:mx-56 table:border  md:mx-32 bg-white border-collapse">
                     <tr>
                       <th class="bg-blue-100 border  px-8 py-4">Credit Card</th>
@@ -206,7 +222,12 @@ const Creditcard = () => {
                         </td>
                       </tr>
                     ))}
+                    
                   </table>
+                  <Link to="/Personal-Information">    
+                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+  Apply Now
+</button></Link> 
                 </div>
 
                 <div className="mt-8  justify-evenly items-start">
@@ -240,7 +261,7 @@ const Creditcard = () => {
                       >
                         {item.rate}
                       </li>
-                      <li className="lg:mx-4 text-sm">{item.charge}</li>
+                      <li className="lg:mx-4 mb-4 text-sm">{item.charge}</li>
                     </ul>
                   ))}
                 </div>
@@ -248,7 +269,7 @@ const Creditcard = () => {
                 {/* Credit card Table End  */}
               </div>
             </div>
-            <div className="md:px-8  md:px-0 lg:px-1 mt-10 xl:mt-0 h-full xl:w-2/5  flex justify-center ">
+            {/* <div className="md:px-8  md:px-0 lg:px-1 mt-10 xl:mt-0 h-full xl:w-2/5  flex justify-center ">
               <div className="flex flex-col lg:justify-start justify-center lg:items-start  my-10">
                 <div className=" w-54 h-96">
                   {" "}
@@ -268,16 +289,16 @@ const Creditcard = () => {
                     What is credit card?
                   </p>
                 </div>
-                {/* <div className="mt-8 flex flex-row justify-start items-center space-x-4">
+                <div className="mt-8 flex flex-row justify-start items-center space-x-4">
                   <div className>
                     <button className="btn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 text-xs lg:text-base border border-white py-2 px-4 md:py-4 md:px-8 bg-white rounded-sm text-indigo-700 hover:bg-gray-100">Start trial</button>
                   </div>
                   <div className>
                     <button className="btn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 text-xs lg:text-base border border-white py-2 px-4 md:py-4 md:px-8 text-white rounded-sm hover:bg-white hover:text-indigo-700">Contact sales</button>
                   </div>
-                </div> */}
+                </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

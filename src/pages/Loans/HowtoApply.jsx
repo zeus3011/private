@@ -35,7 +35,7 @@ const HowtoApply = () => {
   return (
     <>
 
-    <div className="mx-auto container mt-8 p-1 bg-gray-100 rounded-md  ">
+    <div className="mx-auto container my-8 p-1 bg-gray-100 rounded-md  ">
 <p className="text-xl font-semibold text-indigo-900 text-center mt-8">HOW TO APPLY</p>
         <div className="mx-6 id grid lg:grid-cols-3 sm:grid-cols-2 gap-6 text-center p-3 ">
             {apply.map((appitem)=>(

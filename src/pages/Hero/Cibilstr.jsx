@@ -17,7 +17,7 @@ const Cibilstr = () => {
             <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
             Smart choices can improve your credit score, don't be silly.
             </h1>
-            <p className="mt-4 text-x text-gray-500">
+            <p className="mt-4  text-gray-500">
             A business credit report (CCR) is a record of your business credit history. It was created from data submitted to CIBIL by lenders across India. CIBIL RANK summarizes your CCR as a number on a scale of 1 to 10, where 1 is the best ranking. The CIBIL Rank & Company Credit Report (CCR) is an indicator of your loan eligibility.
             </p>
             <Link

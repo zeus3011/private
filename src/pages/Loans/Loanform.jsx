@@ -1,13 +1,13 @@
 import React from 'react'
-import formpic from "../../assets/Images/pers.png"
-
+import formpic from "../../assets/Images/authloan.png"
+import { Link } from 'react-router-dom'
 const loanform = () => {
   return (
     <>
     
-    <div className="container w-full my-6 mx-auto">
+    <div className=" w-full  my-6 mx-auto">
         <div className=" flex flex-cols md:flex-cols-1 lg:flex-rows-3">
-            <div className='tempPic'>
+            <div className=' w-auto tempPic mx-auto'>
                 <img src={formpic} alt="" />
             </div>
             <div className='text-center grid grid-cols lg:grid-cols-3 mx-auto '>
@@ -30,7 +30,9 @@ const loanform = () => {
                     </div>
                 </div>
             <div className='my-auto mx-5'>
+                <Link to="/Adress">
                 <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl w-auto uppercase">apply now</button>
+           </Link>
             </div>
             </div>
         </div>

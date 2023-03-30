@@ -4,6 +4,7 @@ import Exp from "../../assets/Images/exp.png"
 import Analyse from "../../assets/Images/Refine/analyise.png"
 import Educate from "../../assets/Images/Refine/educate.png"
 import Karma from "../../assets/Images/Refine/karma.png"
+import Karma1 from "../../assets/Images/Refine/karma1.png"
 import login from "../../assets/Images/Refine/login.png"
 import form from "../../assets/Images/Refine/form.png"
 import navi from "../../assets/Images/Refine/navi.png"
@@ -12,6 +13,7 @@ const Refine = () => {
   const [box2, setBox2] = useState(false);
   const [box3, setBox3] = useState(false);
   const [box4, setBox4] = useState(false);
+  const [box5, setBox5] = useState(false);
   return (
     <>
 
@@ -101,7 +103,7 @@ const Refine = () => {
           </div>
           
         </div>
-        <img className='flex mt-auto col hidden justify-center items-center w-6/12 md:w-8/12  max-w-full lg:mx-72 ' src={Karma} alt="" srcset="" />
+        <img className='flex mt-auto col  justify-center items-center w-6/12 md:w-8/12  max-w-full lg:mx-72 ' src={Karma1} alt="" srcset="" />
 
 
 
@@ -172,7 +174,8 @@ Talk to an Expert. </p>
             <div className="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
                 <div className="w-full lg:w-6/12">
                     <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">We Educate & Analyse</h2>
-                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">To understand how bad accounts affect your credit score, <br/> we analyse your credit record. Our credit specialists will inform you of the repercussions of having a bad account and advise you on the best course of action. We also point out errors on your credit report and assist you in filing a dispute to get them corrected</p>
+                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">We educate you on the best ways to improve your credit score, so that you can take steps towards a better financial future. We analyse information from all of your accounts and give you an holistic view of what not only affects your credit score but also how much you have in total debt.
+</p>
                 </div>
                 <div className="w-full lg:w-6/12">
                     <img className="lg:block hidden lg:-mt-32 w-full" src={Educate} alt="people discussing on board" />
@@ -192,9 +195,9 @@ Talk to an Expert. </p>
                 </div>
 
 
-                <div className="w-full lg:w-6/12">
+                <div className="w-full mt-12 lg:w-6/12">
                     <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">We Coordinate & Resolve</h2>
-                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">We work with the lender to come up with the most advantageous repayment strategy for you to pay off any past-due debt. We then advise you on how much of the remaining balance you must pay straight to the lender. We follow up with the credit bureau once your payment has been received to make sure the negative account has been effectively addressed.
+                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">Our team of experts coordinate the best available solutions to resolve your consumer credit issues. We take a holistic approach to understanding the problems, the current trends and what can be done to make things better. Our services include: credit repair, debt management and consolidation.
 
 </p>
                 </div>
@@ -300,7 +303,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">Why should I use your service?</h2>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">What is a credit refine service?</h2>
                                 </div>
                                 <button onClick={() => setBox1(!box1)} class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box1 ? (
@@ -318,7 +321,8 @@ Talk to an Expert. </p>
                             {box1 && (
                                 <ul class="">
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">If you want to choose Pro or Business plan the you can use all payments. You can pay from Paypal, Payoneer, Master Card, Debit Card.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-full">Our credit refine service is a program designed to help individuals improve their credit scores. We work with clients to identify areas for improvement and develop a personalized plan to help them achieve their credit goals.
+</p>
                                     </li>
                                 </ul>
                             )}
@@ -326,7 +330,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">What payment method I can use?</h2>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">How does the credit refine service work?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -349,7 +353,8 @@ Talk to an Expert. </p>
                             {box2 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">If you want to choose Pro or Business plan the you can use all payments. You can pay from Paypal, Payoneer, Master Card, Debit Card.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-full">Our credit refine service starts with a free consultation to assess your current credit situation and identify areas for improvement. We then develop a personalized plan that may include strategies such as disputing inaccuracies on your credit report, negotiating with creditors, and providing guidance on how to improve your credit utilization and payment history. We provide ongoing support throughout the process to help you achieve your credit goals
+.</p>
                                     </li>
                                 </ul>
                             )}
@@ -357,7 +362,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">Is your service safe to use?</h2>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">What are the benefits of using a credit refine service?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -380,7 +385,7 @@ Talk to an Expert. </p>
                             {box3 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">If you want to choose Pro or Business plan the you can use all payments. You can pay from Paypal, Payoneer, Master Card, Debit Card.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-full">Using our credit refine service can help you improve your credit score, which can lead to lower interest rates and better loan terms. It can also help you qualify for credit cards and loans that you may not have been eligible for before.</p>
                                     </li>
                                 </ul>
                             )}
@@ -388,7 +393,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">How to recover password?</h2>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">How long does it take to see results with a credit refine service?</h2>
                                 </div>
                                 <button onClick={() => setBox4(!box4)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box4 ? (
@@ -405,7 +410,37 @@ Talk to an Expert. </p>
                             {box4 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">If you want to choose Pro or Business plan the you can use all payments. You can pay from Paypal, Payoneer, Master Card, Debit Card.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-full">The amount of time it takes to see results with our credit refine service varies depending on your individual credit situation. Some clients may see results within a few months, while others may take longer. However, we work with you to develop a personalized plan and provide ongoing support to help you achieve your credit goals as quickly as possible.
+</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">Is using a credit refine service worth the investment?</h2>
+                                </div>
+                                <button onClick={() => setBox5(!box5)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
+                                    {box5 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box5 && (
+                                <ul>
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-full">Using a credit refine service can be a worthwhile investment if you're struggling with a low credit score and want to improve your creditworthiness. The cost of our service is reasonable, and the benefits of improving your credit score can save you money in the long run by qualifying you for better loan terms and interest rates.
+<br/><br/>
+When answering these questions, it's important to provide clear and concise answers that directly address the question. Additionally, using bullet points or numbered lists can help make the information more digestible and easier to read.
+
+</p>
                                     </li>
                                 </ul>
                             )}

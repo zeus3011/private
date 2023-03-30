@@ -1,14 +1,10 @@
 import React from 'react'
 import random from "../../assets/Images/pers.png"
-import leftpic from "../../assets/Images/ploan.png"
-// import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 import rupee from "../../assets/Images/bloan/rupee.png"
-import approved from "../../assets/Images/bloan/approved.jpg"
+import approved from "../../assets/Images/bloan/approved.png"
 import time from "../../assets/Images/bloan/time.png"
 import { useState } from 'react'
-
-// import { useState } from 'react'
 
 import eligibility from './loaneligibility'
 import Loanform from "./Loanform"
@@ -31,7 +27,12 @@ const currentLoaninterest=[{
 
 const Ploan = () => {
   const [loantype, setLoantype] = useState(currentLoaninterest);
-  
+  const [box1, setBox1] = useState(false);
+  const [box2, setBox2] = useState(false);
+  const [box3, setBox3] = useState(false);
+  const [box4, setBox4] = useState(false);
+  const [box5, setBox5] = useState(false);
+  const [box6, setBox6] = useState(false);
   return (
   
 
@@ -43,7 +44,13 @@ const Ploan = () => {
       <div class="md:flex">
         <div class="p-8">
           <div class="uppercase text-small text-blue-00 font-semibold text-blue-900">PERSONAL LOAN</div>
-          <p class="mt-2 text-blue-800">Personal loan is a short to medium term unsecured loan granted to an individual. It has no end use restriction except for speculative purposes. Thus, one can avail personal loan for meeting wedding, education, travel or home renovation expenses; for purchasing consumer durables, two wheelers or second-hand vehicles; etc. Flexibility of usage, minimal documentation and quick processing make personal loan a preferred financing option. Unlike other loans, it usually has a shorter repayment tenure ranging from 1-5 years. Depending upon the individual applicant's profile and lender, the APR (Annual Percentage Rate) of a personal loan may vary from 11.29% to 35%. </p>
+          <p class="mt-2 text-blue-800">CreditKlick offers personal loans from over 30+ banks and non-bank financial institutions to suit different consumer segments. Consumers can compare key loan features from top lenders and apply for the best credit option. We have also entered into unique partnerships with several banks and NBFCs to offer pre-approved/pre-qualified personal loans with end-to-end digital processing and instant disbursal. </p>
+          <div className='flex flex-col   my-6'>
+  <Link to="/Personal-Information">    
+                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+    Apply Now
+  </button></Link> 
+  </div>
         </div>
         <div class="md:shrink-0 ">
           <img class=" object-contain rounded-xl max-w-xs p-2" src={random} alt="Modern building architecture"/>
@@ -86,15 +93,20 @@ const Ploan = () => {
     </div>
     </div>
     
-    
+    <div className='flex flex-col items-center  my-6'>
+  <Link to="/Personal-Information">    
+                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+    Apply Now
+  </button></Link> 
+  </div>
     {/* features area ends */}
     
-    
+    {/* eligibility starts */}
     <div className="mx-2 p-2">
     <div className="container mx-auto text-center ">
       <p className='text-lg font-semibold text-indigo-800'>Personal Loan Eligibility Criteria</p>
       <p className='text-teal-800'>The following factors are taken into consideration when a lender goes through your loan application. If you meet these criteria, you are eligible for a personal loan:</p>
-      <table className='table-auto mx-auto mt-4 mt-3' >
+      <table className='table-auto mx-auto' >
         <thead  className='border bg-blue-200 text-blue-900' >
           <tr>
             <th className='border p-3'>Criteria</th>
@@ -113,6 +125,14 @@ const Ploan = () => {
          ))
         }
       </table>
+      <div className="text-justify md:mx-8 mt-4">
+      <li className='mx-5 my-1 text-md'>Employment stability: Minimum two years of work experience in the same job for salaried.</li>
+      <li className='mx-5 my-1 text-md'>Employment TypeSalaried workers work with reputable organisations, MNCs and private and public limited companies, and the government. Organisations, PSUs and large enterprises</li>
+      <li className='mx-5 my-1 text-md'>Credit Score Preferably 750 or higher as higher credit scores increase loan approval chances</li>
+      <li className='mx-5 my-1 text-md'>Salary: At minimum Rs. For salaried customers, 15,000 per month</li>
+      <li className='mx-5 my-1 text-md'>Self-employed professionals must ensure their business operations can continue without interruption for a minimum of two years.</li>
+      <li className='mx-5 my-1 text-md'>Income: At minimum Rs. 5 lahks per annum For self-employed customers</li>
+      </div>
     </div>
     </div>
     
@@ -129,40 +149,218 @@ const Ploan = () => {
           Copy of your GST returns, bank account statement and other financial documents</li>
      <li className='mx-5 list-disc my-1 text-md'> <b >Proof of Business Ownership - </b>
      The registration documents for your business</li>
+     
       </div>
     
+    {/* eligibility ends */}
     
-    
-      {/* fees charges area starts */}
-    
-      <div className="mx-2 py-8">
-      <div className='bg-blue-100 p-4 mx-auto container'>
-        <p className="font-semibold text-xl text-center text-blue-900 my-4">Personal Loan Interest Rate Comparison</p>
-        <p className="text-teal-800 mt-1">The personal loan interest rates vary between 8.30% p.a. and 49% p.a. Depending on the loan amount availed by you, your credit score, and repayment tenure, the interest rate charged on your loan is decided. If you maintain a high credit score and have a good relationship with the bank, then the interest rate on your personal loan can be lowered.</p>
-    
-    
-        <table className='table-auto mx-auto mt-4 mt-3 w-4/5'  >
-        <thead className='border bg-blue-300 text-blue-900 mx-auto'>
-          <tr>
-            <th className='p-3 border-r'>TYPE OF FEES</th>
-            <th className='p-3 '>CHARGES APPLICABLE</th>
-          </tr>
-        </thead>
-        {loantype.map((loanitem)=>(
-        <tbody className='border bg-blue-200' key={loanitem}>
-        <tr>
-          <td className='border p-3 '>{loanitem.Ltype}</td>
-          <td className='border p-3 '>{loanitem.BLoan}</td>
-        </tr>
-      </tbody>
-         ))
-        }
-      </table>
-      </div>
-      </div>
-    
-      {/* fees and charges area ends */}
       <HowtoApply/>
+
+      <div className='flex flex-col items-center   my-6'>
+  <Link to="/Personal-Information">    
+                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+    Apply Now
+  </button></Link> 
+  </div>
+
+      {/* FAQ STARTS */}
+
+
+<div>
+                <img src="https://i.ibb.co/DQ4FZhL/pattern-bg.png" alt="blue pattern background" class="absolute w-full h-64 md:h-96 object-center object-fit z-0" />
+                <div class="relative flex flex-col items-center justify-center sm:px-0 px-6 z-20 pb-32">
+                    <div class="md:py-36 py-20">
+                        <h1 role="heading" class="xl:text-6xl md:text-5xl text-xl font-bold leading-10 text-white">
+                            Frequently asked questions
+                        </h1>
+                    </div>
+                    <div class="lg:w-1/2 md:w-8/12 sm:w-9/12 w-full">
+                      {/* q1 */}
+                        <div class="bg-white shadow rounded p-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">What credit score is required to obtain a personal loan?</h2>
+                                </div>
+                                <button onClick={() => setBox1(!box1)} class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
+                                    {box1 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+
+                            {box1 && (
+                                <ul class="">
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">It all depends on the eligibility criteria that the lender has set. Lenders don't usually require a minimum credit score to get a personal loan. Although some lenders will lend to applicants with lower credit scores (less than 750), the interest rate is generally higher.
+</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+                      
+                      {/* q2 */}
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">Can I cancel a personal mortgage after the loan amount has been paid?</h2>
+                                </div>
+                                <button
+                                    onClick={() => {
+                                        setBox2(!box2);
+                                    }}
+                                    data-menu
+                                    class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer"
+                                >
+                                    {box2 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box2 && (
+                                <ul>
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">You may cancel a personal loan at any time after disbursal, subject to the lender's terms. Cancellation fees and cancellation charges will apply to loans. All banks prohibit loan cancellation after the amount has been paid. You can prepay the loan amount according to the bank's terms and conditions and save the interest.</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+
+                      {/* q3 */}
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">. Is there a minimum income required to obtain a personal loan?</h2>
+                                </div>
+                                <button
+                                    onClick={() => {
+                                        setBox3(!box3);
+                                    }}
+                                    data-menu
+                                    class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer"
+                                >
+                                    {box3 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box3 && (
+                                <ul>
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">. Personal loans are available to those with a minimum monthly income. On varies from one lender to the next. For large lenders, such as public and private sector banks, the minimum income eligibility for personal loans is Rs. 15,000 per month or more</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+
+                      {/* q4 */}
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">Can I get personal loans if I am a pensioner and have a pension account at one of the top banks in India?</h2>
+                                </div>
+                                <button onClick={() => setBox4(!box4)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
+                                    {box4 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box4 && (
+                                <ul>
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">You can get a personal mortgage even if you are a retired person if your pension account is with one of the top banks. You should check that your bank offers personal loans to pensioners.</p>
+                                       
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+
+                      {/* q5 */}
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">What is the process for applying for a personal loan for a student?</h2>
+                                </div>
+                                <button onClick={() => setBox5(!box5)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
+                                    {box5 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box5 && (
+                                <ul>
+                                    <li>
+                                        <p className="text-base leading-normal text-gray-600 mt-4 lg:w-96">Students are generally not eligible for personal loans as they must have a steady source of income and good credit. A personal loan is possible if you have a steady monthly income and meet the other eligibility requirements.</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+                      
+                      {/* q6 */}
+                        <div class="bg-white shadow rounded p-8 mt-8">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h2 class="text-base font-semibold leading-none text-gray-800">What personal loans can I get for my marriage?</h2>
+                                </div>
+                                <button onClick={() => setBox6(!box6)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
+                                    {box6 ? (
+                                        <svg role="button" aria-label="close dropdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5L5 1L9 5" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    ) : (
+                                        <svg width="10" role="button" aria-label="open dropdown" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L5 5L9 1" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    )}
+                                </button>
+                            </div>
+                            {box6 && (
+                                <ul>
+                                    <li>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">You can get a personal loan to cover wedding-related expenses. Personal loans have flexible repayment terms. Many lenders offer personal loans specifically designated as marriage/wedding loans.</p>
+                                    </li>
+                                </ul>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </div>
+{/* FAQ ENDS */}
+<div className='flex flex-col items-center  my-6'>
+  <Link to="/Personal-Information">    
+                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+    Apply Now
+  </button></Link> 
+  </div>
         </>
   )
 }
