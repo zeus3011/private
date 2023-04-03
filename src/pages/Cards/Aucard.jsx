@@ -110,20 +110,20 @@ const Aucard = () => {
 </div>
 {/* Grid1 End */}
 {/* Grid 2  */}
-<div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 mt-16 p-2">
+<div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2  p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={zenith} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
-      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA</div>
-      <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
-      <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
-      <li className="list-disc p-1">Complimentary Railway Lounge access</li>
-      <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
-      <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
+    <div className="p-4 lg:-mt-16 mx-auto">
+      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">ZENITH AU CREDIT CARD</div>
+      <li className="list-disc p-1">10,000 Bonus Reward Points on completing retail spends* worth INR 1 Lakh</li>
+      <li className="list-disc p-1">Complimentary Epicure Membership on minimum of INR 8 lakh retail spends in a card anniversary year.</li>
+      <li className="list-disc p-1">For 1st year fee waiver : INR 1,25,000 retail spends done within 90 days of card set up.</li>
+      <li className="list-disc p-1">For 2nd year onwards fee waiver : INR 5,00,000 retail spends done in previous card anniversary year.</li>
+      <li className="list-disc p-1">INR 1,000 vouchers on minimum INR 2 lakh retail spends done per calendar quarter.</li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='lg:mx-22 mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
@@ -138,18 +138,19 @@ const Aucard = () => {
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={vetta} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
-      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA PLUS</div>
-      <li className="list-disc p-1"> Double the Delight. Earn both Cashback & Reward Points.</li>
+    <div className="p-4 lg:-mt-16 mx-auto">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">VETTA  AU CREDIT CARD</div>
+      <li className="list-disc p-1"> Vouchers worth INR 2000 on minimum INR 30,000 retail spends done within 60 days of card setup.</li>
 
-      <li className="list-disc p-1"> Attractive Welcome Benefit & Monthly Milestone Benefits </li>
+      <li className="list-disc p-1"> earn up to 1,500 Bonus Reward Points in every calendar quarter with INR 1 lakh retail spends*. </li>
 
-      <li className="list-disc p-1"> Complimentary Railway Lounge access </li>
-      <li className="list-disc p-1"> Complimentary Lost Card Liability cover </li>
+      <li className="list-disc p-1"> 1% Fuel Surcharge Waiver for fuel transactions done between INR 400 and INR 5,000, across all fuel stations in the country  </li>
+      <li className="list-disc p-1"> Annual Card Membership fee Rs. 2,999 + applicable taxes </li>
 
-      <li className="list-disc p-1"> ₹ 25,000+ Yearly Benefits on just ₹ 35,000 monthly spends! </li>
+      <li className="list-disc p-1"> 4 Reward Points per INR 100 retail spends* done on Grocery & Departmental store and Utility bill payments. </li>
+    <li className='list-disc p-1'>2 Reward Points per INR 100 retail spends* done across all other merchant categories.</li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='lg:mx-22 mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>

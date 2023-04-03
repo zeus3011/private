@@ -88,11 +88,11 @@ const Sbicards = () => {
     </div>
     <div className="p-4  mx-auto">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">SBI PULSE</div>
-      <li className="list-disc p-1">Get 5% cashback on grocery and travel spends</li>
-      <li className="list-disc p-1">Get additional 2%-5% cashback on all spends</li>
-      <li className="list-disc p-1">Fly comfortably with domestic airport lounge access</li>
-      <li className="list-disc p-1">Enjoy exciting memberships</li>
-      <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
+      <li className="list-disc p-1">Enjoy 1 year complimentary FITPASS PRO Membership, to be received every year, on card renewal</li>
+      <li className="list-disc p-1">Annual Fee (one-time):Rs. 1,499 + Taxes</li>
+      <li className="list-disc p-1">Enjoy 10 Reward Points per Rs. 100 spent on Chemist, Pharmacy, Dining and Movies spend</li>
+      <li className="list-disc p-1">Avail Fraud Liability Insurance Cover of Rs. 1 lakh</li>
+      <li className="list-disc p-1">Complimentary Priority Pass Membership worth US Rs.8118 for first two years of cardholder membership</li>
 
       <div className="grid grid-cols-1">
         <div className='lg:mx-16 mx-auto  p-2'>
@@ -116,11 +116,11 @@ const Sbicards = () => {
     </div>
     <div className="p-4 mx-auto">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI PRIME</div>
-      <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
-      <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
-      <li className="list-disc p-1">Complimentary Railway Lounge access</li>
-      <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
-      <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
+      <li className="list-disc p-1">Welcome gift worth Rs. 3,000</li>
+      <li className="list-disc p-1">Get 10 Reward Points per Rs.100 spent on Dining, Groceries, Departmental stores and Movies</li>
+      <li className="list-disc p-1">8 complimentary visits per calendar year to Domestic Lounges in India  (max. 2 visits per quarter)</li>
+      <li className="list-disc p-1">4 complimentary visits per calendar year to International Priority Pass Lounges, outside India (max. 2 visits per quarter)</li>
+      <li className="list-disc p-1">E-Gift Voucher worth Rs. 7,000 from Yatra.com/Pantaloons on achieving annual spends of Rs. 5 Lakhs</li>
       <div className="grid grid-cols-1">
         <div className='lg:mx-16 mx-auto  p-2'>
           <Link to="/Personal-Information">
