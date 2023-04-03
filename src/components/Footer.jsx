@@ -8,79 +8,68 @@ const Footer = () => {
       <hr/>
       <footer className="sticky z-10 bg-white  ">
         <div className="container mx-auto">
-          <div className=" p-3 flex flex-wrap">
-            <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-              <div className=" w-full">
+          <div className="grid md:grid-cols-5 grid-cols-2 ml-8 md:mx-auto p-2 justify-evenly">
+            <div className="w-3/5 md:w-full m-auto md:-ml-3 hidden md:block">
                 <a href="  " className="mb-2 inline-block max-w-[160px]">
                   <img
                     // src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
                    src={Logo}
                     alt="logo"
-                    className="w-28"
+                    className="w-28 my-auto"
                   />
                 </a>
-              
-               
-              </div>
             </div>
-            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
+              <div className="my-5  md:-ml-4 w-full">
+                <h4 className="text-dark mb-2 text-lg font-semibold">
                   Quick Links
                 </h4>
                 <ul className="text-gray-600 ">
                   {/* <li>Help</li> */}
                   {/* <li > DSA LOGIN</li> */}
-                  <li>EMI Calculator</li>
-                  <li>AU VALUE CALCULATOR</li>
-                  <li>IDFC FIRST VALUE CALCULATOR</li>
-                  <li>SBI SCLICK VALUE CALCULATOR</li>
-                  <li>YES BANK VALUE CALCULATOR</li>
+                  <li className="list-disc">EMI Calculator</li>
+                  <li className="list-disc">AU VALUE Calculator</li>
+                  <li className="list-disc">IDFC FIRST VALUE Calculator</li>
+                  <li className="list-disc">SBI SCLICK VALUE Calculator</li>
+                  <li className="list-disc">YES BANK VALUE Calculator</li>
                   {/* <li>Gst Calulator</li> */}
                 </ul>
               </div>
-            </div>
       
-            <div className="w-full lg:mx-36  sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
+              <div className="my-5 ml-4 w-full">
+                <h4 className="text-dark mb-2 mx-auto  text-lg font-semibold">
                   Company
                 </h4>
-                <ul className="text-gray-600 ">
-                  <li>About us</li>
-                  <li>Careers</li>
-                  <li>Contact us</li>
+                <ul className="text-gray-600 mx-auto  ">
+                  <li className="list-disc">About us</li>
+                  <li className="list-disc">Careers</li>
+                  <li className="list-disc">Contact us</li>
                   {/* <li>Terms of Use</li> */}
-                  <li>Privacy Policy</li>
+                  <li className="list-disc">Privacy Policy</li>
                   {/* <li>Investors</li>
                    */}
-                <li>Blogs</li>
+                <li className="list-disc">Blogs</li>
                 </ul>
               </div>
-            </div>
-            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
+              <div className="my-5 w-full">
+                <h4 className="text-dark mb-2 text-lg font-semibold">
                   Resources
                 </h4>
-                <ul className="text-gray-600 d">
-                  <li>Credit Score</li>
-                  <li>Credit Card</li>
-                  <li>Credit Refine</li>
-                  <li>Personal Loan</li>
-                  <li>Buiness Loan</li>
-                  <li>Home Loan</li>
+                <ul className="text-gray-600">
+                  <li className="md:list-disc">Credit Score</li>
+                  <li className="list-disc lg:list-disc-none">Credit Card</li>
+                  <li className="list-disc lg:list-disc-none">Credit Refine</li>
+                  <li className="list-disc lg:list-disc-none">Personal Loan</li>
+                  <li className="list-disc lg:list-disc-none">Buiness Loan</li>
+                  <li className="list-disc lg:list-disc-none">Home Loan</li>
                 </ul>
               </div>
-            </div>
          
-            <div className="w-full   sm:w-1/2 lg:w-3/12">
-              <div className="mb-10 w-full">
-               
-              <h4 className="text-dark mb-1 text-lg font-semibold">
+            <div className="w-full">
+              <div className="my-5  md:mx-auto space-y-6">
+                  <h4 className="text-dark mb-1 text-lg font-semibold">
                   Follow Us On
                 </h4>
-                <div className="mb-6 flex items-center">
+                <div className="mb-2 flex items-center">
                   <a
                     href="  "
                     className="text-dark hover:bg-blue-300 hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"
@@ -137,10 +126,14 @@ const Footer = () => {
                 <p className="text-body-color font-semibold text-base">
                   &copy; 2022-2023 CREDITKLICK
                 </p>
+               
               </div>
             </div>
           </div>
         </div>
+             <p className="text-red-800 mb-7 text-lg"> <marquee behavior="scroll" direction="left">
+                CreditKlick does not sell any loans on our own and do not charge any fee from any customers/viewers. We advise customers/viewers to choose from best offers from Banks and its advertisers. We do not guarantee any loans as loan sanction is as per Banks and Nbfcs. We suggest all users to never pay any upfront amount for any loan disbursal and if any person who call you as representative of CreditKlick and ask for any amount report the incident immediately via putting us a mail at <a href="mailto:support@creditklick.com">support@creditklick.com</a>
+                </marquee>  </p>
         <div>
           <span className="absolute left-0 bottom-0 z-[-1]">
             <svg

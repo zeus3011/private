@@ -120,7 +120,7 @@ const  Header=()=> {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center   gap-x-1 text-lg font-semibold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-xl font-semibold leading-6 text-gray-900">
               Credit Cards
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
@@ -178,20 +178,20 @@ const  Header=()=> {
           </Popover>
           
 <Link to ="/Loans">
-          <div href="  " className="text-lg font-semibold leading-6 text-gray-900">
+          <div href="  " className="text-xl font-semibold leading-6 text-gray-900">
             Loans
           </div>
           </Link>
-          <Link to="/Credit-score"  className="text-lg animate-bounce font-semibold leading-6 text-red-700">
+          <Link to="/Credit-score"  className="text-xl animate-bounce font-semibold leading-6 text-red-700">
              Check Credit Score 
           </Link>
-          <Link to="/Calculators" className="text-lg font-semibold leading-6 text-gray-900">
+          <Link to="/Calculators" className="text-xl font-semibold leading-6 text-gray-900">
             Finance Calculator
           </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <button  type="button"
-          onClick={openModal}  className="text-lg font-semibold leading-6 text-gray-900">
+          onClick={openModal}  className="text-xl font-semibold leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </button>
         </div>
