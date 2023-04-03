@@ -62,7 +62,7 @@ export default function Slider() {
   return (
     <div ref={slideRef} className=" shadow-lg select-none relative">
       <Link to="/Personal-Information">
-      <div className="w-8/12  mx-auto  ">
+      <div className="md:w-9/12  mx-auto">
         <img src={featuredProducts[currentIndex]} alt="" />
       </div>
       </Link>

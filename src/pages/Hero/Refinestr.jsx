@@ -23,19 +23,19 @@ const Refinestr = () => {
               </radialGradient>
             </defs> */}
           </svg>
-          <div className="mx-auto shadow-2xl max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <div className="mx-auto shadow-2xl max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left space-y-4  ">
+            <h2 className="md:text-4xl text-2xl font-semibold tracking-tight text-white ">
             How do our Credit Refine Works
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
             We analyse your credit report to understand the impact of negative accounts on your credit score.
 
 </p>
-<h1 className=' text-3xl text-white'> Talk to an Expert <span className='text-blue-600'> FREE</span></h1>
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+<h1 className=' md:text-4xl text-2xl  text-white'> Talk to an Expert <span className='text-blue-600'> FREE</span></h1>
+            <div className="mt-10 flex items-center justify-center space-x-6 lg:justify-start">
               <Link
                 to="Refine"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="rounded-md bg-white px-3.5 py-2.5 text-lg font-base text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
 Connect Me To Credit Consultant
               </Link>
@@ -44,7 +44,7 @@ Connect Me To Credit Consultant
               </Link>
             </div>
           </div>
-          <div className="relative lg:mt-8 sm:h-96 lg:h-80 lg:mt-8">
+          <div className="relative lg:mt-8 sm:h-96 lg:h-80 ">
             <img
               className="absolute  shrink-0  sm:max-w-none rounded-md bg-white/5 "
               src={ExpertImg}
