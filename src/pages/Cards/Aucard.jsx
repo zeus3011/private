@@ -1,8 +1,8 @@
 import React from 'react'
 import CCpic from "../../assets/Images/cards/aum.png"
-import altura from "../../assets/Images/auimg/altura.png"
-import alturaplus from "../../assets/Images/auimg/alturaplus.png"
-import lit from "../../assets/Images/auimg/litcard.jpg"
+import altura from "../../assets/Images/auimg/alt.png"
+import alturaplus from "../../assets/Images/auimg/plus.png"
+import lit from "../../assets/Images/auimg/lit.png"
 import zenith from "../../assets/Images/auimg/zenth.png"
 import vetta from "../../assets/Images/auimg/vetta.png"
 import Product from '../Product'
@@ -35,7 +35,7 @@ const Aucard = () => {
     <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
-      <img className="h-auto w-56 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={altura} alt="Modern building architecture"/>
+      <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={altura} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA</div>
@@ -58,7 +58,7 @@ const Aucard = () => {
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
-      <img className="h-full w-56 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={alturaplus} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={alturaplus} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA PLUS</div>
@@ -85,7 +85,7 @@ const Aucard = () => {
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3">
-      <img className="h-full w-56 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={lit} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={lit} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">LIT CREDIT CARD</div>
