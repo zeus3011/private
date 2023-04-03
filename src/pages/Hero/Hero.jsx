@@ -4,7 +4,7 @@ import React from 'react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import "../../index.css"
 import Slider from './Slider'
-import Product from './Product'
+import Product from '../Product'
 import Cibilstr from './Cibilstr'
 import Refinestr from './Refinestr'
 import Contactstr from './Contactstr'

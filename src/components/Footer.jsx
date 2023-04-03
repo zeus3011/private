@@ -19,7 +19,65 @@ const Footer = () => {
                     className="w-28"
                   />
                 </a>
-                <h4 className="text-dark mb-1 text-lg font-semibold">
+              
+               
+              </div>
+            </div>
+            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-3/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Quick Links
+                </h4>
+                <ul className="text-gray-600 ">
+                  {/* <li>Help</li> */}
+                  {/* <li > DSA LOGIN</li> */}
+                  <li>EMI Calculator</li>
+                  <li>AU VALUE CALCULATOR</li>
+                  <li>IDFC FIRST VALUE CALCULATOR</li>
+                  <li>SBI SCLICK VALUE CALCULATOR</li>
+                  <li>YES BANK VALUE CALCULATOR</li>
+                  {/* <li>Gst Calulator</li> */}
+                </ul>
+              </div>
+            </div>
+      
+            <div className="w-full lg:mx-36  sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Company
+                </h4>
+                <ul className="text-gray-600 ">
+                  <li>About us</li>
+                  <li>Careers</li>
+                  <li>Contact us</li>
+                  {/* <li>Terms of Use</li> */}
+                  <li>Privacy Policy</li>
+                  {/* <li>Investors</li>
+                   */}
+                <li>Blogs</li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="text-dark mb-9 text-lg font-semibold">
+                  Resources
+                </h4>
+                <ul className="text-gray-600 d">
+                  <li>Credit Score</li>
+                  <li>Credit Card</li>
+                  <li>Credit Refine</li>
+                  <li>Personal Loan</li>
+                  <li>Buiness Loan</li>
+                  <li>Home Loan</li>
+                </ul>
+              </div>
+            </div>
+         
+            <div className="w-full   sm:w-1/2 lg:w-3/12">
+              <div className="mb-10 w-full">
+               
+              <h4 className="text-dark mb-1 text-lg font-semibold">
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
@@ -78,66 +136,6 @@ const Footer = () => {
                 </div>
                 <p className="text-body-color font-semibold text-base">
                   &copy; 2022-2023 CREDITKLICK
-                </p>
-               
-              </div>
-            </div>
-            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-3/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Quick Links
-                </h4>
-                <ul className="text-gray-600 ">
-                  {/* <li>Help</li> */}
-                  {/* <li > DSA LOGIN</li> */}
-                  <li>EMI Calculator</li>
-                  <li>AU VALUE CALCULATOR</li>
-                  <li>IDFC FIRST VALUE CALCULATOR</li>
-                  <li>SBI SCLICK VALUE CALCULATOR</li>
-                  <li>YES BANK VALUE CALCULATOR</li>
-                  {/* <li>Gst Calulator</li> */}
-                </ul>
-              </div>
-            </div>
-      
-            <div className="w-full lg:mx-36  sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Company
-                </h4>
-                <ul className="text-gray-600 ">
-                  <li>About us</li>
-                  <li>Careers</li>
-                  <li>Contact us</li>
-                  {/* <li>Terms of Use</li> */}
-                  <li>Privacy Policy</li>
-                  {/* <li>Investors</li>
-                   */}
-                <li>Blogs</li>
-                </ul>
-              </div>
-            </div>
-            <div className="w-full lg:-mx-28 sm:w-1/2 lg:w-2/12">
-              <div className="mb-10 w-full">
-                <h4 className="text-dark mb-9 text-lg font-semibold">
-                  Resources
-                </h4>
-                <ul className="text-gray-600 d">
-                  <li>Credit Score</li>
-                  <li>Credit Card</li>
-                  <li>Credit Refine</li>
-                  <li>Personal Loan</li>
-                  <li>Buiness Loan</li>
-                  <li>Home Loan</li>
-                </ul>
-              </div>
-            </div>
-         
-            <div className="w-full   sm:w-1/2 lg:w-3/12">
-              <div className="mb-10 w-full">
-               
-                <p className="text-body-color mb-7 text-base">
-                CreditKlick does not sell any loans on our own and do not charge any fee from any customers/viewers. We advise customers/viewers to choose from best offers from Banks and its advertisers. We do not guarantee any loans as loan sanction is as per Banks and Nbfcs. We suggest all users to never pay any upfront amount for any loan disbursal and if any person who call you as representative of CreditKlick and ask for any amount report the incident immediately via putting us a mail at <a href="mailto:support@creditklick.com">support@creditklick.com</a>
                 </p>
               </div>
             </div>

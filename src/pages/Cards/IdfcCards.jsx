@@ -31,27 +31,27 @@ const IdfcCards = () => {
 
 {/* types of cards start */}
 
-    <div className="mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-4 mt-16 p-2">
+    <div className="mx-auto container overflow-hidden grid grid-cols-1 md:grid-cols-4 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3 ">
       <img className="h-48 w-84 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={classic} alt="Modern building architecture"/>
     </div>
-    <div className="p-4">
+    <div className="p-4 lg:-mt-28">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">IDFC First Classic Card</div>
       <li className="list-disc p-1">10x Reward Points on incremental spends above ₹20,000 per month and spends done on your birthday</li>
       <li className="list-disc p-1">Welcome voucher worth ₹500 on spending ₹15,000 or more within 90 days of card generation </li>
       <li className="list-disc p-1">25% discount on movie tickets up to ₹100 on Paytm mobile app (valid once per month)</li>
       <li className="list-disc p-1">300+ Merchant offers, all year long! | Upto 20% discount at 1500+ restaurants | Upto 15% discount at 3000+ Health & Wellness outlets</li>
       <li className="list-disc p-1">Free cash withdrawals on Domestic and International ATMs for upto 48 days (Cash Advance Fee of only ₹250 per transaction)</li>
-
-    </div>
-    <div className="grid grid-cols-1">
-        <div className='mx-auto p-2'>
+      <div className='mx-auto p-2'>
         <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
+    </div>
+    <div className="grid grid-cols-1">
+      
             </div>
   </div>
 
@@ -59,17 +59,14 @@ const IdfcCards = () => {
     <div className="md:shrink-0 my-3">
       <img className="h-48 w-84 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={select} alt="Modern building architecture"/>
     </div>
-    <div className="p-4">
+    <div className="p-4 lg:-mt-28">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">IDFC First Select Card</div>
       <li className="list-disc p-1">Unlimited Reward points that <b>never expires</b> </li>
       <li className="list-disc p-1">5% cashback (upto ₹1,000) on the transaction value of first EMI done within 90 days of card generation. </li>
       <li className="list-disc p-1">4 complimentary Railway lounge visits per quarter. </li>
       <li className="list-disc p-1">Personal Accident Cover of ₹2,00,000* and Lost Card Liability Cover of ₹25,000. </li>
       <li className="list-disc p-1">6x & 3x Reward points on online & offline purchases respectively for spends upto ₹20,000 per month. </li>
-      
-
-    </div>
-    <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1">
         <div className='p-2 mx-auto'>
         <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
@@ -77,14 +74,17 @@ const IdfcCards = () => {
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
+
+    </div>
+   
   </div>
 
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3">
-      <img className="h-48 w-84 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={wealth} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={wealth} alt="Modern building architecture"/>
     </div>
-    <div className="p-4">
+    <div className="p-4 lg:-mt-28">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">IDFC First Wealth Card</div>
       <li className="list-disc p-1">10x Reward points on incremental spends above ₹30,000 per month and spends done on your birthday.</li>
       <li className="list-disc p-1">Get access to International and Domestic Airport lounges and spas </li>
@@ -96,11 +96,7 @@ const IdfcCards = () => {
 
       <li className="list-disc p-1"> Forex Markup at 1.5% for all international transactions. </li>
 
-
-
-
-    </div>
-    <div className="grid grid-cols-1 ">
+      <div className="grid grid-cols-1 ">
         <div className='p-2 mx-auto'>
         <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
@@ -108,13 +104,17 @@ const IdfcCards = () => {
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
+
+
+    </div>
+   
   </div>
 
   <div className="md:grid grid-rows-2 m-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3">
       <img className="h-48 w-84 rounded-lg object-cover max-w-xs mx-auto" src={millenia} alt="Modern building architecture"/>
     </div>
-    <div className="p-4">
+    <div className="p-4 lg:-mt-28">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">IDFC First Millenia Card</div>
       <li className="list-disc p-1"> 6X & 3X Reward Points on online & offline purchases respectively for spends up to ₹20,000 per month </li>
       <li className="list-disc p-1">5% cashback (up to ₹1000) on the transaction value of first EMI done within 90 days of card generation </li>
@@ -122,9 +122,7 @@ const IdfcCards = () => {
       <li className="list-disc p-1">Personal Accident Cover of ₹2,00,000* and Lost Card Liability Cover of ₹25,000 </li>
       <li className="list-disc p-1"> 100% cashback on available purchase items. </li>
       
-
-    </div>
-    <div className="grid grid-cols-1">
+      <div className="grid grid-cols-1">
         <div className='mx-auto p-2'>
         <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
@@ -132,9 +130,113 @@ const IdfcCards = () => {
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
+    </div>
+  
   </div>
 
 </div>
+
+
+{/* <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-4 mt-16 p-2">
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="md:shrink-0  my-3">
+      <img className="h-48 w-84 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={classic} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4">
+      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA</div>
+      <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
+      <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
+      <li className="list-disc p-1">Complimentary Railway Lounge access</li>
+      <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
+      <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div>  
+    </div>
+ 
+  </div>
+
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="md:shrink-0 my-3">
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={select} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">LIT CREDIT CARD</div>
+      <li className="list-disc p-1">Get 5% cashback on grocery and travel spends</li>
+      <li className="list-disc p-1">Get additional 2%-5% cashback on all spends</li>
+      <li className="list-disc p-1">Fly comfortably with domestic airport lounge access</li>
+      <li className="list-disc p-1">Enjoy exciting memberships</li>
+      <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
+
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div> 
+    </div>
+   
+  </div>
+
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
+    <div className="md:shrink-0 my-3">
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={wealth} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">ALTURA PLUS</div>
+      <li className="list-disc p-1"> Double the Delight. Earn both Cashback & Reward Points.</li>
+
+      <li className="list-disc p-1"> Attractive Welcome Benefit & Monthly Milestone Benefits </li>
+
+      <li className="list-disc p-1"> Complimentary Railway Lounge access </li>
+      <li className="list-disc p-1"> Complimentary Lost Card Liability cover </li>
+
+      <li className="list-disc p-1"> ₹ 25,000+ Yearly Benefits on just ₹ 35,000 monthly spends! </li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div> 
+    </div>
+   
+  </div>
+
+
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="md:shrink-0 my-3">
+      <img className="h-full w-56 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={millenia} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">LIT CREDIT CARD</div>
+      <li className="list-disc p-1">Get 5% cashback on grocery and travel spends</li>
+      <li className="list-disc p-1">Get additional 2%-5% cashback on all spends</li>
+      <li className="list-disc p-1">Fly comfortably with domestic airport lounge access</li>
+      <li className="list-disc p-1">Enjoy exciting memberships</li>
+      <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
+
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div> 
+    </div>
+   
+  </div>
+
+</div> */}
 
 {/* types of cards ends */}
 

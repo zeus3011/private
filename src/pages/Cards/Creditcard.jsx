@@ -7,6 +7,7 @@ import sbim from "../../assets/Images/cards/sbim.png";
 import yesm from "../../assets/Images/cards/yesm.png";
 import credittable from "./credittable";
 import char from "./fees";
+import StepFirst from "../Auth/StepFirst"
 import { Link,Routes,Route } from "react-router-dom";
 // import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
 const Creditcard = () => {
@@ -156,28 +157,9 @@ const Creditcard = () => {
               {/* <div>
                 <h2 className="text-gray-800 dark:text-white lg:text-3xl text-2xl font-bold leading-7">The details</h2>
               </div> */}
-              <div className="mt-1">
-                <p className="text-gray-800 lg:mt-2  dark:text-white lg:text-base text-sm leading-normal">
-                  that will help you evaluate and select the exceptional-suited
-                  card, we've got listed down the exceptional 10 credit cards in
-                  India for 2023 at the side of their features and blessings.
-                  through Paisabazaar, you could get right of entry to precise
-                  statistics around every credit score card, compare them on a
-                  couple of parameters like functions, praise structure, costs
-                  and so on. and also, practice for a credit card from our
-                  associate Banks.
-                </p>
-              </div>
+            
               <div className="mt-8 mx-auto w-full lg:w-8/12">
-                <img
-                  className="w-max items-center lg:mx-72 rounded-xl shadow-lg"
-                  src={ccmain2}
-                  alt="office"
-                />
-                <Link to="/Personal-Information">    
-                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
-  Apply Now
-</button></Link> 
+             <StepFirst/>
               </div>
               
               <div className="mt-8  flex justify-start items-start flex-col">

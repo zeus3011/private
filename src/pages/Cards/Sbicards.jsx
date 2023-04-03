@@ -1,7 +1,10 @@
 import React from 'react'
 import CCpic from "../../assets/Images/cards/sbim.png"
-import SimplyCLICK from "../../assets/Images/cards/simplysave.png"
-import SimplySAVE from "../../assets/Images/auimg/alturaplus.png"
+import save from "../../assets/Images/sbiimg/save.png"
+import click from "../../assets/Images/sbiimg/click.png"
+import prime from "../../assets/Images/sbiimg/prime.png"
+import pulse from "../../assets/Images/sbiimg/pulse.png"
+import elite from "../../assets/Images/sbiimg/elite.png"
 // import lit from "../../assets/Images/auimg/litcard.jpg"
 import Product from '../Product'
 import { Link } from 'react-router-dom'
@@ -27,60 +30,142 @@ const Sbicards = () => {
     </div>
 
 {/* types of cards start */}
-
-    <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 mt-16 p-2">
+{/* Grid 1 */}
+<div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
-      <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={SimplyCLICK} alt="Modern building architecture"/>
+      <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={save} alt="Modern building architecture"/>
     </div>
     <div className="p-4 mx-auto">
-      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SimplyCLICK Advantage SBI Card</div>
-      <li className="list-disc p-1">Amazon.in Gift Card worth Rs. 500 on joining</li>
-      <li className="list-disc p-1">5X Reward Points on online spends</li>
-      <li className="list-disc p-1">10X Reward Points on online spends with exclusive partners</li>
-      <li className="list-disc p-1">10X Reward Points on online spends with exclusive partners</li>
-
-    </div>
-    <div className="grid grid-cols-1">
-        <div className='mx-auto p-2'>
-        <Link to="/Personal-Information">
+      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI SIMPLY SAVE</div>
+      <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
+      <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
+      <li className="list-disc p-1">Complimentary Railway Lounge access</li>
+      <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
+      <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
-            </div>
+            </div>  
+    </div>
+ 
   </div>
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
-      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={SimplySAVE} alt="Modern building architecture"/>
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={click} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
-      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">SimplySAVE Advantage SBI Card</div>
-      <li className="list-disc p-1">Enjoy 10 Reward Points per Rs.150 spent on Dining, Movies, Departmental Stores and Grocery Spends</li>
+    <div className="p-4  mx-auto">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI SIMPLY Click</div>
+      <li className="list-disc p-1"> Double the Delight. Earn both Cashback & Reward Points.</li>
 
-      <li className="list-disc p-1"> Annual fees reversal on spends of Rs. 1,00,000 and above </li>
+      <li className="list-disc p-1"> Attractive Welcome Benefit & Monthly Milestone Benefits </li>
 
-      <li className="list-disc p-1">1% fuel surcharge waiver across all petrol pumps</li>
+      <li className="list-disc p-1"> Complimentary Railway Lounge access </li>
+      <li className="list-disc p-1"> Complimentary Lost Card Liability cover </li>
 
-    </div>
-    <div className="grid grid-cols-1">
-        <div className='p-2 mx-auto'>
-        <Link to="/Personal-Information">
+      <li className="list-disc p-1"> ₹ 25,000+ Yearly Benefits on just ₹ 35,000 monthly spends! </li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
-            </div>
+            </div> 
+    </div>
+   
   </div>
 
 
-  
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="md:shrink-0 my-3">
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={pulse} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4  mx-auto">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">SBI PULSE</div>
+      <li className="list-disc p-1">Get 5% cashback on grocery and travel spends</li>
+      <li className="list-disc p-1">Get additional 2%-5% cashback on all spends</li>
+      <li className="list-disc p-1">Fly comfortably with domestic airport lounge access</li>
+      <li className="list-disc p-1">Enjoy exciting memberships</li>
+      <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
+
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div> 
+    </div>
+   
+  </div>
 
 </div>
+{/* Grid1 End */}
+{/* Grid 2  */}
+<div className="container mx-auto overflow-hidden grid grid-cols-1   md:grid-cols-2 lg:mt-16 p-2">
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="md:shrink-0  my-3">
+      <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={prime} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4 mx-auto">
+      <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI PRIME</div>
+      <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
+      <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
+      <li className="list-disc p-1">Complimentary Railway Lounge access</li>
+      <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
+      <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div>  
+    </div>
+ 
+  </div>
+
+  <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
+    <div className="md:shrink-0 my-3">
+      <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={elite} alt="Modern building architecture"/>
+    </div>
+    <div className="p-4 mx-auto">
+      <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI ELITE</div>
+      <li className="list-disc p-1"> Welcome e- Gift Voucher worth Rs. 5,000.</li>
+
+      <li className="list-disc p-1"> Enjoy 2 complimentary Domestic Airport Lounge visits every quarter in India </li>
+
+      <li className="list-disc p-1">Free Movie Tickets worth Rs. 6,000 every year </li>
+      <li className="list-disc p-1">Earn upto 50,000 Bonus Reward Points worth Rs. 12,500/ year </li>
+
+      <li className="list-disc p-1"> Annual Fee (one-time):Rs.4,999 + Taxes </li>
+      <div className="grid grid-cols-1">
+        <div className='lg:mx-16 mx-auto  p-2'>
+          <Link to="/Personal-Information">
+            <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
+            </Link>
+              <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
+           </div>
+            </div> 
+    </div>
+   
+  </div>
+
+
+ 
+
+</div>
+{/* Grid 2 End */}
 
 {/* types of cards ends */}
-
 {/* our product area starts */}
 
 <Product />

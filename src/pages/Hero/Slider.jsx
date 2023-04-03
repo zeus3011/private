@@ -5,8 +5,12 @@ import CScore from "../../assets/Images/CScore.png"
 // import Ccard from "../../assets/Images/Ccard.png"
 
 const featuredProducts = [
-  "/images/CScore.png",
-  "/images/Ccard.png",
+  "/images/cs1.png",
+  "/images/cs2.png",
+  "/images/cs3.png",
+  "/images/cs4.png",
+  "/images/cs5.png",
+  "/images/cs6.png",
 
 ];
 
@@ -56,7 +60,7 @@ export default function Slider() {
   };
 
   return (
-    <div ref={slideRef} className="w-full shadow-lg select-none relative">
+    <div ref={slideRef} className=" shadow-lg select-none relative">
       <Link to="/Personal-Information">
       <div className="w-8/12  mx-auto  ">
         <img src={featuredProducts[currentIndex]} alt="" />
