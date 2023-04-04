@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import CCpic from "../../assets/Images/cards/aum.png"
 import altura from "../../assets/Images/auimg/alt.png"
 import alturaplus from "../../assets/Images/auimg/plus.png"
@@ -7,8 +7,10 @@ import zenith from "../../assets/Images/auimg/zenth.png"
 import vetta from "../../assets/Images/auimg/vetta.png"
 import Product from '../Product'
 import { Link } from 'react-router-dom'
+import HoverDropdown from '../Auth/Hover'
 
 const Aucard = () => {
+  // const [open, setOpen] = useState(false);
   return (
     <>
     <div className="container mx-auto h-auto rounded-3xl shadow-lg bg-blue-100">
@@ -29,6 +31,38 @@ const Aucard = () => {
       </div>
       </div>
     </div>
+
+
+    {/* <div className="flex justify-center mt-20">
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-white border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+    </div> */}
 
 {/* types of cards start */}
 {/* Grid 1 */}
@@ -55,7 +89,7 @@ const Aucard = () => {
     </div>
  
   </div>
-
+ 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={alturaplus} alt="Modern building architecture"/>
