@@ -21,7 +21,7 @@ const Aucard = () => {
         </div>
         <div className="p-8 my-auto">
           <div className="uppercase text-2xl font-semibold text-indigo-900 text-center">AU BANK CREDIT CARDS</div>
-          <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
+          <p className='text-semibold text-base text-blue-900 my-2 p-2'>AU Bank Credit Cards are designed to cater to the diverse spending habits and lifestyles of customers. With a range of credit cards to choose from, you can select the one that best suits your financial needs. AU Bank Credit Cards offer benefits such as rewards on dining, travel, and entertainment expenses, airport lounge access, travel insurance, and concierge services. They also come with features like fuel surcharge waivers, low-interest rates, higher credit limits, expense management tools, and customized reporting.</p>
           <div className=' mt-6 mx-auto justify-center'>
           <Link to="/Personal-Information">    
                    <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-autotext-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
@@ -79,7 +79,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
       <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='lg:mx-22 mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
@@ -105,13 +105,13 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
 
       <li className="list-disc p-1"> ₹ 25,000+ Yearly Benefits on just ₹ 35,000 monthly spends! </li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='lg:mx-22 mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
-            </div> 
+            </div>  
     </div>
    
   </div>
@@ -130,7 +130,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
 
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='lg:mx-22 mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>

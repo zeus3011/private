@@ -19,7 +19,7 @@ const Sbicards = () => {
         </div>
         <div className="p-8 my-auto">
           <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">SBI CREDIT CARDS</div>
-          <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
+          <p className='text-semibold text-base text-blue-900 my-2 p-2'>SBI Credit Cards are a great option for individuals looking for financial products that offer convenience and rewards. SBI offers a wide range of credit cards designed to cater to diverse spending habits and lifestyles. SBI Credit Cards provide customers with numerous benefits, such as rewards on travel, shopping, dining, and cashback on specific transactions. With low-interest rates, easy payment options, and balance transfer facilities, SBI Credit Cards are an ideal solution for those looking for financial flexibility. Take a look at the various features and benefits of SBI Credit Cards to choose the one that meets your financial needs.</p>
           <div className=' mt-6 mx-auto justify-center'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>

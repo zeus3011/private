@@ -19,7 +19,9 @@ const YesCards = () => {
         </div>
         <div className="p-8 my-auto">
           <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">YES BANK CREDIT CARDS</div>
-          <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
+          <p className='text-semibold text-base text-blue-900 my-2 p-2'>YES Bank Credit Cards are a great financial product that offers a range of benefits to its customers. With YES Bank Credit Cards, you can enjoy cashback, rewards, low processing fees, and interest rates. Every time you swipe your YES Bank Credit Card for dining or shopping expenses, you can save money or get rewarded. <br/>
+In addition to these benefits, YES Bank Credit Cards also offer lifestyle benefits and special offers. You can access airport lounges, earn rewards on your dining expenses, and more.
+</p>
           <div className=' mt-6 mx-auto justify-center'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
