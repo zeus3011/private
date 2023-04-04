@@ -19,16 +19,16 @@ const Refine = () => {
 
 {/* Hero Start */}
 
-<div className="container mx-auto h-auto rounded-3xl shadow-lg bg-blue-100">
-      <div className="bg-gradient-to-l rounded-3xl from-gray-300 w-auto h-auto border border-1 border-gray-100 p-4">
+<div className="container mx-auto h-auto rounded-3xl shadow-lg">
+      <div className="bg-gradient-to-l rounded-3xl from-blue-300 to-gray-100 w-auto h-auto border border-1  p-4">
       <div className="md:flex">
        
-        <div className="p-8 my-auto">
-          <div className="uppercase text-2xl  font-semibold text-indigo-900 text-left ">How do our Credit Refine</div>
-          <p className='text-semibold text-base text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
+        <div className="p-4 my-auto">
+          <div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">How do our Credit Refine</div>
+          <p className='text-semibold text-lg text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
 </p>
-<div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">Talk to an Expert</div>
-<div className="uppercase text-4xl  font-extrabold text-blue-400 text-left ">FREE</div>
+<div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an Expert For</div>
+<div className="uppercase text-4xl  font-bold text-blue-400 text-left ">FREE</div>
 
           <div className=' mt-6 mx-auto justify-center'>
                 <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect With Consultant</button>
@@ -50,8 +50,8 @@ const Refine = () => {
 
 <div classname="overflow-y-hidden bg-gray-100">
     <div className="mx-auto container f-f-p px-4 xl:px-0 py-24">
-      <h1 className="focus:outline-none text-center text-3xl lg:text-4xl font-extrabold lg:leading-9 tracking-wider text-gray-900">How We Works?</h1>
-      <div className="md:mt-24 f-f-p">
+      <h1 className="focus:outline-none text-center text-4xl font-semibold lg:leading-9 tracking-wider text-gray-900">How We Works?</h1>
+      <div className="md:mt-12 f-f-p">
          
 
       <div className="  md:flex justify-center w-full">
@@ -139,7 +139,7 @@ const Refine = () => {
                 < div className = "flex flex-cols rounded-md " > 
                     {/* < img src = {Cnt} alt = " city view " className = "opacity-30 w-full h-full rounded-md object-center object-fill absolute sm:block hidden " />    
                     < img src = " https://i.ibb.co/LQpxBsc/mobile.png " alt = " city view " className = " opacity-20 w-full h-full rounded-md absolute object-center object-fill sm:hidden " />     */}
-                    < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-600 to-transparent   w-full h-full z-40 top-0 md:p-16 p-6 flex flex- col justify-between rounded-md " > 
+                    < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-600 to-transparent   w-full h-full top-0 md:p-16 p-6 flex flex- col justify-between rounded-md " > 
                         <div> 
                             < h1 className = " md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64 " >Book a Call with Expert <span className='text-blue-800'>FREE</span> </h1> 
                             < p className = " text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4 " >Need personalized guidance to solve your question? Don't worry! Call a trained credit professional to make an appointment.
@@ -303,7 +303,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">What is a credit refine service?</h2>
+                                    <h2 class="text-lg font-semibold leading-none text-gray-800">What is a credit refine service?</h2>
                                 </div>
                                 <button onClick={() => setBox1(!box1)} class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box1 ? (
@@ -330,7 +330,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">How does the credit refine service work?</h2>
+                                    <h2 class="text-lg font-semibold leading-none text-gray-800">How does the credit refine service work?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -362,7 +362,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">What are the benefits of using a credit refine service?</h2>
+                                    <h2 class="text-lg font-semibold leading-none text-gray-800">What are the benefits of using a credit refine service?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -393,7 +393,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">How long does it take to see results with a credit refine service?</h2>
+                                    <h2 class="text-lg font-semibold leading-none text-gray-800">How long does it take to see results with a credit refine service?</h2>
                                 </div>
                                 <button onClick={() => setBox4(!box4)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box4 ? (
@@ -419,7 +419,7 @@ Talk to an Expert. </p>
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">Is using a credit refine service worth the investment?</h2>
+                                    <h2 class="text-lg font-semibold leading-none text-gray-800">Is using a credit refine service worth the investment?</h2>
                                 </div>
                                 <button onClick={() => setBox5(!box5)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box5 ? (

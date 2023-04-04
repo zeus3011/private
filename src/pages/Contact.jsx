@@ -23,7 +23,7 @@ const Contact = () => {
        </Parallax>    
      </div>
 
-<div className='lg:flex mx-auto   sm:flex-col lg:flex-row md:flex-col xs:flex-col '>
+<div className='lg:flex mx-auto justify-center  sm:flex-col lg:flex-row md:flex-col xs:flex-col '>
      <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="mx-auto max-w-xs px-8">
@@ -36,7 +36,7 @@ const Contact = () => {
 
                 </p>
                
-                <p className="mt-6 text-xs leading-5 text-gray-600">
+                <p className="mt-6 text-sm leading-5 text-gray-600">
                 1st floor, Plot 112, Udyog Vihar phase 1 Gurgaon Haryana <br/> 122002 <br/>
 Registered Office -: C 125/1, sector 2 Noida 201001
                 </p>
@@ -55,7 +55,7 @@ Registered Office -: C 125/1, sector 2 Noida 201001
 
                 </p>
                
-                <p className="mt-6 text-xs leading-5 text-gray-600">
+                <p className="mt-6 text-sm leading-5 text-gray-600">
                 Drop your Valuable Mail In our Mail Box <br/> we will reach soon.
                 </p>
                 <a
@@ -78,7 +78,7 @@ Registered Office -: C 125/1, sector 2 Noida 201001
                 
                 </p>
                
-                <p className="mt-6 text-xs leading-5 text-gray-600">
+                <p className="mt-6 text-sm leading-5 text-gray-600">
                  Our Team Here to assist You <br/> <br/>
                 </p>
 
@@ -98,7 +98,7 @@ Registered Office -: C 125/1, sector 2 Noida 201001
 
           <div className="w-full flex items-center justify-center my-12">
                 <div className=" top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
-                    <p className="md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">Submit Your Query</p>
+                    <p className="md:text-3xl text-2xl font-semibold leading-7 text-center text-gray-700">Submit Your Query</p>
                     <div className="md:flex items-center mt-12">
                         <div className="md:w-72 flex flex-col">
                             <label className="text-base font-semibold leading-none text-gray-800">Name</label>

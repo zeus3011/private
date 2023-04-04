@@ -25,6 +25,7 @@ const insideStyles = {
   export default function Privacy() {
     return (
        <>
+       
        </>
     )
   }

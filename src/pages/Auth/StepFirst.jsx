@@ -8,7 +8,7 @@ const stepfirst = () => {
     
     <div className="container w-full my-6 mx-auto">
         <div className=" flex flex-cols md:flex-cols-1 lg:flex-rows-3">
-            <div className='tempPic mx-auto'>
+            <div className='tempPic m-auto'>
                 <img src={formpic} alt="" />
             </div>
             <div className='text-center grid grid-cols lg:grid-cols-3 mx-auto '>
@@ -39,7 +39,7 @@ const stepfirst = () => {
             </div>
 
         </div>
-            <div className="bg-red-300 w-80 border-l-4  border-red-800 mx-auto text-center text-red-800 p-3"> Error - Please fill all fields</div>
+            {/* <div className="bg-red-300 w-80 border-l-4  border-red-800 mx-auto text-center text-red-800 p-3"> Error - Please fill all fields</div> */}
     </div>
     
     </>
