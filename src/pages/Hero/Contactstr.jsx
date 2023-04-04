@@ -6,7 +6,7 @@ const Contactstr = () => {
     <>  <main>
     <div className="mx-auto max-w-7xl my-16">
 
-      <div className="mx-auto bg-gradient-to-l p-6 from-blue-100 to-gray-100 shadow-lg rounded-xl max-w-7xl ">
+      <div className="mx-auto bg-gradient-to-l p-6 py-10 from-blue-100 to-gray-100 shadow-lg rounded-xl max-w-7xl ">
         <div className="mx-auto max-w-2xl lg:text-center space-y-10">
           {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2> */}
           <p className="md:text-4xl text-2xl font-semibold tracking-tight text-blue-900">
@@ -19,7 +19,7 @@ const Contactstr = () => {
           <div className="flex items-center justify-center ">
                 <Link
                   to="/connectwithus"
-                  className="rounded-md mb-10 p-3  w-48 bg-teal-600 text-center font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
+                  className="rounded-md p-3  w-48 bg-teal-600 text-center font-semibold text-white shadow-sm hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900"
                 >
                  Contact Us 
                 </Link>

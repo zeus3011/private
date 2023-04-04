@@ -99,9 +99,8 @@
 }
 
 .tempPic{
-  /* height: 200px; */
-  /* width: 200px; */
-  margin: auto;
+  height: 400px;
+  width: 400px;
 }
 
 @media only screen and (max-width: 600px){

@@ -12,10 +12,10 @@ const FAQ = () => {
         <div className=" 2xl:container mt-28 2xl:mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
 
 
-            <h2 className=" font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-gray-800">Frequently Asked Questions</h2>
+            <h2 className=" font-semibold lg:text-4xl text-3xl lg:leading-9 md:leading-7 leading-9 text-blue-900">Frequently Asked Questions</h2>
             <div className="mt-4 flex md:justify-between md:items-start md:flex-row flex-col justify-start items-start">
                 <div className=" ">
-                    <p className=" font-normal text-base leading-6 text-gray-600 lg:w-8/12 md:w-9/12 ">Here are few of the most frequently asked questions by our valueable customers</p>
+                    <p className="  text-xl leading-6 text-gray-600 lg:w-8/12 md:w-9/12 ">Here are few of the most frequently asked questions by our valueable customers</p>
                 </div>
 
              

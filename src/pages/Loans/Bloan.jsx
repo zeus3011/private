@@ -58,25 +58,25 @@ const Bloan = () => {
   
 
     <>
-{/* starting tile area starts  */}
-<div className="mx-2">
+{/* title area starts  */}
+<div className="mx-2 mt-10">
     <div className="mx-auto container shadow-md bg-blue-100 rounded-lg">
     <div class=" overflow-hidden ">
   <div class="md:flex">
-  <div class="md:shrink-0 p-5 mx-auto">
-      <img class=" object-cover rounded-xl max-w-xs" src={bsloan} alt="Modern building architecture"/>
-    </div>
+  
     <div class="p-8 my-auto">
       <div class="uppercase text-xl font-semibold text-blue-900">business loan</div>
       <p className='text-semibold text-base text-blue-900 my-2'>Small businesses and entrepreneurs can get business loans to meet their capital needs. Over 20 financial institutions offer tailored business loans at attractive rates to meet your financial needs.</p>
-      <div className='flex flex-col item   my-6'>
+      <div className='flex flex-col  my-6'>
   <Link to="/Personal-Information">    
-                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+                     <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  py-2 px-4 rounded-2xl w-auto">
     Apply Now
   </button></Link> 
   </div>
     </div>
-    
+    <div class="md:shrink-0 p-5 mx-auto">
+      <img class=" object-cover rounded-xl max-w-xs p-2" src={bsloan} alt="Modern building architecture"/>
+    </div> 
   </div>
 </div>
 </div>
@@ -95,24 +95,24 @@ const Bloan = () => {
 
 
 <div className="mx-auto container">
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8 px-8 bs-gray-100 mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-8 bs-gray-100 mx-auto">
   <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
-    <img src={time} alt="" className='w-16' />
+    <img src={time} alt="" className='w-20' />
     <p className="text-semibold text-lg text-purple-600 my-2">Apply in just 5 minutes</p>
     <p>Now a days, it is not difficult to apply for a loan in 5 minutes. Since money lending and loan applications started online, applying for instant loans became easy</p>
   </div>
   <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
-    <img src={approved} alt="" className='w-16'/>
+    <img src={approved} alt="" className='w-20'/>
     <p className="text-semibold text-lg text-purple-600 my-2">Get approved within 72 hours</p>
     <p>The path to achieving your life goals may be often hindered by financial hurdles that may seem too steep to skip. Now with 72 hours Loans you can avail instant offers for a range of uses</p>
   </div>
   <div className='hover:shadow-xl m-2 p-4 rounded-xl'>
-    <img src={rupee} alt="" className='w-16' />
+    <img src={rupee} alt="" className='w-20' />
     <p className="text-semibold text-lg text-purple-600 my-2">Get loans up to Rs. 50 lakhs</p>
     <p>Avail Business Loan of up to Rs.50 Lakh at attractive interest rates to meet personal urgencies that can crop up anytime in life.</p>
   </div>
   <div className='hover:shadow-xl m-2 p-4 rounded-xl' > 
-    <img src={percentage} alt="" className='w-16'/>
+    <img src={percentage} alt="" className='w-20'/>
     <p className="text-semibold text-lg text-purple-600 my-2">Competitive interest rates</p>
     <p>Interest for loans with similar terms charged by private lending institutions in the same area to borrowers of equivalent creditworthiness and access to alternative credit.</p>
   </div>
@@ -130,7 +130,7 @@ const Bloan = () => {
 {/* eligibility area starts */}
 
 <div className="mx-2 p-2">
-<div className="container mx-auto text-center">
+<div className="container mx-auto text-center space-y-4">
   <p className='text-xl font-semibold text-indigo-800'>Business Loan Eligibility Criteria</p>
   <p  className='text-teal-800 mt-1'>The following factors are taken into consideration when a lender goes through your loan application. If you meet these criteria, you are eligible for a Business loan:</p>
  
@@ -155,26 +155,26 @@ const Bloan = () => {
     }
   </table> 
   <div className="text-justify md:mx-8 mt-4">
-  <li className='mx-5 list-disc my-1 text-md'>Self-employed professionals and self-employed non-professionals can apply for the loan</li>
-  <li className='mx-5 list-disc my-1 text-md'>Self-employed professionals include chartered accountants, chartered accountants and company secretaries. Only those applicants who can show proof of their qualifications and are also practising their profession are eligible to apply.</li>
-  <li className='mx-5 list-disc my-1 text-md'>Non-professional traders and manufacturers are examples of self-employed professionals.</li>
-  <li className='mx-5 list-disc my-1 text-md'>These entities include partnerships, limited liability partnerships and private limited companies.</li>
-  <li className='mx-5 list-disc my-1 text-md'>A minimum turnover of Rs.40 Lakh may be required for the business.</li>
-  <li className='mx-5 list-disc my-1 text-md'>A minimum of three years of experience is required in your current business.</li>
-  <li className='mx-5 list-disc my-1 text-md'>You must have at least five years' experience in the business.</li>
-  <li className='mx-5 list-disc my-1 text-md'>For the past two years, the business should have made a profit.</li>
-  <li className='mx-5 list-disc my-1 text-md'>A minimum annual income (ITR) is required to be Rs. 1.5 lakh per annum.</li>
-  <li className='mx-5 list-disc my-1 text-md'>The applicants should be between 25 and 55 years old.</li>
-  <li className='mx-5 list-disc my-1 text-md'>You should have filed the IT returns for the past year.</li>
-  <li className='mx-5 list-disc my-1 text-md'>Lenders might only offer loans for businesses in certain areas.</li>
+  <li className='mx-5 my-1 text-md'>Self-employed professionals and self-employed non-professionals can apply for the loan</li>
+  <li className='mx-5 my-1 text-md'>Self-employed professionals include chartered accountants, chartered accountants and company secretaries. Only those applicants who can show proof of their qualifications and are also practising their profession are eligible to apply.</li>
+  <li className='mx-5 my-1 text-md'>Non-professional traders and manufacturers are examples of self-employed professionals.</li>
+  <li className='mx-5 my-1 text-md'>These entities include partnerships, limited liability partnerships and private limited companies.</li>
+  <li className='mx-5 my-1 text-md'>A minimum turnover of Rs.40 Lakh may be required for the business.</li>
+  <li className='mx-5 my-1 text-md'>A minimum of three years of experience is required in your current business.</li>
+  <li className='mx-5 my-1 text-md'>You must have at least five years' experience in the business.</li>
+  <li className='mx-5 my-1 text-md'>For the past two years, the business should have made a profit.</li>
+  <li className='mx-5 my-1 text-md'>A minimum annual income (ITR) is required to be Rs. 1.5 lakh per annum.</li>
+  <li className='mx-5 my-1 text-md'>The applicants should be between 25 and 55 years old.</li>
+  <li className='mx-5 my-1 text-md'>You should have filed the IT returns for the past year.</li>
+  <li className='mx-5 my-1 text-md'>Lenders might only offer loans for businesses in certain areas.</li>
   </div>
 
-  <div className='flex flex-col items-center   my-6'>
+  {/* <div className='flex flex-col items-center   my-6'>
   <Link to="/Personal-Information">    
                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto  text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
     Apply Now
   </button></Link> 
-  </div>
+  </div> */}
 </div>
    <div className='container mx-auto my-8 bg-gray-100 p-4'>
   <p className='text-xl font-semibold text-indigo-800 text-center'>Document required for a Business Loan</p>
@@ -207,7 +207,7 @@ const Bloan = () => {
   </button></Link> 
   </div>
 {/* extras accordion starts */}
-    <div className=" mx-auto">
+    <div className=" mx-auto mb-10">
       <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white">
         <Disclosure>
           {({ open }) => (
@@ -307,9 +307,9 @@ const Bloan = () => {
 
 <div>
                 <img src="https://i.ibb.co/DQ4FZhL/pattern-bg.png" alt="blue pattern background" class="absolute w-full h-64 md:h-96 object-center object-fit z-0" />
-                <div class="relative flex flex-col items-center justify-center sm:px-0 px-6 z-20 pb-32">
+                <div class="relative flex flex-col items-center justify-center sm:px-0 px-6 z-20 pb-10">
                     <div class="md:py-36 py-20">
-                        <h1 role="heading" class="xl:text-6xl md:text-5xl text-xl font-bold leading-10 text-white">
+                        <h1 role="heading" class="xl:text-6xl md:text-5xl text-xl font-semibold leading-10 text-white">
                             Frequently asked questions
                         </h1>
                     </div>
@@ -318,7 +318,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">What security do I need to provide to obtain a loan for my business?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">What security do I need to provide to obtain a loan for my business?</h2>
                                 </div>
                                 <button onClick={() => setBox1(!box1)} class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box1 ? (
@@ -336,7 +336,7 @@ const Bloan = () => {
                             {box1 && (
                                 <ul class="">
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">A business loan does not require collateral or security. However, a careful review of your documents will confirm this. To find out what the terms and conditions of your lender requirements are, you can review them.
+                                        <p class="text-base leading-normal text-gray-600 mt-4 ">A business loan does not require collateral or security. However, a careful review of your documents will confirm this. To find out what the terms and conditions of your lender requirements are, you can review them.
 </p>
                                     </li>
                                 </ul>
@@ -347,7 +347,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">I am a physician and have been practicing for ten years. To start my own practice, can I get a loan for a business?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">I am a physician and have been practicing for ten years. To start my own practice, can I get a loan for a business?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -370,7 +370,7 @@ const Bloan = () => {
                             {box2 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">All practicing professionals are eligible for business loans, provided they can provide proof of their qualifications.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 ">All practicing professionals are eligible for business loans, provided they can provide proof of their qualifications.</p>
                                     </li>
                                 </ul>
                             )}
@@ -380,7 +380,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">Do I need to give my personal information to use the EMI calculator and calculate EMIs for my business loan?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">Do I need to give my personal information to use the EMI calculator and calculate EMIs for my business loan?</h2>
                                 </div>
                                 <button
                                     onClick={() => {
@@ -403,7 +403,7 @@ const Bloan = () => {
                             {box3 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">You will not be asked to provide personal information when calculating your expected EMI. The EMI calculator requires only the amount of the loan you are applying for, the term of the loan and the interest rate.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 ">You will not be asked to provide personal information when calculating your expected EMI. The EMI calculator requires only the amount of the loan you are applying for, the term of the loan and the interest rate.</p>
                                     </li>
                                 </ul>
                             )}
@@ -413,7 +413,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">What are the purposes of a business loan?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">What are the purposes of a business loan?</h2>
                                 </div>
                                 <button onClick={() => setBox4(!box4)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box4 ? (
@@ -430,7 +430,7 @@ const Bloan = () => {
                             {box4 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">A business loan can be applied for the following purposes or similar.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 ">A business loan can be applied for the following purposes or similar.</p>
                                         <li className='list-disc mx-6 text-gray-600'>Small business financing</li>
                                         <li className='list-disc mx-6 text-gray-600'>Working Capital Finance</li>
                                         <li className='list-disc mx-6 text-gray-600'>Renovation of your home</li>
@@ -444,7 +444,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">How much liquidity is the Reserve Bank of India (RBI) under the AtmarnirbharBharat Abhiyan plan?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">How much liquidity is the Reserve Bank of India (RBI) under the AtmarnirbharBharat Abhiyan plan?</h2>
                                 </div>
                                 <button onClick={() => setBox5(!box5)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box5 ? (
@@ -461,8 +461,8 @@ const Bloan = () => {
                             {box5 && (
                                 <ul>
                                     <li>
-                                        <p className="text-base leading-normal text-gray-600 mt-4 lg:w-96">The RBI will inject Rs.3.74 million crores, of which Targeted Long Term Repo Operations will be worth Rs.1 crore. One hundred basis points will cut the Cash Reserve Ratio to 3% net demand and time liabilities of Rs.1.37 million crores. Marginal Standing Facility accommodation was increased from 2% to 3% Rs.1.37 crore.</p>
-                                        <p className="text-base leading-normal text-gray-600 mt-4 lg:w-96">The RBI will also inject liquidity equal to 0.5% of GDP. NABARD, SIDBI and SHB for the second phase will reserve Rs.50,000 crore.</p>
+                                        <p className="text-base leading-normal text-gray-600 mt-4 ">The RBI will inject Rs.3.74 million crores, of which Targeted Long Term Repo Operations will be worth Rs.1 crore. One hundred basis points will cut the Cash Reserve Ratio to 3% net demand and time liabilities of Rs.1.37 million crores. Marginal Standing Facility accommodation was increased from 2% to 3% Rs.1.37 crore.</p>
+                                        <p className="text-base leading-normal text-gray-600 mt-4 ">The RBI will also inject liquidity equal to 0.5% of GDP. NABARD, SIDBI and SHB for the second phase will reserve Rs.50,000 crore.</p>
                                     </li>
                                 </ul>
                             )}
@@ -472,7 +472,7 @@ const Bloan = () => {
                         <div class="bg-white shadow rounded p-8 mt-8">
                             <div class="flex items-center justify-between">
                                 <div>
-                                    <h2 class="text-base font-semibold leading-none text-gray-800">Does the government have a moratorium on the payment of loans to businesses?</h2>
+                                    <h2 class="text-base md:text-xl font-semibold leading-none text-gray-800">Does the government have a moratorium on the payment of loans to businesses?</h2>
                                 </div>
                                 <button onClick={() => setBox6(!box6)} data-menu class="focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 ring-offset-white cursor-pointer">
                                     {box6 ? (
@@ -489,7 +489,7 @@ const Bloan = () => {
                             {box6 && (
                                 <ul>
                                     <li>
-                                        <p class="text-base leading-normal text-gray-600 mt-4 lg:w-96">Yes, you will receive a repayment term of 4 years with a one-year moratorium.</p>
+                                        <p class="text-base leading-normal text-gray-600 mt-4 ">Yes, you will receive a repayment term of 4 years with a one-year moratorium.</p>
                                     </li>
                                 </ul>
                             )}

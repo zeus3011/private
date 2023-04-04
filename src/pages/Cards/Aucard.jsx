@@ -18,7 +18,7 @@ const Aucard = () => {
           <img className=" object-cover rounded-xl max-w-xs" src={CCpic} alt="Modern building architecture"/>
         </div>
         <div className="p-8 my-auto">
-          <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">AU BANK CREDIT CARDS</div>
+          <div className="uppercase text-2xl font-semibold text-indigo-900 text-center">AU BANK CREDIT CARDS</div>
           <p className='text-semibold text-base text-blue-900 my-2 p-2'>Banks and NBFCs offer business loans to help businesses meet their financial needs. You can use a business loan to expand your business, finance new equipment, or manage your working capital. Business loans are available to self-employed individuals, small businesses, and other businesses. Businesses are increasingly turning to business loans to grow and thrive, due to flexible repayment options and competitive interest rates. Consider applying for a business loan today if you're looking to grow your business.</p>
           <div className=' mt-6 mx-auto justify-center'>
           <Link to="/Personal-Information">    

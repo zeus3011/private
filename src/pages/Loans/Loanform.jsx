@@ -7,7 +7,7 @@ const loanform = () => {
     
     <div className=" w-full  my-6 mx-auto">
         <div className=" flex flex-cols md:flex-cols-1 lg:flex-rows-3">
-            <div className=' w-auto tempPic mx-auto'>
+            <div className='tempPic m-auto'>
                 <img src={formpic} alt="" />
             </div>
             <div className='text-center grid grid-cols lg:grid-cols-3 mx-auto '>

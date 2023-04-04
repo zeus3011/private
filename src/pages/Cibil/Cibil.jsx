@@ -22,7 +22,7 @@ const Cibil = () => {
                 <form  className="mx-auto  ">
         <div className="grid grid-cols-1 px-8 gap-y-6 gap-x-8 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-gray-900">
             Full Name
             </label>
             <div className="mt-2.5">
@@ -36,7 +36,7 @@ const Cibil = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-900">
             Gender
             </label>
             <div className="mt-2.5">
@@ -53,13 +53,13 @@ const Cibil = () => {
   <option value="volvo">Male</option>
   <option value="saab">Female</option>
   <option value="opel">Other</option>
-  <option value="opel">prefer not say</option>
+  <option value="opel">Prefer not to say</option>
   
 </select>
             </div>
           </div>
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-gray-900">
             Date Of Birth
             </label>
             <div className="mt-2.5">
@@ -73,7 +73,7 @@ const Cibil = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-900">
             Pincode
                         </label>
             <div className="mt-2.5">
@@ -87,7 +87,7 @@ const Cibil = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-gray-900">
             PAN
             </label>
             <div className="mt-2.5">
@@ -101,7 +101,7 @@ const Cibil = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-900">
             Mobile Number
             </label>
             <div className="mt-2.5">
@@ -144,11 +144,11 @@ const Cibil = () => {
             </Switch.Label>
           </Switch.Group>
         </div>
-        <div className="mt-10">
+        <div className="my-10">
           <Link to="/report-analysis">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-auto mx-auto rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
           Check Credit Score Now</button>
           </Link>
