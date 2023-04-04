@@ -7,12 +7,12 @@ const Newsletter = () => {
             <div className="container sm:mx-auto">
                 <div className="block xl:flex justify-between xl:items-center lg:items-center md:flex">
                     <div className="w-11/12 xl:w-4/12 mx-auto xl:mx-16 md:w-5/12">
-                        <h1 className="text-gray-800 text-3xl font-extrabold mb-3 pt-12 xl:pt-0">Sign Up for Product Updates</h1>
+                        <h1 className="text-gray-800 text-3xl font-semibold mb-3 pt-12 xl:pt-0">Sign Up for Product Updates</h1>
                         <p className="text-lg text-gray-600 mb-6">Sign Up for our weekly newsletter to get the latest news updates and amazing offers delivered directly in your inbox.</p>
                         <div className="flex w-full flex-wrap">
                             <div className="w-full">
                                 <div className="flex flex-col mb-3">
-                                    <label className="text-base font-bold text-gray-800 mb-2" htmlFor="email">
+                                    <label className="text-base font-semibold text-gray-800 mb-2" htmlFor="email">
                                         Email
                                     </label>
                                     <input type="email" id="email" placeholder="johnstark97@gmail.com" className="focus:outline-none focus:border-indigo-700 border-gray-300 border rounded-sm py-2 outline-none pl-2 pr-2" />

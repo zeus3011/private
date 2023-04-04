@@ -5,7 +5,7 @@ const loanform = () => {
   return (
     <>
     
-    <div className=" w-full  my-6 mx-auto">
+    <div className="container w-full  my-6 mx-auto">
         <div className=" flex flex-cols md:flex-cols-1 lg:flex-rows-3">
             <div className='tempPic m-auto'>
                 <img src={formpic} alt="" />
