@@ -75,198 +75,198 @@ const posts = [
     return (
       <div className="bg-white  ">
           {/* Navbar grid */}
-          <div className="flex sm:hidden  justify-start">
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-
-
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-
-
-
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-
-
-
-
-
-
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-
-
-
-
-      <div onMouseLeave={() => setOpen(false)} className="relative">
-        <button
-          onMouseOver={() => setOpen(true)}
-          className="flex items-center  p-2 bg-gray-800 border rounded-md"
-        >
-          <span className="mr-2 text-black">Dropdown Button</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
-
-        </button>
-        <ul
-          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
-            open ? "block" : "hidden"
-          }`}
-        >
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 1
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 2
-          </li>
-          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
-            Dropdown List 3
-          </li>
-        </ul>
-      </div>
-    </div>  
+        
     
     {/* Navbar Grid End */}
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32  lg:px-8">
 
         
-    
+        <div className="flex sm:hidden  justify-start">
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+
+
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+
+
+
+
+      <div onMouseLeave={() => setOpen(false)} className="relative">
+        <button
+          onMouseOver={() => setOpen(true)}
+          className="flex items-center  p-2 bg-gray-800 border rounded-md"
+        >
+          <span className="mr-2 text-black">Dropdown Button</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+{/* https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example */}
+
+        </button>
+        <ul
+          className={`absolute right-0 w-40 py-2 mt-2 rounded-lg shadow-xl ${
+            open ? "block" : "hidden"
+          }`}
+        >
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 1
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 2
+          </li>
+          <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">
+            Dropdown List 3
+          </li>
+        </ul>
+      </div>
+    </div> 
     
              <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Credit Cards Blogs</h2>
