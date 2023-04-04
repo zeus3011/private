@@ -18,7 +18,7 @@ const Creditcard = () => {
           {/* Hero Start */}
           <div className="lg:flex w-screen  lg:items-center lg:justify-between">
             <div className="min-w-0 flex-1  ">
-              <h2 className="text-blue-900 text-center rounded p-4 uppercase shadow-lg lg:mx-6 bg-gray-100 dark:text-white lg:text-4xl text-3xl font-extrabold leading-9">
+              <h2 className="text-blue-900 text-center rounded p-4 uppercase shadow-lg lg:mx-6 bg-gray-100 dark:text-white lg:text-4xl text-3xl font-semibold leading-9">
                 Credit Card
               </h2>
             </div>
@@ -30,12 +30,12 @@ const Creditcard = () => {
                 <p className="lg:text-sm text-xs text-gray-600 dark:text-gray-300 font-medium leading-none">Creditklick</p>
               </div> */}
               <div className="md:mt-3">
-                <p className="text-gray-800 dark:text-white lg:text-4xl text-3xl font-extrabold leading-9">
+                <p className="text-gray-800 dark:text-white lg:text-4xl text-3xl font-semibold leading-9">
                   Compare & Apply Credit Cards Online
                 </p>
               </div>
               <div className="md:mt-3">
-                <p className="lg:text-base text-sm leading-normal text-gray-600 dark:text-gray-300">
+                <p>
                 At CreditKlick, you can search applications online for credit cards and choose the perfect one. By your eligibility, you can review pre-approved offers from top companies like Axis Bank, ICICI and SBI, as well as others. You can also get immediate approval.
                 </p>
                 <br/>
@@ -65,7 +65,7 @@ const Creditcard = () => {
                     <div className="mb-3 w-54  rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={aum} alt=" " />
                     </div>
-                    <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
+                    <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       AU BANK CREDIT CARDS
                       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
  Check Now
@@ -81,7 +81,7 @@ const Creditcard = () => {
                     <div className="mb-3 w-54 rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={idfcm} alt=" " />
                     </div>
-                    <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
+                    <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       IDFC FIRST CREDIT CARDS
                       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
  Check Now
@@ -97,7 +97,7 @@ const Creditcard = () => {
                     <div className="mb-3 w-54 rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={sbim} alt=" " />
                     </div>
-                    <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
+                    <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       SBI CREDIT CARDS
                       <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
  Check Now
@@ -112,7 +112,7 @@ const Creditcard = () => {
                     <div className="mb-3 w-54 animate-pulse rounded-full  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={yesm} alt=" " />
                     </div>
-                    <h2 className="text-blue-800 font-semibold dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
+                    <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       YES BANK CREDIT CARDS
                       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
  Check Now
@@ -162,8 +162,8 @@ const Creditcard = () => {
              <StepFirst/>
               </div>
               
-              <div className="mt-8  flex justify-start items-start flex-col">
-                <div className="mt-8 lg:mx-2 flex-col justify-start items-start">
+              <div className=" flex justify-start items-start flex-col">
+                <div className=" lg:mx-2 flex-col justify-start items-start">
                   <div className="mt-2">
                     <p className="text-gray-800 dark:text-white lg:text-base text-sm leading-normal">
                       Another writing challenge can be to take the individual

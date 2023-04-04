@@ -75,20 +75,20 @@ const insideStyles = {
     
     <div className="p-4">
     <p className="text-rose-700 font-semibold"> WE MAKE PERSONAL FINANCE EASY, CONVENIENT & TRANSPARENT</p><br></br>
-    <p className="text-5xl font-semi-bold text-blue-800">WELCOME TO CREDITKLICK</p> <br></br>
+    <p className="text-4xl font-semi-bold text-blue-800">WELCOME TO CREDITKLICK</p> <br></br>
       {/* <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a> */}
       <p className="text-sky-700 ">Using data and technology innovations, we help you choose the most-suited financial products. Our algorithm-based technology platform provides you with access to multiple personal credit offers, ease of comparison of multiple offers available and unbiased advice. From application to disbursal, CreditKlick will accompany you at each step, till the disbursal of loan or issuance of credit card</p>
     </div>
     <div className="lg:shrink-0">
-      <img className="h-max w-full object-cover lg:h-4/5" src={about2} alt="About"/>
+      <img className="h-max w-full object-cover lg:h-4/5 rounded-lg" src={about2} alt="About"/>
     </div>
   </div>
 </div>
 
     <div className="bg-gradient-to-r from-blue-200 to-blue-900 	w-full h-auto my-8 text-center rounded-lg" >
       <p className="text-4xl uppercase pt-16 text-slate-800">Ready to talk ?</p>
-      <p className="text-2xl uppercase p-4 text-slate-800">Our team is here to answer your question about CreditKlick</p>
-      <p className="text-2xl uppercase pb-4 text-slate-800">More that 1.5 million businesses and organizations use CreditKlick</p>
+      <p className="text-xl uppercase p-4 text-slate-800">Our team is here to answer your question about CreditKlick</p>
+      <p className="text-xl uppercase pb-4 text-slate-800">More that 1.5 million businesses and organizations use CreditKlick</p>
     <button className="bg-sky-600 text-slate-800 hover:bg-blue-900 font-semibold hover:text-gray-200 rounded-lg shadow-xl p-2 mb-8">CONTACT US</button>
     </div>
 
