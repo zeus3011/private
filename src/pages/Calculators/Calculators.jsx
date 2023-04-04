@@ -18,12 +18,12 @@ const Calculators = () => {
     {/* Calculators hero ends */}
      <div className="bg-gray-100">
                 <div className="container mx-auto">
-                    <div role="article" className="bg-gray-100 py-12 md:px-8">
-                        <div className="px-4 xl:px-0 py-10">
+                    <div role="article" className="bg-gray-100  md:px-8">
+                        <div className="px-4 xl:px-0 py-8">
                             <div className="flex flex-col lg:flex-row flex-wrap">
-                                <div className="mt-4 lg:mx-72 lg:my-4 lg:text-center lg:mt-0 lg:w-3/5">
+                                <div className="mx-auto lg:my-4 lg:text-center lg:mt-0 lg:w-3/5">
                                     <div>
-                                        <h1 className="text-3xl ml-2  lg:ml-0 lg:text-4xl font-bold text-gray-900 tracking-normal lg:w-11/12">Finance Calculators</h1>
+                                        <h1 className="text-3xl uppercase lg:ml-0 lg:text-4xl font-semibold text-blue-900 tracking-normal lg:w-11/12">Finance Calculators</h1>
                                     </div>
                                 </div>
                                
@@ -37,8 +37,8 @@ const Calculators = () => {
                                         <span >
                                             <img className='w-36' src={EMI} alt="home-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">EMI Calculators</h1>
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">EMI Calculators</h1>
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md text-indigo-700 md:font-semibold cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -57,9 +57,9 @@ const Calculators = () => {
                                         <span>
                                             <img className="w-36" src={Au} alt="pricetags-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">au value Calculator</h1>
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">au value Calculator</h1>
                                       
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md md:font-semibold text-indigo-700  cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -78,9 +78,9 @@ const Calculators = () => {
                                         <span>
                                             <img className="w-36" src={Idfc} alt="home-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">idfc first value Calculator</h1>
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">idfc first value Calculator</h1>
                                        
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md md:font-semibold text-indigo-700  cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -99,9 +99,9 @@ const Calculators = () => {
                                         <span>
                                             <img className="w-36" src={Save} alt="home-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">sbi simply save value Calculator</h1>
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">sbi simply save value Calculator</h1>
                                       
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md md:font-semibold text-indigo-700  cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -115,14 +115,14 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100">
-                                    <div className="relative  hover:shadow-lg bg-white p-5 rounded-md relative h-full w-full">
+                                    <div className="relative  hover:shadow-lg bg-white p-5 rounded-md  h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
                                             <img className="w-36" src={Clicks} alt="home-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">Sbi simply click value Calculator</h1>
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">Sbi simply click value Calculator</h1>
                                     
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md md:font-semibold text-indigo-700  cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">
@@ -136,14 +136,14 @@ const Calculators = () => {
                                     </div>
                                 </div>
                                 <div role="cell" className="bg-gray-100 ">
-                                    <div className="relative hover:shadow-lg bg-white p-5 rounded-md relative h-full  w-full">
+                                    <div className="relative hover:shadow-lg bg-white p-5 rounded-md  h-full  w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
                                             <img className="w-36 rounded" src={YesB} alt="home-1" />
                                         </span>
-                                        <h1 className="pb-4 text-2xl uppercase font-semibold">yes bank value Calculator</h1>
+                                        <h1 className="pb-4 text-xl uppercase font-semibold">yes bank value Calculator</h1>
                                      
-                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-sm text-indigo-700 font-bold cursor-pointer flex items-center" href=" ">
+                                        <a className="hover:text-indigo-500 -my-4 hover:underline absolute bottom-5 text-md md:font-semibold text-indigo-700  cursor-pointer flex items-center" href=" ">
                                             <p>Calculate Now</p>
                                             <div>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-narrow-right" width={16} height={16} viewBox="0 0 24 24" strokeWidth="1.5" stroke="#4338CA" fill="none" strokeLinecap="round" strokeLinejoin="round">

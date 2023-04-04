@@ -4,7 +4,7 @@ import"../../index.css"
 import sliderImageUrl from "./sliderImageUrl"
 const Carousel = () => {
   return (
-	<div div className='container mx-auto'> <div className='text-6xl text-gray-600  font-semibold text-start'>Our Partners</div>
+	<div div className='container mx-auto'> <div className='md:text-5xl mb-4 text-4xl font-semibold ml-4 text-start'>Our Partners</div>
 	
     <div className='SliderX'>
 <div className="sliderP">

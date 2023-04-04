@@ -29,7 +29,7 @@ const loandetails=[
   },
   {
     heading: "Privacy & Trust",
-    content:" CreditKlick takes your privacy seriously. Any personal information provided to us is solely shared with your chosen lender and never shared with a third party for any reason whatsoever. \\n Top banks such as HDFC and Axis Bank have put their faith in CreditKlick, their reliable online technology having been adopted by these lenders to offer their customers the best loan experience on their websites."
+    content:" CreditKlick takes your privacy seriously. Any personal information provided to us is solely shared with your chosen lender and never shared with a third party for any reason whatsoever. Top banks such as HDFC and Axis Bank have put their faith in CreditKlick, their reliable online technology having been adopted by these lenders to offer their customers the best loan experience on their websites."
   }
 ]
 
@@ -48,7 +48,7 @@ const loansteps = [
   },
   {
     heading:"step 4",
-    content: "Once you submit your application to CreditKlick, you will instantly receive an e-approval. Your loan application will then be transferred to the lender of your choice and a customer support executive will contact you within a short period of time. In the meantime, you can track the status of your application through SMS alerts and emails. \\n CreditKlick provides you with multiple loan options from various lenders, so you can compare them and pick the one best suited to your needs. CreditKlick has competitive interest rates and flexible repayment plans. Furthermore, CreditKlick guarantees complete privacy and security of your personal information.\\n \\n Finally, CreditKlick makes getting a loan in India an effortless and intuitive process. Not only will you save time, effort and money but you'll also gain access to some of the best loan options available on the market. With CreditKlick you won't waste any time or energy searching for options - making it the ideal one-stop shop!"
+    content: "Once you submit your application to CreditKlick, you will instantly receive an e-approval. Your loan application will then be transferred to the lender of your choice and a customer support executive will contact you within a short period of time. In the meantime, you can track the status of your application through SMS alerts and emails. CreditKlick provides you with multiple loan options from various lenders, so you can compare them and pick the one best suited to your needs. CreditKlick has competitive interest rates and flexible repayment plans. Furthermore, CreditKlick guarantees complete privacy and security of your personal information. Finally, CreditKlick makes getting a loan in India an effortless and intuitive process. Not only will you save time, effort and money but you'll also gain access to some of the best loan options available on the market. With CreditKlick you won't waste any time or energy searching for options - making it the ideal one-stop shop!"
   },
 ]
 
@@ -80,7 +80,7 @@ const Loans = () => {
   <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 pt-6 px-8">
     <div className=" m-4 grid ">
    <Link to="/Personalloan">
-        <img src={PL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={PL} alt=""  className='rounded-xl flex justify-center text-6xl  shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>PERSONAL LOAN</p>
     </Link>
         <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
@@ -88,7 +88,7 @@ const Loans = () => {
 </button>   </div>
     <div className="m-4 grid">
       <Link to="/Homeloan">
-        <img src={HL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={HL} alt=""  className='rounded-xl flex justify-center text-6xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>HOME LOAN</p>
         </Link>
         <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
@@ -97,7 +97,7 @@ const Loans = () => {
     </div>
     <div className="m-4 grid">
     <Link to="/Businessloan">
-        <img src={BL} alt=""  className='rounded-xl flex justify-center text-6xl rounded-xl shadow-lg'/>
+        <img src={BL} alt=""  className='rounded-xl flex justify-center text-6xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>BUSINESS LOAN</p>
         </Link>
         <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
