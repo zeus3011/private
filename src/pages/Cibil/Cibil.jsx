@@ -64,7 +64,7 @@ const Cibil = () => {
             </label>
             <div className="mt-2.5">
               <input
-                type="text"
+                type="date"
                 name="first-name"
                 id="first-name"
                 autoComplete="given-name"
