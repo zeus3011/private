@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import "../index.css"
 import Logo from "../assets/img/ck.jpg"
-import Login from "../assets/Images/login.png"
+import Login from "../assets/Images/creditlogin.png"
 import { Route,Link, Routes } from 'react-router-dom'
 // import AU from "../pages/Cards/Creditcard"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
@@ -259,7 +259,7 @@ const  Header=()=> {
             <div className="md:flex mx-auto w-md block justify-center">
               
               <div className=" w-auto mx-16  text-center flex flex-col justify-center items-center max-w-md ">
-               <img className='' src={Login} alt=''/>
+               <img className='h-52 w-auto' src={Login} alt=''/>
               </div>
               <div className="lg:max-w-[373px] md:max-w-[696px] lg:mt-16 w-full bg-white lg:px-8 md:px-4 px-4 pt-5 md:pb-6 pb-4 relative">
             
