@@ -38,7 +38,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
     <div className="md:shrink-0  my-3 ">
       <img className="h-48 w-84 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={classic} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-28">
+    <div className="p-4 lg:-mt-36">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">IDFC First Classic Card</div>
       <li className="list-disc p-1">10x Reward Points on incremental spends above ₹20,000 per month and spends done on your birthday</li>
       <li className="list-disc p-1">Welcome voucher worth ₹500 on spending ₹15,000 or more within 90 days of card generation </li>
@@ -61,7 +61,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
     <div className="md:shrink-0 my-3">
       <img className="h-48 w-84 object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={select} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-28">
+    <div className="p-4 lg:-mt-36">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">IDFC First Select Card</div>
       <li className="list-disc p-1">Unlimited Reward points that <b>never expires</b> </li>
       <li className="list-disc p-1">5% cashback (upto ₹1,000) on the transaction value of first EMI done within 90 days of card generation. </li>
@@ -86,7 +86,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={wealth} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-28">
+    <div className="p-4 lg:-mt-36">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">IDFC First Wealth Card</div>
       <li className="list-disc p-1">10x Reward points on incremental spends above ₹30,000 per month and spends done on your birthday.</li>
       <li className="list-disc p-1">Get access to International and Domestic Airport lounges and spas </li>
@@ -116,7 +116,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
     <div className="md:shrink-0 my-3">
       <img className="h-48 w-84 rounded-lg object-cover max-w-xs mx-auto" src={millenia} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-28">
+    <div className="p-4 lg:-mt-36">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">IDFC First Millenia Card</div>
       <li className="list-disc p-1"> 6X & 3X Reward Points on online & offline purchases respectively for spends up to ₹20,000 per month </li>
       <li className="list-disc p-1">5% cashback (up to ₹1000) on the transaction value of first EMI done within 90 days of card generation </li>

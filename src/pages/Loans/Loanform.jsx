@@ -10,8 +10,9 @@ const loanform = () => {
             <div className='tempPic m-auto'>
                 <img src={formpic} alt="" />
             </div>
+            
             <div className='text-center grid grid-cols lg:grid-cols-3 mx-auto '>
-                <p className='my-auto font-bold text-indigo-900' >APPLY HERE & GET BEST LOAN OFFERS</p>
+                <p className='my-auto font-bold text-indigo-900' >APPLY HERE & GET BEST OFFERS</p>
                 <div className='my-auto justify-between mx-4'>
                     <form class="w-full max-w-lg">
                         <div class="flex items-center border-b border-teal-500 py-2">

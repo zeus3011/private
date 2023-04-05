@@ -268,7 +268,7 @@ const posts = [
     </div> 
     
 
-    <div>
+    <div className="lg:hidden">
             <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-900">
           Categories
             </label>
