@@ -16,7 +16,7 @@ const Aucard = () => {
     <div className="container mx-auto h-auto rounded-3xl shadow-lg bg-blue-100">
       <div className="bg-gradient-to-l rounded-3xl from-gray-300 w-auto h-auto border border-1 border-gray-100 p-4">
       <div className="md:flex">
-        <div className="md:shrink-0 p-5 mx-auto">
+        <div className="md:shrink-0 p-5 m-auto">
           <img className=" object-cover rounded-xl max-w-xs" src={CCpic} alt="Modern building architecture"/>
         </div>
         <div className="p-8 my-auto">
@@ -80,7 +80,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
       
        
-    </div>
+  
     <div className="grid grid-cols-1">
         <div className='lg:mx-22 mx-auto md:mx-auto  p-2'>
           <Link to="/Personal-Information">
@@ -89,7 +89,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>
-  </div>
+  </div>  </div>
  
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">

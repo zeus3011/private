@@ -100,12 +100,12 @@ const  Header=()=> {
 };
   return (
     <>
-    <header className="bg-white">
+    <header className="bg-white h-20">
       <nav className="mx-auto flex max-w-7xl items-center justify-between lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link to="/" className="-m-1.5 p-1.5">
+          <Link to="/" className="-mx-1.5 p-1.5 my-2">
             <span className="sr-only ">Creditklick</span>
-            <img className="h-12" src={Logo} alt="" />
+            <img className="h-12 p-1" src={Logo} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">

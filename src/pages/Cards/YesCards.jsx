@@ -14,7 +14,7 @@ const YesCards = () => {
   <div className="container mx-auto h-auto rounded-3xl shadow-lg bg-blue-100">
       <div className="bg-gradient-to-l rounded-3xl from-gray-300 w-auto h-auto border border-1 border-gray-100 p-4">
       <div className="md:flex">
-        <div className="md:shrink-0 p-5 mx-auto">
+        <div className="md:shrink-0 p-5 m-auto">
           <img className=" object-cover rounded-xl max-w-xs" src={CCpic} alt="Modern building architecture"/>
         </div>
         <div className="p-8 my-auto">

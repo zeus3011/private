@@ -34,13 +34,13 @@ const Creditcard = () => {
                   Compare & Apply Credit Cards Online
                 </p>
               </div>
-              <div className="md:mt-3">
+              <div className="mt-3">
                 <p>
                 At CreditKlick, you can search applications online for credit cards and choose the perfect one. By your eligibility, you can review pre-approved offers from top companies like Axis Bank, ICICI and SBI, as well as others. You can also get immediate approval.
                 </p>
                 <br/>
                 <p>Credit cards provide benefits in many categories, including fuel, shopping, and travel, with the help of rewards points, cashback and discounts. But you can reap the benefits offered by making an informed decision. Be aware that the most suitable choice for your credit score is one you select according to your habits and spending habits. To make it easier for you to choose the right one with this, we've covered essential details on credit card options on this webpage. Find out more about credit card options in India.</p>
-        <Link to="/Personal-Information">       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mt-8 py-2 px-4 rounded-2xl w-auto">
+        <Link to="/Personal-Information">       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold my-8 py-2 px-4 rounded-2xl w-auto">
   Apply Now
 </button></Link> 
               </div>
@@ -66,11 +66,11 @@ const Creditcard = () => {
                       <img src={aum} alt=" " />
                     </div>
                     <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
-                      AU BANK CREDIT CARDS
-                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+                      AU BANK CREDIT CARDS </h2>
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 flex mx-auto rounded-2xl w-auto">
  Check Now
 </button>
-                    </h2>
+                   
                   
                     </Link>
                  
@@ -83,10 +83,10 @@ const Creditcard = () => {
                     </div>
                     <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
                       IDFC FIRST CREDIT CARDS
-                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+                    </h2>
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 flex mx-auto rounded-2xl w-auto">
  Check Now
 </button>
-                    </h2>
                   
                     </Link>
                    
@@ -98,11 +98,11 @@ const Creditcard = () => {
                       <img src={sbim} alt=" " />
                     </div>
                     <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
-                      SBI CREDIT CARDS
-                      <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+                      SBI CREDIT CARDS</h2>
+                      <button class="bg-blue-400  animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 flex mx-auto rounded-2xl w-auto">
  Check Now
 </button>
-                    </h2>
+                    
                     
                     </Link>
                    
@@ -113,11 +113,11 @@ const Creditcard = () => {
                       <img src={yesm} alt=" " />
                     </div>
                     <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">
-                      YES BANK CREDIT CARDS
-                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl w-auto">
+                      YES BANK CREDIT CARDS </h2>
+                      <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold py-2 px-4 flex mx-auto rounded-2xl w-auto">
  Check Now
 </button>
-                    </h2>
+                   
                   
                     </Link>
                    
@@ -207,7 +207,7 @@ const Creditcard = () => {
                     
                   </table>
                   <Link to="/Personal-Information">    
-                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600 items-center  mx-auto lg:mx-96 text-white font-semibold  mt-8 py-2 px-4 rounded-2xl w-auto">
+                   <button class="bg-blue-400 animate-pulse hover:bg-blue-600  mx-auto lg:mx-96 text-white font-semibold flex mt-8 py-2 px-4 rounded-2xl w-auto">
   Apply Now
 </button></Link> 
                 </div>

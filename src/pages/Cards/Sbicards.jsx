@@ -14,10 +14,10 @@ const Sbicards = () => {
     <div className="container mx-auto h-auto rounded-3xl shadow-lg bg-blue-100">
       <div className="bg-gradient-to-l rounded-3xl from-gray-300 w-auto h-auto border border-1 border-gray-100 p-4">
       <div className="md:flex">
-        <div className="md:shrink-0 p-5 mx-auto">
+        <div className="md:shrink-0 p-5 m-auto">
           <img className=" object-cover rounded-xl max-w-xs" src={CCpic} alt="Modern building architecture"/>
         </div>
-        <div className="p-8 my-auto">
+        <div className="p-8 my-auto ">
           <div className="uppercase text-2xl  font-semibold text-indigo-900 text-center ">SBI CREDIT CARDS</div>
           <p className='text-semibold text-base text-blue-900 my-2 p-2'>SBI Credit Cards are a great option for individuals looking for financial products that offer convenience and rewards. SBI offers a wide range of credit cards designed to cater to diverse spending habits and lifestyles. SBI Credit Cards provide customers with numerous benefits, such as rewards on travel, shopping, dining, and cashback on specific transactions. With low-interest rates, easy payment options, and balance transfer facilities, SBI Credit Cards are an ideal solution for those looking for financial flexibility. Take a look at the various features and benefits of SBI Credit Cards to choose the one that meets your financial needs.</p>
           <div className=' mt-6 mx-auto justify-center'>
@@ -36,7 +36,7 @@ const Sbicards = () => {
     <div className="md:shrink-0  my-3">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={save} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
+    <div className="p-4 md:-mt-16 mx-auto">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI SIMPLY SAVE</div>
       <li className="list-disc p-1">Save Big. Upto 7% Cashback as an introductory offer</li>
       <li className="list-disc p-1">Attractive Monthly Milestone Benefits</li>
@@ -59,7 +59,7 @@ const Sbicards = () => {
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={click} alt="Modern building architecture"/>
     </div>
-    <div className="p-4  mx-auto">
+    <div className="p-4 md:-mt-16 mx-auto">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI SIMPLY Click</div>
       <li className="list-disc p-1"> Double the Delight. Earn both Cashback & Reward Points.</li>
 
@@ -86,7 +86,7 @@ const Sbicards = () => {
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={pulse} alt="Modern building architecture"/>
     </div>
-    <div className="p-4  mx-auto">
+    <div className="p-4 md:-mt-16 mx-auto">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold ">SBI PULSE</div>
       <li className="list-disc p-1">Enjoy 1 year complimentary FITPASS PRO Membership, to be received every year, on card renewal</li>
       <li className="list-disc p-1">Annual Fee (one-time):Rs. 1,499 + Taxes</li>
@@ -114,7 +114,7 @@ const Sbicards = () => {
     <div className="md:shrink-0  my-3">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={prime} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
+    <div className="p-4 md:-mt-16 mx-auto">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI PRIME</div>
       <li className="list-disc p-1">Welcome gift worth Rs. 3,000</li>
       <li className="list-disc p-1">Get 10 Reward Points per Rs.100 spent on Dining, Groceries, Departmental stores and Movies</li>
@@ -137,7 +137,7 @@ const Sbicards = () => {
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={elite} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 mx-auto">
+    <div className="p-4 md:-mt-16 mx-auto">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">SBI ELITE</div>
       <li className="list-disc p-1"> Welcome e- Gift Voucher worth Rs. 5,000.</li>
 
