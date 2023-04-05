@@ -80,7 +80,7 @@ const posts = [
     return (
       <div className="bg-white ">
           {/* Navbar grid */}
-           <div className="hidden lg:flex  container mx-auto justify-center">
+           <div className="hidden lg:flex  mt-16 container mx-auto justify-center">
       <div onMouseLeave={() => setLoans(false)} className="relative mx-2 ">
         <button
           onMouseOver={() => setLoans(true)}

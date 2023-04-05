@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import "../index.css"
-import Logo from "../assets/img/ck.jpg"
+import Logo from "../assets/Images/cklogo.png"
 import Login from "../assets/Images/creditlogin.png"
 import { Route,Link, Routes } from 'react-router-dom'
 // import AU from "../pages/Cards/Creditcard"
@@ -105,7 +105,7 @@ const  Header=()=> {
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only ">Creditklick</span>
-            <img className="h-28" src={Logo} alt="" />
+            <img className="h-12" src={Logo} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
