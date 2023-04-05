@@ -40,7 +40,7 @@ const Creditcard = () => {
                 </p>
                 <br/>
                 <p>Credit cards provide benefits in many categories, including fuel, shopping, and travel, with the help of rewards points, cashback and discounts. But you can reap the benefits offered by making an informed decision. Be aware that the most suitable choice for your credit score is one you select according to your habits and spending habits. To make it easier for you to choose the right one with this, we've covered essential details on credit card options on this webpage. Find out more about credit card options in India.</p>
-        <Link to="/Personal-Information">       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mx-8 mt-8 py-2 px-4 rounded-2xl w-auto">
+        <Link to="/Personal-Information">       <button class="bg-blue-400 animate-pulse hover:bg-blue-600 text-white font-semibold mt-8 py-2 px-4 rounded-2xl w-auto">
   Apply Now
 </button></Link> 
               </div>
