@@ -40,7 +40,7 @@ export default function Slider() {
   const startSlider = () => {
     slideInterval = setInterval(() => {
       handleOnNextClick();
-    }, 2000);
+    }, 3000);
   };
 
   const pauseSlider = () => {

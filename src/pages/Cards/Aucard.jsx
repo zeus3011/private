@@ -78,16 +78,17 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1">Complimentary Railway Lounge access</li>
       <li className="list-disc p-1">Complimentary Lost Card Liability cover</li>
       <li className="list-disc p-1">₹ 2,000+ Yearly Benefits on just ₹ 10,000 monthly spends!</li>
-      <div className="grid grid-cols-1">
-        <div className='lg:mx-22 mx-auto  p-2'>
+      
+       
+    </div>
+    <div className="grid grid-cols-1">
+        <div className='lg:mx-22 mx-auto md:mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
-            </div>  
-    </div>
- 
+            </div>
   </div>
  
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">

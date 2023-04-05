@@ -80,7 +80,7 @@ const posts = [
     return (
       <div className="bg-white ">
           {/* Navbar grid */}
-           <div className="hidden lg:flex  container mx-auto justify-center">
+           <div className="hidden lg:flex  mt-16 container mx-auto justify-center">
       <div onMouseLeave={() => setLoans(false)} className="relative mx-2 ">
         <button
           onMouseOver={() => setLoans(true)}
@@ -268,7 +268,7 @@ const posts = [
     </div> 
     
 
-    <div>
+    <div className="lg:hidden">
             <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-900">
           Categories
             </label>
