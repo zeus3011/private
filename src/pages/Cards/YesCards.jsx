@@ -33,9 +33,9 @@ In addition to these benefits, YES Bank Credit Cards also offer lifestyle benefi
 
 {/* types of cards start */}
 
-    <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 mt-16 p-2">
+    <div className="container mx-auto overflow-hidden grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
-    <div className="md:shrink-0  my-3">
+    <div className="md:shrink-0 my-auto">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={plus} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
@@ -58,7 +58,7 @@ In addition to these benefits, YES Bank Credit Cards also offer lifestyle benefi
   </div>
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
-    <div className="md:shrink-0 my-3">
+    <div className="md:shrink-0 my-auto">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={edge} alt="Modern building architecture"/>
     </div>
     <div className="p-4">
@@ -87,7 +87,7 @@ In addition to these benefits, YES Bank Credit Cards also offer lifestyle benefi
 
 
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
-    <div className="md:shrink-0 my-3">
+    <div className="md:shrink-0 my-auto">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={Premia} alt="Modern building architecture"/>
     </div>
     <div className="p-4">

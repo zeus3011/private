@@ -62,7 +62,7 @@ const Creditcard = () => {
                 <div className="flex flex-col lg:flex-row mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-2xl">
                   <div className="w-full lg:w-1/4 px-12 border-t border-b lg:border-t-0 lg:border-b-0 lg:border-l lg:border-r border-gray-300 flex flex-col items-center py-10">
                     <Link to="/Aucards">
-                    <div className="mb-3 w-54  rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
+                    <div className="mb-3 w-54 rounded-2xl  flex items-center justify-center cursor-pointer text-indigo-700">
                       <img src={aum} alt=" " />
                     </div>
                     <h2 className="text-blue-800 dark:text-gray-100 text-xl tracking-normal text-center font-medium mb-1">

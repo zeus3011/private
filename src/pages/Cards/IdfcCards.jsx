@@ -33,7 +33,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
 
 {/* types of cards start */}
 
-    <div className="mx-auto container overflow-hidden grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 mt-16 p-2">
+    <div className="mx-auto container overflow-hidden grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 mt-16 p-2">
   <div className="md:grid grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3  h-auto ">
       <img className="h-48 w-84 rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={classic} alt="Modern building architecture"/>
@@ -67,8 +67,9 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
       <li className="list-disc p-1">5% cashback (upto ₹1,000) on the transaction value of first EMI done within 90 days of card generation. </li>
       <li className="list-disc p-1">4 complimentary Railway lounge visits per quarter. </li>
       <li className="list-disc p-1">Personal Accident Cover of ₹2,00,000* and Lost Card Liability Cover of ₹25,000. </li>
-      <li className="list-disc p-1">6x & 3x Reward points on online & offline purchases respectively for spends upto ₹20,000 per month. </li>
-      <div className="grid grid-cols-1">
+      <li className="list-disc p-1">6x & 3x Reward points on online/offline purchases respectively for spends upto ₹20,000/month. </li>
+      <li className="list-disc p-1">Lower Interest rates starting at 9% per annum i.e. 0.75% per month</li>
+      <div className="grid lg:mt-4 grid-cols-1">
         <div className='p-2 mx-auto'>
         <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
@@ -91,8 +92,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
       <li className="list-disc p-1">10x Reward points on incremental spends above ₹30,000 per month and spends done on your birthday.</li>
       <li className="list-disc p-1">Get access to International and Domestic Airport lounges and spas </li>
       <li className="list-disc p-1">'Buy one, get one' offer on movie tickets upto ₹500 on Paytm mobile app (valid twice per month). </li>
-      <li className="list-disc p-1">(i) Complimentary Roadside Assistance worth ₹1,399. <br />
-      (ii) Personal Accident Cover of ₹10,00,000* and Lost Card Liability Cover of ₹50,000 .
+      <li className="list-disc p-1">Complimentary Roadside Assistance worth ₹1,399 and Accident Cover of ₹10,00,000* and Lost Card Liability Cover of ₹50,000 .
       </li>
       <li className="list-disc p-1"> 5% cashback (up to ₹1000) on the transaction value of first EMI done within 90 days of card generation.</li>
 
@@ -121,6 +121,7 @@ One of the primary features of IDFC FIRST Credit Cards is their extensive reward
       <li className="list-disc p-1">4 complimentary Railway lounge visits per quarter. </li>
       <li className="list-disc p-1">Personal Accident Cover of ₹2,00,000* and Lost Card Liability Cover of ₹25,000 </li>
       <li className="list-disc p-1"> 100% cashback on available purchase items. </li>
+      <li className="list-disc p-1">Lower Interest rates starting at 9% per annum i.e. 0.75% per month</li>
       
       <div className="grid grid-cols-1 ">
         <div className='p-2 mx-auto'>
