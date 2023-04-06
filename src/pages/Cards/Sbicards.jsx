@@ -44,15 +44,16 @@ const Sbicards = () => {
       <li className="list-disc p-1">Annual fees reversal on spends of Rs. 1,00,000 and above</li>
       <li className="list-disc p-1">Earn 1 Reward Point on every Rs. 150 that you spend using the SimplySAVE SBI Card</li>
       <li className="list-disc p-1">You can use your SimplySAVE SBI Card in over 24 million outlets across the globe, including 3,25,000 outlets in India</li>
+      </div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto lg:mt-4  p-2'>
+        <div className='mx-auto p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>  
-    </div>
+   
  
   </div>
 
@@ -70,16 +71,16 @@ const Sbicards = () => {
       <li className="list-disc p-1">Annual fee reversal on annual spends of Rs.1 lakh</li>
 
       <li className="list-disc p-1">1% fuel surcharge waiver for each transaction between Rs 500 & Rs 3000 (exclusive of GST, wherever applicable, & all other charges)</li>
-
+      </div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='mx-auto p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div> 
-    </div>
+   
    
   </div>
 
@@ -96,16 +97,16 @@ const Sbicards = () => {
       <li className="list-disc p-1">Avail Fraud Liability Insurance Cover of Rs. 1 lakh</li>
       <li className="list-disc p-1">Complimentary Priority Pass Membership worth US Rs.8118 for first two years of cardholder membership</li>
       <li className="list-disc p-1">Fast & convenient: No need to hand over your card or look for cash / coins for everyday small ticket purchases</li>
-
+      </div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='mx-auto p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div> 
-    </div>
+   
    
   </div>
 
@@ -125,7 +126,7 @@ const Sbicards = () => {
       <li className="list-disc p-1">4 complimentary visits per calendar year to International Priority Pass Lounges, outside India (max. 2 visits per quarter)</li>
       <li className="list-disc p-1">E-Gift Voucher worth Rs. 7,000 from Yatra.com/Pantaloons on achieving annual spends of Rs. 5 Lakhs</li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='mx-auto p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
@@ -152,7 +153,7 @@ const Sbicards = () => {
       <li className="list-disc p-1"> Annual Fee (one-time):Rs.4,999 + Taxes </li>
       <li  className="list-disc p-1">Get a 1% fuel surcharge waiver, on every transaction between Rs. 500 to Rs. 4,000, at any petrol pump across the country. Purchase fuel worth Rs. 500 to Rs. 4,000, to avail this benefit</li>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-16 mx-auto  p-2'>
+        <div className='mx-auto p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>

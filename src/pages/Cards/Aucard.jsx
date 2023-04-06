@@ -66,8 +66,8 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
 
 {/* types of cards start */}
 {/* Grid 1 */}
-    <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 mt-16 p-2">
-  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+    <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 p-2">
+  <div className="grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={altura} alt="Modern building architecture"/>
     </div>
@@ -81,7 +81,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       
        
   
-    <div className="grid grid-cols-1">
+    <div className="grid grid-cols-1 md:mt-6 lg:mt-auto">
         <div className='lg:mx-22 mx-auto md:mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
@@ -91,7 +91,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
             </div>
   </div>  </div>
  
-  <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
+  <div className="grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={alturaplus} alt="Modern building architecture"/>
     </div>
@@ -118,7 +118,7 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
   </div>
 
 
-  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+  <div className="grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={lit} alt="Modern building architecture"/>
     </div>
@@ -129,51 +129,51 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1">Fly comfortably with domestic airport lounge access</li>
       <li className="list-disc p-1">Enjoy exciting memberships</li>
       <li className="list-disc p-1">Get 5X-10X rewards on online and offline spends</li>
-
+      </div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-22 mx-auto  p-2'>
+        <div className=' mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div> 
-    </div>
+    
    
   </div>
 
-</div>
+{/* </div> */}
 {/* Grid1 End */}
 {/* Grid 2  */}
-<div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2  p-2">
-  <div className="md:grid grid-rows-2 mt-3 rounded-xl">
+{/* <div className="container mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2  p-2"> */}
+  <div className="grid-rows-2 mt-3 rounded-xl">
     <div className="md:shrink-0  my-3">
       <img className="h-auto w-full rounded-lg shadow-lg object-cover max-w-xs mx-auto" src={zenith} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-16 mx-auto">
+    <div className="p-4 ">
       <div class="uppercase tracking-wide text-xl text-teal-700 font-semibold">ZENITH AU CREDIT CARD</div>
       <li className="list-disc p-1">10,000 Bonus Reward Points on completing retail spends* worth INR 1 Lakh</li>
       <li className="list-disc p-1">Complimentary Epicure Membership on minimum of INR 8 lakh retail spends in a card anniversary year.</li>
       <li className="list-disc p-1">For 1st year fee waiver : INR 1,25,000 retail spends done within 90 days of card set up.</li>
       <li className="list-disc p-1">For 2nd year onwards fee waiver : INR 5,00,000 retail spends done in previous card anniversary year.</li>
-      <li className="list-disc p-1">INR 1,000 vouchers on minimum INR 2 lakh retail spends done per calendar quarter.</li>
+      <li className="list-disc p-1">INR 1,000 vouchers on minimum INR 2 lakh retail spends done per calendar quarter.</li></div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-22 mx-auto  p-2'>
+        <div className='mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div>  
-    </div>
+    
  
   </div>
 
-  <div className="md:grid grid-rows-2 mt-3 rounded-xl ">
+  <div className="grid-rows-2 mt-3 rounded-xl ">
     <div className="md:shrink-0 my-3">
       <img className="h-auto w-full object-cover rounded-lg shadow-lg max-w-xs mx-auto " src={vetta} alt="Modern building architecture"/>
     </div>
-    <div className="p-4 lg:-mt-16 mx-auto">
+    <div className="p-4 ">
       <div className="uppercase tracking-wide text-xl text-teal-700 font-semibold">VETTA  AU CREDIT CARD</div>
       <li className="list-disc p-1"> Vouchers worth INR 2000 on minimum INR 30,000 retail spends done within 60 days of card setup.</li>
 
@@ -183,16 +183,16 @@ https://larainfo.com/blogs/tailwind-css-dropdowns-menu-on-hover-example
       <li className="list-disc p-1"> Annual Card Membership fee Rs. 2,999 + applicable taxes </li>
 
       <li className="list-disc p-1"> 4 Reward Points per INR 100 retail spends* done on Grocery & Departmental store and Utility bill payments. </li>
-    <li className='list-disc p-1'>2 Reward Points per INR 100 retail spends* done across all other merchant categories.</li>
+    <li className='list-disc p-1'>2 Reward Points per INR 100 retail spends* done across all other merchant categories.</li></div>
       <div className="grid grid-cols-1">
-        <div className='lg:mx-22 mx-auto  p-2'>
+        <div className=' mx-auto  p-2'>
           <Link to="/Personal-Information">
             <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 mr-4 rounded-2xl uppercase">apply now</button>
             </Link>
               <button className="bg-indigo-300 hover:bg-indigo-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">read more</button>
            </div>
             </div> 
-    </div>
+    
    
   </div>
 
