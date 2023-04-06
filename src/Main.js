@@ -74,9 +74,10 @@ const Main = () => {
 {/* Blogs Grid End */}
 
 </Routes>
+<Footer/>
 </BrowserRouter>
 {/* <About/> */}
-    <Footer/>
+   
     </div>
   )
 }

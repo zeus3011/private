@@ -26,11 +26,21 @@ const Footer = () => {
                 <ul className="text-gray-600 ">
                   {/* <li>Help</li> */}
                   {/* <li > DSA LOGIN</li> */}
+                  <Link to="/Calculators">
                   <li className="list-disc">EMI Calculator</li>
+                  </Link>
+                  <Link to="/Calculators">
                   <li className="list-disc">AU VALUE Calculator</li>
+                  </Link>
+                  <Link to="/Calculators">
                   <li className="list-disc">IDFC FIRST VALUE Calculator</li>
+                  </Link>
+                  <Link to="/Calculators">
                   <li className="list-disc">SBI SCLICK VALUE Calculator</li>
+                  </Link>
+                  <Link to="/Calculators">
                   <li className="list-disc">YES BANK VALUE Calculator</li>
+                  </Link>
                   {/* <li>Gst Calulator</li> */}
                 </ul>
               </div>
