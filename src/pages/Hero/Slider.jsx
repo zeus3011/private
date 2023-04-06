@@ -60,10 +60,10 @@ export default function Slider() {
   };
 
   return (
-    <div ref={slideRef} className=" shadow-lg select-none relative">
+    <div ref={slideRef} className="pb-10 shadow-lg select-none relative">
       <Link to="/Personal-Information">
-      <div className="md:w-9/12  mx-auto">
-        <img src={featuredProducts[currentIndex]} alt="" />
+      <div className="md:w-9/12 mx-auto">
+        <img src={featuredProducts[currentIndex]} alt="" className="" />
       </div>
       </Link>
       {/* <div className="absolute w-full top-1/2 transform -translate-y-1/2 px-3 flex justify-between items-center">
