@@ -50,14 +50,15 @@ const Footer = () => {
                   Company
                 </h4>
                 <ul className="text-gray-600 mx-auto  ">
-                  <li className="list-disc">About us</li>
+                  <Link to="/CreditklickFamily">
+                  <li className="list-disc">About us</li></Link>
                   <li className="list-disc">Careers</li>
-                  <li className="list-disc">Contact us</li>
+                 <Link to='/connectwithus'><li className="list-disc">Contact us</li></Link> 
                   {/* <li>Terms of Use</li> */}
-                  <li className="list-disc">Privacy Policy</li>
+            <Link to="/Privacy-policies">    <li className="list-disc">Privacy Policy</li></Link>  
                   {/* <li>Investors</li>
                    */}
-                <li className="list-disc">Blogs</li>
+           <Link to="/Blogs">     <li className="list-disc">Blogs</li></Link>
                 </ul>
               </div>
               <div className="my-5 w-full">
