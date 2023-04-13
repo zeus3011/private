@@ -1,11 +1,47 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const StepThird = () => {
   const [show, setshow] = useState(true);
   const [text, setText] = useState("Worst");
   const getText = (value) => {
     setText(value);
   };
+
+  const [otp, setotp]= useState('');
+    const navigate = useNavigate();
+    const Submithandle=()=>{
+    
+    if (otp.length!==6) {
+      toast.error('Invalid otp', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+       
+      } 
+      // else if(otp.length!==setotp){
+      //   toast.warn('Check otp once!', {
+      //     position: "top-center",
+      //     autoClose: 5000,
+      //     hideProgressBar: false,
+      //     closeOnClick: true,
+      //     pauseOnHover: true,
+      //     draggable: true,
+      //     progress: undefined,
+      //     theme: "colored",
+      //     });
+      // }
+      else {
+        navigate('/report-analysis')
+      }
+    }
   return (
     <>
 
@@ -30,6 +66,7 @@ const StepThird = () => {
                 Open Modal
               </button>
             </div>
+            <ToastContainer/>
           </div>
           <div
             id="modal"
@@ -68,13 +105,9 @@ const StepThird = () => {
                           <span className="font-bold">+91 ******876</span>
                       </div>
                       
-                      <div id="otp" className="flex flex-row justify-center text-center px-2 mt-5">
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="first" maxlength="1" /> 
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="second" maxlength="1" /> 
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="third" maxlength="1" /> 
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="fourth" maxlength="1" />
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="fifth" maxlength="1" /> 
-            <input className="m-2 border h-10 w-10 text-center form-control rounded" type="text" id="sixth" maxlength="1" />
+                      <div id="otp"   className="flex flex-row justify-center text-center px-2 mt-5">
+            <input className="m-2 border h-10 w-auto border-bottom-0 text-center form-control rounded" onChange={(event) => setotp(event.target.value)} type="text" id="first" maxlength="6" /> 
+           
                       </div>
                       
                       <div className="flex justify-center text-center mt-5">
@@ -83,9 +116,9 @@ const StepThird = () => {
 
 
                       <div className="flex justify-center text-center mt-5">  
-                      <Link to="/report-analysis">
-                          <a className="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer"><span className="font-bold">CONTINUE</span><i className='bx bx-caret-right ml-1'></i></a>
-                          </Link>
+                      {/* <Link to="/report-analysis"> */}
+                          <a className="flex items-center text-blue-700 hover:text-blue-900 cursor-pointer" onClick={Submithandle}><span className="font-bold">CONTINUE</span><i className='bx bx-caret-right ml-1'></i></a>
+                          {/* </Link> */}
                     
                       </div>
                 </div>
