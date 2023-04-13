@@ -30,6 +30,8 @@ import SbiGrid from './pages/Blogs/GridBlogs/SbiGrid';
 import IdfcGrid from './pages/Blogs/GridBlogs/IdfcGrid';
 import YesGrid from './pages/Blogs/GridBlogs/YesGrid';
 import CreditCardBlogs from './pages/Blogs/GridBlogs/AuGrid';
+import Payout from './pages/Refine/Payout';
+import Payment from './pages/Refine/Payment';
 // import Stripehead from './components/Stripehead';
 const Main = () => {
   return (
@@ -57,6 +59,9 @@ const Main = () => {
   <Route path="/report-analysis" exact element={<Cibilhero/>}/>
   <Route path="/connectwithus" exact element={<Contact/>}/>
   <Route path="/Privacy-policies" exact element={<Privacy/>}/>
+
+  <Route path="/queries" exact element={<Payout/>}/>
+  <Route path="/payments" exact element={<Payment/>}/>
 
   {/* Auth Routing */}
 

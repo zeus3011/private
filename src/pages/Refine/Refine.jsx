@@ -4,10 +4,11 @@ import Exp from "../../assets/Images/exp.png"
 import Analyse from "../../assets/Images/Refine/analyise.png"
 import Educate from "../../assets/Images/Refine/educate.png"
 import Karma from "../../assets/Images/Refine/karma.png"
-import Karma1 from "../../assets/Images/Refine/karma1.png"
+import Karma1 from "../../assets/Images/Refine/karma.gif"
 import login from "../../assets/Images/Refine/login.png"
 import form from "../../assets/Images/Refine/form.png"
 import navi from "../../assets/Images/Refine/navi.png"
+import { Link } from 'react-router-dom'
 const Refine = () => {
   const [box1, setBox1] = useState(false);
   const [box2, setBox2] = useState(false);
@@ -29,12 +30,13 @@ const Refine = () => {
 </p>
 <div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an Expert For</div>
 <div className="uppercase text-4xl  font-bold text-blue-400 text-left ">FREE</div>
-
+<Link to="/queries">
           <div className=' mt-6 mx-auto justify-center'>
                 <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect With Consultant</button>
             </div>
+            </Link>
         </div>
-
+     
 
         <div className="md:shrink-0 sm:shrink-0 p-5 lg:mx-15  mx-auto">
           <img className=" object-cover  rounded-xl lg:max-w-xl" src={Exp} alt="Modern building architecture"/>
@@ -97,13 +99,13 @@ const Refine = () => {
               <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Our Proffesional Consultant assist you as soon as possible,know your importance in detail</h2>
             </div>
 
-              <div className='h-48' aria-label={2} role="img">
+              <div className=' lg:h-48' aria-label={2} role="img">
              
             </div>
           </div>
           
         </div>
-        <img className='flex mt-auto col  justify-center items-center w-6/12 md:w-8/12  max-w-full lg:mx-72 ' src={Karma1} alt="" srcset="" />
+        <img className='flex mt-auto col my-8  justify-center items-center  md:w-1/5 mx-auto ' src={Karma1} alt="" srcset="" />
 
 
 
