@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Exp from "../../assets/Images/exp.png"
+import Exp from "../../assets/Images/expert.gif"
 // import Cnt from "../../assets/Images/cnt.jpg"
 import Analyse from "../../assets/Images/Refine/analyise.png"
 import Educate from "../../assets/Images/Refine/educate.png"
 import Karma from "../../assets/Images/Refine/karma.png"
-import Karma1 from "../../assets/Images/Refine/karma.gif"
+import Karma1 from "../../assets/Images/Refine/karma1.png"
 import login from "../../assets/Images/Refine/login.png"
 import form from "../../assets/Images/Refine/form.png"
 import navi from "../../assets/Images/Refine/navi.png"
@@ -24,12 +24,12 @@ const Refine = () => {
       <div className="bg-gradient-to-l rounded-3xl from-blue-300 to-gray-100 w-auto h-auto border border-1  p-4">
       <div className="md:flex">
        
-        <div className="p-4 my-auto">
+        <div className="p-4 my-auto space-y-8">
           <div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">How do our Credit Refine</div>
-          <p className='text-semibold text-lg text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
+          <p className='text-semibold text-2xl text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
 </p>
-<div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an Expert For</div>
-<div className="uppercase text-4xl  font-bold text-blue-400 text-left ">FREE</div>
+<div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an Expert</div>
+
 <Link to="/queries">
           <div className=' mt-6 mx-auto justify-center'>
                 <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect With Consultant</button>
@@ -95,7 +95,7 @@ const Refine = () => {
               <img className="focus:outline-none mt-20" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg" alt=" " />
             </div>
             <div className="flex mt-6 flex-col items-center md:items-start md:w-8/12">
-              <h1 className="focus:outline-none text-xl font-bold leading-5">Connect with Consultants</h1>
+              <h1 className="focus:outline-none text-xl font-bold leading-5">Connect with Consultant</h1>
               <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Our Proffesional Consultant assist you as soon as possible,know your importance in detail</h2>
             </div>
 
@@ -105,7 +105,7 @@ const Refine = () => {
           </div>
           
         </div>
-        <img className='flex mt-auto col my-8  justify-center items-center  md:w-1/5 mx-auto ' src={Karma1} alt="" srcset="" />
+        <img className='flex  col my-8  justify-center items-center w-2/5 mx-auto ' src={Karma1} alt="" srcset="" />
 
 
 
@@ -143,13 +143,13 @@ const Refine = () => {
                     < img src = " https://i.ibb.co/LQpxBsc/mobile.png " alt = " city view " className = " opacity-20 w-full h-full rounded-md absolute object-center object-fill sm:hidden " />     */}
                     < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-600 to-transparent  flex  w-full h-full top-0 md:p-16 p-6 flex flex- col justify-between rounded-md " > 
                         <div> 
-                            < h1 className = " md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64 " >Book a Call with Expert <span className='text-blue-800'>FREE</span> </h1> 
+                            < h1 className = " md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64 " >Book a Call with Expert  </h1> 
                             < p className = " text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4 " >Need personalized guidance to solve your question? Don't worry! Call a trained credit professional to make an appointment.
 
 Talk to an Expert. </p> 
                         </div> 
                                                 < div className = " md:mt-12 mt-20 w-auto " > 
-                            < button className = " text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-auto rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring- 2 focus:ring-offset-2 focus:ring-white " > TALK WITH TEAM </ button > 
+                            < button className = " text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-auto rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring- 2 focus:ring-offset-2 focus:ring-white " > TALK TO TEAM </ button > 
                         </div> 
                                             </div> 
                                         </div> 
