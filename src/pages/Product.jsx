@@ -5,6 +5,7 @@ import ccico from "../assets/Images/Icon/1.png"
 import loico from "../assets/Images/Icon/2.png"
 import calico from "../assets/Images/Icon/3.png"
 import refico from "../assets/Images/Icon/4.png"
+import refine from "../assets/Images/Icon/5.png"
 // const people = [
 //     {
 //       name: 'Credit Cards',
@@ -68,15 +69,15 @@ const Product = () => {
   </Link>
   <Link to="/Refine">
   <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={refico} alt="" className='w-full animate-pulse h-auto mt-auto md:p-4'/>
+    <img src={refine} alt="" className='w-full animate-pulse h-auto mt-auto md:p-4'/>
 
   </div>
     <p className='font-semibold hover:text-black  text-center md:text-lg text-xs'>CREDIT REFINE</p>
   </Link>
 
-  <Link to="/Calculators">
+  <Link to="/Credit-score">
   <div className='  w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={calico} alt="" className='w-full h-auto animate-pulse mt-auto md:p-4'/>
+    <img src={refico} alt="" className='w-full h-auto animate-pulse mt-auto md:p-4'/>
 
   </div>
     <p className='font-semibold hover:text-black text-center md:text-lg text-xs'> CREDIT SCORE</p>

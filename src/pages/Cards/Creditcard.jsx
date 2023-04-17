@@ -25,7 +25,7 @@ const Creditcard = () => {
           </div>
 
           <div className="mx-auto mt-6   container w-full flex items-center md:flex-row flex-col justify-between px-6 lg:px-0">
-            <div className="flex flex-col justify-start items-start lg:w-3/5 px-2 lg:px-0">
+            <div className="flex flex-col justify-start items-start mx-auto">
               {/* <div>
                 <p className="lg:text-sm text-xs text-gray-600 dark:text-gray-300 font-medium leading-none">Creditklick</p>
               </div> */}
@@ -158,13 +158,13 @@ const Creditcard = () => {
                 <h2 className="text-gray-800 dark:text-white lg:text-3xl text-2xl font-bold leading-7">The details</h2>
               </div> */}
             
-              <div className="mt-8 mx-auto w-full lg:w-8/12">
+              <div className="my-8 mx-auto w-full">
              <StepFirst/>
               </div>
               
               <div className=" flex justify-start items-start flex-col">
                 <div className=" lg:mx-2 flex-col justify-start items-start">
-                  <div className="mt-2">
+                  {/* <div className="mt-2">
                     <p className="text-gray-800 dark:text-white lg:text-base text-sm leading-normal">
                       Another writing challenge can be to take the individual
                       sentences in the random paragraph and incorporate a single
@@ -182,7 +182,7 @@ const Creditcard = () => {
                       will be a bit different. You also won't know exactly how
                       many sentences will appear in the random paragraph.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
                 {/* Credit card Table */}
 

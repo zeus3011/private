@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Exp from "../../assets/Images/exp.png"
+import Exp from "../../assets/Images/expert.gif"
 import Compare from './Compare'
 import char from "./challanges"
 const Payment = () => {
@@ -13,15 +13,14 @@ const Payment = () => {
       <div className="md:flex">
        
         <div className="p-4 mx-auto space-y-12 my-auto">
-          <div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">Revolutionize Your Credit Score with Our Expert Credit Refinement Service!
-</div>
+          <div className="uppercase text-2xl  font-semibold text-indigo-900 text-left ">Take advantage of Credit Refine's program to build your score and qualify for the best loan/credit card offers</div>
           {/* <p className='text-semibold text-lg text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
 </p> */}
-<div className="uppercase md:text-3xl text-2xl font-semibold text-indigo-900 text-left ">Amount to be paid: <span className=" text-4xl text-blue-700   "> ₹ 99</span></div>
+<div className="uppercase  text-2xl font-semibold text-indigo-900 text-left ">Available @ just <span className=" text-3xl text-blue-700  "> ₹ 99</span></div>
 
 <Link to="/queries">
           <div className=' mt-6 mx-auto justify-center'>
-                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Pay Now </button>
+                <button className="bg-blue-400 hover:bg-blue-600 text-white text-xl font-semibold px-4 py-2 rounded-2xl uppercase">Pay Now </button>
             </div>
             </Link>
         </div>

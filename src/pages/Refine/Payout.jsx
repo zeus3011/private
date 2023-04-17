@@ -18,7 +18,7 @@ const Payout = () => {
                      
                   </div>
                   <div className="container mx-auto flex justify-center md:-mt-56 -mt-20 sm:-mt-40">
-                      <div className="relative shadow-2xl rounded-2xl  m-4 sm:w-2/3 w-11/12">
+                      <div className="relative shadow-xl shadow-l-xl rounded-2xl  m-4 sm:w-2/3 w-11/12">
                           <img className='rounded-2xl' src={heroImg} alt="Sample Page" />
                       </div>
                   </div>
@@ -28,38 +28,38 @@ const Payout = () => {
 
 
           <div className="w-full flex items-center justify-center my-12">
-                <div className=" top-40 bg-white shadow rounded py-12 lg:px-28 px-8">
+                <div className=" top-40 bg-gray-200 shadow-lg rounded-2xl py-12 lg:px-28 px-8">
                     <p className="md:text-3xl text-2xl font-semibold leading-7 text-center text-gray-700">Submit Your Query</p>
                     <div className="md:flex items-center mt-12">
                         <div className="md:w-72 flex flex-col">
-                            <label className="text-base font-semibold leading-none text-gray-800">Name</label>
-                            <input tabIndex={0} arial-label="Please input name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input  name" />
+                            <label className="text-xl font-semibold leading-none text-gray-800">Name</label>
+                            <input tabIndex={0} arial-label="Please input name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-100 border rounded border-gray-200 shadow-lg placeholder-gray-500 rounded-xl" placeholder="Please input  name" />
                         </div>
                         <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                            <label className="text-base font-semibold leading-none text-gray-800">Email Address</label>
-                            <input tabIndex={0} arial-label="Please input email address" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input email address" />
+                            <label className="text-xl font-semibold leading-none text-gray-800">Email Address</label>
+                            <input tabIndex={0} arial-label="Please input email address" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-100 border rounded border-gray-200 shadow-lg placeholder-gray-500 rounded-xl" placeholder="Please input email address" />
                         </div>
                     </div>
                     <div className="md:flex items-center mt-8">
                         <div className="md:w-72 flex flex-col">
-                            <label className="text-base font-semibold leading-none text-gray-800">Pin Code</label>
-                            <input tabIndex={0} role="input" arial-label="Please input company name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 " placeholder="Please input company name" />
+                            <label className="text-xl font-semibold leading-none text-gray-800">Pin Code</label>
+                            <input tabIndex={0} role="input" arial-label="Please input company name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-200 border shadow-lg rounded border-gray-200 placeholder-gray-500 rounded-xl" placeholder="Please input company name" />
                         </div>
                         <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                            <label className="text-base font-semibold leading-none text-gray-800">Pan Number</label>
-                            <input tabIndex={0} arial-label="Please input country name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100" placeholder="Please input country name" />
+                            <label className="text-xl font-semibold leading-none text-gray-800">Pan Number</label>
+                            <input tabIndex={0} arial-label="Please input country name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-200 border rounded border-gray-200 shadow-lg placeholder-gray-500 rounded-xl" placeholder="Please input country name" />
                         </div>
                     </div>
                     <div>
                         <div className="w-full flex flex-col mt-8">
-                            <label className="text-base font-semibold leading-none text-gray-800">Your Query</label>
-                            <textarea tabIndex={0} aria-label="leave a message" role="textbox" type="name" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none" defaultValue={""} />
+                            <label className="text-xl font-semibold leading-none text-gray-800">Your Query</label>
+                            <textarea tabIndex={0} aria-label="leave a message" role="textbox" type="name" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-300 border shadow-lg rounded border-gray-200 placeholder-gray-500 resize-none rounded-xl" defaultValue={""} />
                         </div>
                     </div>
-                    <p className="text-xs leading-3 text-gray-600 mt-4">By clicking submit you agree to our terms of service, privacy policy.</p>
+                    <p className="text-sm leading-3 text-gray-900 mt-8 px-3">By clicking submit you agree to our terms of service, privacy policy.</p>
                <Link to="/payments">
-                    <div id="button" className={`${show ? "hidden" : "flex"}  container mx-auto justify-center items-center px-4 md:px-10 py-20`}>
-                        <button  className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none">SUBMIT</button>
+                    <div id="button" className={`${show ? "hidden" : "flex"}  container mx-auto justify-center items-center px-4 md:px-10 pb-10 mt-4`}>
+                        <button  className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-500 rounded hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none rounded-full">SUBMIT</button>
                     </div>
                     </Link>  
                 </div>
