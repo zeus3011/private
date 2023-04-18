@@ -30,6 +30,12 @@ import SbiGrid from './pages/Blogs/GridBlogs/SbiGrid';
 import IdfcGrid from './pages/Blogs/GridBlogs/IdfcGrid';
 import YesGrid from './pages/Blogs/GridBlogs/YesGrid';
 import CreditCardBlogs from './pages/Blogs/GridBlogs/AuGrid';
+import Homecalc from './pages/Calculators/Homecalc';
+import Aucalc from './pages/Calculators/Aucalc';
+import IDFCcalc from './pages/Calculators/IDFCcalc';
+import SBIsave from './pages/Calculators/SBIsave';
+import SBIclick from './pages/Calculators/SBIclick';
+import YEScalc from './pages/Calculators/YEScalc';
 import Payout from './pages/Refine/Payout';
 import Payment from './pages/Refine/Payment';
 // import Stripehead from './components/Stripehead';
@@ -60,6 +66,13 @@ const Main = () => {
   <Route path="/connectwithus" exact element={<Contact/>}/>
   <Route path="/Privacy-policies" exact element={<Privacy/>}/>
 
+  <Route path="/au-calculator" exact element={<Aucalc />}/>  
+  <Route path="/idfc-calculator" exact element={<IDFCcalc />}/>
+  <Route path="/sbisave-calculator" exact element={<SBIsave />}/>
+  <Route path="/sbiclick-calculator" exact element={<SBIclick />}/>
+  <Route path="/yes-calculator" exact element={<YEScalc />}/>  
+  <Route path="/emi-calculator" exact element={<Homecalc />}/>
+  
   <Route path="/queries" exact element={<Payout/>}/>
   <Route path="/payments" exact element={<Payment/>}/>
 

@@ -23,7 +23,7 @@ const Refinestr = () => {
               </radialGradient>
             </defs> */}
           </svg>
-          <div className="mx-auto shadow-2xl max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left space-y-8  ">
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left space-y-8  ">
             <h2 className="md:text-4xl text-2xl font-semibold tracking-tight text-white ">
             How do our Credit Refine Works
             </h2>
@@ -44,7 +44,8 @@ Connect Me To Credit Consultant
               </Link>
             </div>
           </div>
-          <div class="md:shrink-0 mx-auto">
+          <div class="md:shrink-0 m
+          -auto">
       <img class=" object-cover rounded-xl md:max-w-lg bg-white/5 " src={ExpertImg} alt="Modern building architecture"/>
     </div>
         </div>

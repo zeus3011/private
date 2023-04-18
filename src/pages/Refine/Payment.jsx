@@ -12,11 +12,11 @@ const Payment = () => {
       <div className="bg-gradient-to-l  rounded-3xl from-blue-300 to-gray-100 w-auto h-auto border border-1  p-4">
       <div className="md:flex">
        
-        <div className="p-4 mx-auto space-y-12 my-auto">
-          <div className="uppercase text-2xl  font-semibold text-indigo-900 text-left ">Take advantage of Credit Refine's program to build your score and qualify for the best loan/credit card offers</div>
+        <div className="p-4 mx-auto md:space-y-12 space-y-4 my-auto">
+          <div className="uppercase md:text-2xl text-xl  font-semibold text-indigo-900 text-left ">Take advantage of Credit Refine's program to build your score and qualify for the best loan/credit card offers</div>
           {/* <p className='text-semibold text-lg text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
 </p> */}
-<div className="uppercase  text-2xl font-semibold text-indigo-900 text-left ">Available @ just <span className=" text-3xl text-blue-700  "> ₹ 99</span></div>
+<div className="uppercase md:text-2xl text-xl font-semibold text-indigo-900 text-left ">Available @ just <span className=" text-3xl text-blue-700  "> ₹ 99</span></div>
 
 <Link to="/queries">
           <div className=' mt-6 mx-auto justify-center'>
@@ -26,7 +26,7 @@ const Payment = () => {
         </div>
      
 
-        <div className="md:shrink-0 sm:shrink-0 p-5 lg:mx-15  mx-auto">
+        <div className="md:shrink-0 sm:shrink-0 md:p-5 lg:mx-15  mx-auto">
           <img className=" object-cover  rounded-xl lg:max-w-xl" src={Exp} alt="Modern building architecture"/>
         </div>
       </div>
@@ -38,30 +38,30 @@ const Payment = () => {
     
 <div className="bg-gray-50   py-20 flex flex-col items-center justify-center">
             <div className="xl:w-1/2 space-y-12 w-11/12">
-              <h1  className="text-4xl font-bold  leading-2 text-center text-gray-800">Revolutionize Your Credit Score  <br/> with Our Expert Credit Refinement Service!
+              <h1  className="md:text-4xl text-3xl font-semibold  leading-2 text-center text-gray-800">Revolutionize Your Credit Score  <br/> with Our Expert Credit Refinement Service!
 </h1>
-                <p  className="text-2xl font-bold  leading-2 text-center text-gray-600">
+                <p  className="text-2xl font-semibold  leading-2 text-center text-gray-600">
                     What we provides as compare to others
                 </p>
                 <div className="mt-8  flex-col justify-start items-start">
-                  <table class="   table:border lg:w-full   bg-white border-collapse">
+                  <table class="table:border lg:w-full bg-white border-collapse">
                     <tr>
-                    <th class="bg-blue-100 border   py-4">Contents</th>
-                      <th class="bg-blue-100 border   py-4">Creditklick @99 INR</th>
-                      <th class="bg-blue-100 border text-left  py-4">
-                        Others @1297 INR
+                    <th class="bg-blue-100 font-normal border py-4">Contents</th>
+                      <th class="bg-blue-100 border py-4">Creditklick <span className='text-teal-700'> @99 </span> INR</th>
+                      <th class="bg-blue-100 border text-center ">
+                        Others <span className='text-red-800'>@1297 </span>  INR
                       </th>
                     </tr>
                     {Compare.map((item) => (
                       <tr key={item}>
-                        <td class="border  text-left px-8 py-4">
+                        <td class="border text-md text-left px-8 py-4">
                           {item.content}
                         </td>
                        
-                        <td class="border  text-left px-8 py-4">
+                        <td class="border  text-center px-8 py-4">
                           {item.CreditKlick}
                         </td>
-                        <td class="border text-left px-8 py-4">
+                        <td class="border text-center px-8 py-4">
                           {item.others}
                         </td>
                       </tr>
@@ -77,13 +77,13 @@ const Payment = () => {
             </div>
 
             {/* Challanges */}
-            <div className="mt-8 space-y-12  justify-evenly items-start">
+            <div className="mt-8 space-y-8 container mx-auto justify-evenly items-start">
            
-           <h1 className="text-4xl font-bold  leading-2 text-center text-gray-800">Boost Your Credit Score
+           <h1 className="md:text-4xl text-2xl font-semibold  leading-2 text-center text-gray-800">Boost Your Credit Score
 </h1>
-<p  className="text-2xl font-bold  p-4  leading-2 text-center text-gray-600">CreditKlick is the perfect way to improve your credit score, while learning more about debt management. With our easy-to-use platform, you can be on top of your credit score in no time.
+<p  className="md:text-2xl text-xl font-semibold  p-2  leading-2 text-center text-gray-600">CreditKlick is the perfect way to improve your credit score, while learning more about debt management. With our easy-to-use platform, you can be on top of your credit score in no time.
 </p>
-                  <h3 className="text-2xl lg:mx-4 text-teal-800 font-semibold mt-4">
+                  <h3 className="text-2xl text-teal-800 md:ml-0 ml-6 font-semibold ">
                     {" "}
                     Features section:
 
@@ -91,13 +91,11 @@ const Payment = () => {
 
                   {char.map((item) => (
                     <ul className="mx-4" key={item}>
-                      <li
-                        li
-                        className="my-4  font-semibold text-gray-800 uppercase"
+                      <li className="my-2 md:text-xl text-lg font-semibold text-gray-800 uppercase"
                       >
                         {item.rate}
                       </li>
-                      <li className="lg:mx-4 mb-4 text-sm">{item.charge}</li>
+                      <li className="lg:mx-4 mb-4 md:text-lg text-md">{item.charge}</li>
                     </ul>
                   ))}
                 </div>

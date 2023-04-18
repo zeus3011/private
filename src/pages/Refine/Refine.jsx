@@ -8,6 +8,10 @@ import Karma1 from "../../assets/Images/Refine/karma1.png"
 import login from "../../assets/Images/Refine/login.png"
 import form from "../../assets/Images/Refine/form.png"
 import navi from "../../assets/Images/Refine/navi.png"
+import rupee from "../../assets/Images/bloan/rupee.png"
+import approved from "../../assets/Images/bloan/approved.png"
+import time from "../../assets/Images/bloan/time.png"
+
 import { Link } from 'react-router-dom'
 const Refine = () => {
   const [box1, setBox1] = useState(false);
@@ -25,14 +29,14 @@ const Refine = () => {
       <div className="md:flex">
        
         <div className="p-4 my-auto space-y-8">
-          <div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">How do our Credit Refine</div>
-          <p className='text-semibold text-2xl text-blue-900 my-2 p-2'>We analyse your credit report to understand  the impact of negative accounts on your credit score.
+          <div className="uppercase text-4xl  font-semibold text-indigo-900 text-left ">How Credit Refine can boost your financial future!</div>
+          <p className='text-semibold text-2xl text-blue-900 my-2 p-2'>Credit refine improves your credit score, which leads to better financial products and services, and ultimatey financial stability and wealth building opportunities.
 </p>
-<div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an Expert</div>
+<div className="uppercase text-3xl  font-semibold text-indigo-900 text-left ">Talk to an <span className='text-red-500'>Expert </span> </div>
 
 <Link to="/queries">
           <div className=' mt-6 mx-auto justify-center'>
-                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect With Consultant</button>
+                <button className="bg-blue-400 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-2xl uppercase">Connect Now</button>
             </div>
             </Link>
         </div>
@@ -84,7 +88,7 @@ const Refine = () => {
             </div>
             <div className="flex mt-6 flex-col items-center md:items-start md:w-8/12">
               <h1 className="focus:outline-none text-xl font-bold leading-5">SignUp for an Account</h1>
-              <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Log In on our website or registered  yourself  . </h2>
+              <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Log In to our website or Register yourself  . </h2>
             </div>
 
                {/* Setp1 End */}
@@ -96,7 +100,7 @@ const Refine = () => {
             </div>
             <div className="flex mt-6 flex-col items-center md:items-start md:w-8/12">
               <h1 className="focus:outline-none text-xl font-bold leading-5">Connect with Consultant</h1>
-              <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Our Proffesional Consultant assist you as soon as possible,know your importance in detail</h2>
+              <h2 className="focus:outline-none text-gray-500 mt-3 text-base leading-6 tracking-wide">Our Professional Consultant assist you as soon as possible. Know your importance in details.</h2>
             </div>
 
               <div className=' lg:h-48' aria-label={2} role="img">
@@ -138,28 +142,43 @@ const Refine = () => {
 {/* Contact Us Start  */}
 
 < div className = "  2xl:mx-auto 2xl:container md:px-20 px-4 " > 
-                < div className = "flex flex-cols rounded-md " > 
                     {/* < img src = {Cnt} alt = " city view " className = "opacity-30 w-full h-full rounded-md object-center object-fill absolute sm:block hidden " />    
                     < img src = " https://i.ibb.co/LQpxBsc/mobile.png " alt = " city view " className = " opacity-20 w-full h-full rounded-md absolute object-center object-fill sm:hidden " />     */}
-                    < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-600 to-transparent  flex  w-full h-full top-0 md:p-16 p-6 flex flex- col justify-between rounded-md " > 
-                        <div> 
-                            < h1 className = " md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white sm:w-auto w-64 " >Book a Call with Expert  </h1> 
-                            < p className = " text-lg leading-6 text-white xl:w-5/12 lg:w-8/12 md:w-10/12 2xl:pr-12 mt-4 " >Need personalized guidance to solve your question? Don't worry! Call a trained credit professional to make an appointment.
-
-Talk to an Expert. </p> 
+                    < div className = " text-xl relative z-20 bg-gradient-to-r from-blue-500 to-blue-100 md:flex flex-row-2 w-full top-0  md:p-16 p-8 justify-between rounded-md ring-1 ring-blue-100" > 
+                        <div className='space-y-8'> 
+                            <h1 className = "md:text-5xl text-3xl font-bold md:leading-10 leading-9 text-white w-auto" >Book a Call with Expert  </h1> 
+                            <p className = "text-xl font-semibold text-blue-900 leading-6 w-auto mt-4" >Need personalized guidance to solve your question? Don't worry!<br/> Call a trained credit professional to make an appointment. </p> 
                         </div> 
-                                                < div className = " md:mt-12 mt-20 w-auto " > 
-                            < button className = " text-base font-medium leading-4 text-indigo-700 bg-white sm:w-auto w-auto rounded p-4 focus:outline-none hover:bg-gray-100 focus:ring- 2 focus:ring-offset-2 focus:ring-white " > TALK TO TEAM </ button > 
+                                                < div className = "flex my-auto md:pt-0 pt-8" > 
+                            < button className = " text-base  font-medium text-white bg-gradient-to-r h-12 px-4 from-blue-500 to-blue-300 w-auto rounded  hover:bg-gray-100  mx-auto " > TALK TO TEAM </ button > 
                         </div> 
                                             </div> 
-                                        </div> 
                                     </div> 
 
 
 
 
 
-
+                                    <div className="mx-auto container mt-8">
+                                        <p className="text-center font-semibold md:text-4xl text-3xl text-blue-900 my-8">EXCLUSIVE FEATURES</p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-8 bs-gray-100 mx-auto">
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4'>
+        <img src={approved} alt="" className='w-20'/>
+        <p className="font-semibold text-xl text-blue-800 ">An Individual Credit Coach</p>
+        <p className='text-lg font-semibold text-gray-700'>Expert Guidance with our Credit Coach</p>
+      </div>
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4'>
+        <img src={approved} alt="" className='w-20'/>
+        <p className="font-semibold text-xl text-blue-800 ">Credit Health Reports</p>
+        <p className='text-lg font-semibold text-gray-700'>Get personalised Credit Report.</p>
+      </div>
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4'>
+        <img src={approved} alt="" className='w-20'/>
+        <p className="font-semibold text-xl text-blue-800 ">Free Account Dispute Service</p>
+        <p className='text-lg font-semibold text-gray-700'>One time free account dispute can be filed with the Experian Bureau.</p>
+      </div>
+    </div>
+    </div>
 
 
 
@@ -169,18 +188,17 @@ Talk to an Expert. </p>
 {/* Our Vision Start*/}
 
 
-<div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-            <p className="font-normal text-sm leading-3 text-indigo-700 hover:text-indigo-800 cursor-pointer pb-2">About</p>
+<div className="2xl:container 2xl:mx-auto  lg:px-20 py-4 px-4">
             
                 {/* Educate Starts */}
             <div className="flex lg:flex-row flex-col lg:gap-8 sm:gap-10 gap-12">
-                <div className="w-full lg:w-6/12">
-                    <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">We Educate & Analyse</h2>
-                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">We educate you on the best ways to improve your credit score, so that you can take steps towards a better financial future. We analyse information from all of your accounts and give you an holistic view of what not only affects your credit score but also how much you have in total debt.
+                <div className="w-full lg:w-6/12 my-auto">
+                    <h2 className="w-full font-semibold lg:text-4xl text-3xl lg:leading-10 leading-9">We Educate & Analyse</h2>
+                    <p className="font-normal text-xl leading-6 text-gray-600 mt-6">We educate you on the best ways to improve your credit score, so that you can take steps towards a better financial future. We analyse information from all of your accounts and give you an holistic view of what not only affects your credit score but also how much you have in total debt.
 </p>
                 </div>
-                <div className="w-full lg:w-6/12">
-                    <img className="lg:block hidden lg:-mt-32 w-full" src={Educate} alt="people discussing on board" />
+                <div className="w-full lg:w-6/12 p-8">
+                    <img className="lg:block hidden  w-full" src={Educate} alt="people discussing on board" />
                     <img className="lg:hidden sm:block hidden w-full" src={Educate} alt="people discussing on board" />
                     <img className="sm:hidden block w-full" src={Educate} alt="people discussing on board" />
                 </div>
@@ -190,20 +208,20 @@ Talk to an Expert. </p>
                 {/* Cordination Starts */}
             <div className="flex lg:flex-row  flex-col lg:gap-8 sm:gap-10 gap-12">
 
-            <div className="w-full mt-4 lg:w-6/12">
-                    <img className="lg:block  hidden lg:-mt-32 w-full" src={Analyse} alt="people discussing on board" />
+            <div className="w-full lg:w-6/12 md:p-8">
+                    <img className="lg:block  hidden my-auto w-full" src={Analyse} alt="people discussing on board" />
                     {/* <img className="lg:hidden sm:block hidden w-full" src="https://i.ibb.co/16fPqrg/Rectangle-122-2.png" alt="people discussing on board" /> */}
                     {/* <img className="sm:hidden  block w-full" src="https://i.ibb.co/Jxhpxh6/Rectangle-122.png" alt="people discussing on board" /> */}
                 </div>
 
 
-                <div className="w-full mt-12 lg:w-6/12">
-                    <h2 className="w-full font-bold lg:text-4xl text-3xl lg:leading-10 leading-9">We Coordinate & Resolve</h2>
-                    <p className="font-normal text-base leading-6 text-gray-600 mt-6">Our team of experts coordinate the best available solutions to resolve your consumer credit issues. We take a holistic approach to understanding the problems, the current trends and what can be done to make things better. Our services include: credit repair, debt management and consolidation.
+                <div className="w-full  lg:w-6/12 my-auto">
+                    <h2 className="w-full font-semibold lg:text-4xl text-3xl lg:leading-10 leading-9">We Coordinate & Resolve</h2>
+                    <p className="font-normal text-xl leading-6 text-gray-600 mt-6">Our team of experts coordinate the best available solutions to resolve your consumer credit issues. We take a holistic approach to understanding the problems, the current trends and what can be done to make things better. Our services include: credit repair, debt management and consolidation.
 
 </p>
                 </div>
-                <div className="w-full lg:hidden sm:block   lg:w-6/12">
+                <div className="w-full lg:hidden sm:block lg:w-6/12">
                     {/* <img className="lg:block  hidden lg:-mt-32 w-full" src={Exp} alt="people discussing on board" /> */}
                     <img className="lg:hidden sm:block hidden w-full" src={Analyse} alt="people discussing on board" />
                     <img className="sm:hidden  block w-full" src={Analyse} alt="people discussing on board" />
@@ -212,7 +230,27 @@ Talk to an Expert. </p>
 
 {/* Cordination Ends */}
 
-
+<div className="mx-auto  my-16">
+    <p className="text-center font-semibold text-4xl text-blue-900 my-10">WHY USE CREDIT REFINE</p>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 bg-gray-100 mx-auto py-4 rounded-xl">
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
+        <img src={time} alt="" className='w-20'/>
+        <p className="font-semibold text-xl text-blue-800 ">To achieve a credit score above 800</p>
+      </div>
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
+        <img src={approved} alt="" className='w-20'/>
+        <p className="font-semibold text-xl text-blue-800 ">Reduce the monthly cost of EMI.</p>
+      </div>
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
+        <img src={rupee} alt="" className='w-20' />
+        <p className="font-semibold text-xl text-blue-800 ">You can keep an eye on your Credit Profile</p>
+      </div>
+      <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
+        <img src={rupee} alt="" className='w-20' />
+        <p className="font-semibold text-xl text-blue-800 ">Identify accounts that affects your Credit Score.</p>
+      </div>
+    </div>
+    </div>
 
             {/* <div className="relative mt-24">
                 <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-8 gap-4">
