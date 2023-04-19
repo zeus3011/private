@@ -8,8 +8,8 @@ import Karma1 from "../../assets/Images/Refine/karma1.png"
 import login from "../../assets/Images/Refine/login.png"
 import form from "../../assets/Images/Refine/form.png"
 import navi from "../../assets/Images/Refine/navi.png"
-import rupee from "../../assets/Images/bloan/rupee.png"
-import approved from "../../assets/Images/bloan/approved.png"
+import rupees from "../../assets/Images/bloan/rupees.png"
+import approved from "../../assets/Images/bloan/approved.jpg"
 import time from "../../assets/Images/bloan/time.png"
 
 import { Link } from 'react-router-dom'
@@ -242,11 +242,11 @@ const Refine = () => {
         <p className="font-semibold text-xl text-blue-800 ">Reduce the monthly cost of EMI.</p>
       </div>
       <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
-        <img src={rupee} alt="" className='w-20' />
+        <img src={rupees} alt="" className='w-20' />
         <p className="font-semibold text-xl text-blue-800 ">You can keep an eye on your Credit Profile</p>
       </div>
       <div className='hover:shadow-xl m-2 p-4 rounded-xl space-y-4 bg-white'>
-        <img src={rupee} alt="" className='w-20' />
+        <img src={rupees} alt="" className='w-20' />
         <p className="font-semibold text-xl text-blue-800 ">Identify accounts that affects your Credit Score.</p>
       </div>
     </div>

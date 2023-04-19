@@ -31,7 +31,7 @@ const Refinestr = () => {
             We analyse your credit report to understand the impact of negative accounts on your credit score.
 
 </p>
-<h1 className=' md:text-4xl text-2xl  text-white'> Talk to an Expert <span className='text-blue-600'>FREE</span></h1>
+<h1 className=' md:text-4xl text-2xl  text-white'> Talk to our Expert </h1>
             <div className="my-10 flex items-center justify-center space-x-6 lg:justify-start">
               <Link
                 to="Refine"
