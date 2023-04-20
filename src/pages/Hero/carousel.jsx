@@ -11,9 +11,9 @@ const Carousel = () => {
 <div className="slide-trackP">
 {sliderImageUrl.map((imageUrl, index) => {
           return (
- <>           <div className="slider" key={index}>
+ <>           <div className="slider m-0" key={index}>
 
-              <img src={imageUrl.url}  height="100" width="250" alt="partners" />
+              <img src={imageUrl.url}  height="100" width="250" alt="partners"/>
             </div>
             </>
           );

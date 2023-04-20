@@ -55,36 +55,36 @@ const Product = () => {
  <div className="grid grid-cols-5 mx-6">
  <Link to="/Loans">
                    
-  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={loico} alt="" className='w-full animate-pulse h-auto mt-auto md:p-4'/>
+  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto    '>
+    <img src={loico} alt="" className='w-full  h-auto mt-auto '/>
   </div>
     <p className='font-semibold hover:text-black m-auto text-center md:text-lg text-xs'>LOANS</p>
   </Link>
   <Link to="/Creditcards">
-  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={ccico} alt="" className='w-full animate-pulse h-auto mt-auto md:p-4'/>
+  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto    '>
+    <img src={ccico} alt="" className='w-full  h-auto mt-auto '/>
 
   </div>
     <p className='font-semibold hover:text-black text-center md:text-lg text-xs'>CARDS</p>
   </Link>
   <Link to="/Refine">
-  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={refine} alt="" className='w-full animate-pulse h-auto mt-auto md:p-4'/>
+  <div className=' w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto    '>
+    <img src={refine} alt="" className='w-full  h-auto mt-auto '/>
 
   </div>
     <p className='font-semibold hover:text-black  text-center md:text-lg text-xs'>CREDIT REFINE</p>
   </Link>
 
   <Link to="/Credit-score">
-  <div className='  w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={refico} alt="" className='w-full h-auto animate-pulse mt-auto md:p-4'/>
+  <div className='  w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto   '>
+    <img src={refico} alt="" className='w-full h-auto  mt-auto '/>
 
   </div>
     <p className='font-semibold hover:text-black text-center md:text-lg text-xs'> CREDIT SCORE</p>
   </Link>
   <Link to="/Calculators">
-  <div className='  w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto rounded-xl shadow-lg '>
-    <img src={calico} alt="" className='w-full h-auto animate-pulse mt-auto md:p-4'/>
+  <div className='  w-3/5 md:w-2/5 mt-8 mb-3 h-auto  mx-auto   '>
+    <img src={calico} alt="" className='w-full h-auto  mt-auto '/>
 
   </div>
     <p className='font-semibold hover:text-black text-center md:text-lg text-xs p-1'>CALCULATORS</p>

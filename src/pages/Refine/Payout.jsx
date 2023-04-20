@@ -50,10 +50,38 @@ const Payout = () => {
                             <input tabIndex={0} arial-label="Please input country name" type="name" className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-200 border rounded border-gray-200 shadow-lg placeholder-gray-500 rounded-xl" placeholder="Please input country name" />
                         </div>
                     </div>
-                    <div>
-                        <div className="w-full flex flex-col mt-8">
-                            <label className="text-xl font-semibold leading-none text-gray-800">Your Query</label>
-                            <textarea tabIndex={0} aria-label="leave a message" role="textbox" type="name" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-300 border shadow-lg rounded border-gray-200 placeholder-gray-500 resize-none rounded-xl" defaultValue={""} />
+                    <div className='my-8'>
+                            <label className="text-xl font-semibold leading-none text-gray-800 ">Your Query</label>
+                        <div className="w-full flex flex-col mt-4 bg-pink-200 p-3 rounded-xl shadow-lg">
+                            {/* <textarea tabIndex={0} aria-label="leave a message" role="textbox" type="name" className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-purple-300 border shadow-lg rounded border-gray-200 placeholder-gray-500 resize-none rounded-xl" defaultValue={""} /> */}
+                            <span className='mb-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Need fresh loan/CC to clear outstandings?</label>
+                        </span>
+                        <span className='my-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Settle the existing loan</label>
+                        </span>
+                        <span className='my-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Pay partial payment of existing account and pay in EMIs</label>
+                        </span>
+                        <span className='my-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Just want to improve the credit score</label>
+                        </span>
+                        <span className='my-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Get rid off the recurring phone calls of recovery</label>
+                        </span>
+                        <span className='my-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Close existing account</label>
+                        </span>
+                        <span className='mt-3'>
+                            <input type="radio" />
+                            <label htmlFor="salaried" className='text-base font-semibold mx-3 text-gray-700'>Others</label>
+                        </span>
                         </div>
                     </div>
                     <p className="text-sm leading-3 text-gray-900 mt-8 px-3">By clicking submit you agree to our terms of service, privacy policy.</p>
