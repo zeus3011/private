@@ -23,7 +23,7 @@ const Refinestr = () => {
               </radialGradient>
             </defs> */}
           </svg>
-          <div className="mx-auto shadow-2xl max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left space-y-8  ">
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left space-y-8  ">
             <h2 className="md:text-4xl text-2xl font-semibold tracking-tight text-white ">
             How do our Credit Refine Works
             </h2>
@@ -31,7 +31,7 @@ const Refinestr = () => {
             We analyse your credit report to understand the impact of negative accounts on your credit score.
 
 </p>
-<h1 className=' md:text-4xl text-2xl  text-white'> Talk to an Expert <span className='text-blue-600'>FREE</span></h1>
+<h1 className=' md:text-4xl text-2xl  text-white'> Talk to our Expert </h1>
             <div className="my-10 flex items-center justify-center space-x-6 lg:justify-start">
               <Link
                 to="Refine"
@@ -44,7 +44,8 @@ Connect Me To Credit Consultant
               </Link>
             </div>
           </div>
-          <div class="md:shrink-0 mx-auto">
+          <div class="md:shrink-0 m
+          -auto">
       <img class=" object-cover rounded-xl md:max-w-lg bg-white/5 " src={ExpertImg} alt="Modern building architecture"/>
     </div>
         </div>

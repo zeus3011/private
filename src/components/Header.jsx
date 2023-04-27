@@ -1,10 +1,12 @@
 import { Fragment, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
+import {Route, Link,useNavigate ,Routes} from 'react-router-dom'
+
   import 'react-toastify/dist/ReactToastify.css';
 import "../index.css"
 import Logo from "../assets/Images/cklogo.png"
 import Login from "../assets/Images/creditlogin.png"
-import { Route,Link, Routes } from 'react-router-dom'
+// import { Route,Link, Routes } from 'react-router-dom'
 // import AU from "../pages/Cards/Creditcard"
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
@@ -55,49 +57,69 @@ const  Header=()=> {
   function openModal() {
     setIsOpen(true)
   }
-  const notify = () =>{ 
+//   const notify = () =>{ 
 
-  toast.warn('Check Your Mobile number', {
-    position: "top-right",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "colored",
-    });
-    toast.success('Login Succesfull', {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-      });
-      toast.error('OTP INVALID', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
-        toast.info('OTP SENT', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "colored",
-          });
-};
+//   toast.warn('Check Your Mobile number', {
+//     position: "top-right",
+//     autoClose: 5000,
+//     hideProgressBar: false,
+//     closeOnClick: true,
+//     pauseOnHover: true,
+//     draggable: true,
+//     progress: undefined,
+//     theme: "colored",
+//     });
+//     toast.success('Login Succesfull', {
+//       position: "top-right",
+//       autoClose: 5000,
+//       hideProgressBar: false,
+//       closeOnClick: true,
+//       pauseOnHover: true,
+//       draggable: true,
+//       progress: undefined,
+//       theme: "colored",
+//       });
+//       toast.error('OTP INVALID', {
+//         position: "top-right",
+//         autoClose: 5000,
+//         hideProgressBar: false,
+//         closeOnClick: true,
+//         pauseOnHover: true,
+//         draggable: true,
+//         progress: undefined,
+//         theme: "colored",
+//         });
+//         toast.info('OTP SENT', {
+//           position: "top-right",
+//           autoClose: 5000,
+//           hideProgressBar: false,
+//           closeOnClick: true,
+//           pauseOnHover: true,
+//           draggable: true,
+//           progress: undefined,
+//           theme: "colored",
+//           });
+// };
+
+const [phone, setPhone]= useState('');
+    const navigate = useNavigate();
+    const Submithandle=()=>{
+    const phoneRegex = /^(\+91|0)?[6789]\d{9}$/;
+    if (phoneRegex.test(phone)) {
+       navigate('/working-information')
+      } else {
+        toast.warn('Check Your Mobile number', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+      }
+    }
   return (
     <>
     <header className="bg-white h-20">
@@ -274,10 +296,11 @@ const  Header=()=> {
                     id
                     placeholder="Enter Phone here"
                     className="border border-gray-200 placeholder:text-gray-600 focus:outline-none lg:max-w-[40px] w-full lg:w-96 px-4 py-3"
-                  />
+                onChange={event=>setPhone (event.target.value)}
+                />
                 </div>
                 <div className="text-center pt-4 w-full">
-                  <button onClick={notify} className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full lg:w-96 py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
+                  <button onClick={Submithandle} className="bg-gray-800 font-medium text-white lg:max-w-[406px] w-full lg:w-96 py-3 hover:bg-gray-700 duration-200 md:mt-0 mt-4">
                    GET OTP
                   </button>
                 
@@ -289,7 +312,6 @@ const  Header=()=> {
               </div>
             </div>
           </div>
-          <ToastContainer />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -394,6 +416,7 @@ const  Header=()=> {
 
 
 
+    {/* <ToastContainer /> */}
    
     </>
     // <>

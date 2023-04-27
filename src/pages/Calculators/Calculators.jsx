@@ -5,6 +5,7 @@ import Idfc from "../../assets/Images/calci/IBcalc.png"
 import Save from "../../assets/Images/calci/SScalc.png"
 import Clicks from "../../assets/Images/calci/SCLcalc.png"
 import YesB from "../../assets/Images/calci/YBcalc.png"
+import { Link } from 'react-router-dom'
 const Calculators = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Calculators = () => {
                         </div>
                         <div className="px-6 xl:px-0">
                             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-6 gap-8">
+                         <Link to="/emi-calculator">
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
                                         {/*className="shadow-lg w-28  p-2 mb-5 rounded-full" class="absolute inset-0 object-center object-cover h-full w-full"  */}
@@ -51,6 +53,9 @@ const Calculators = () => {
                                         </a>
                                     </div>
                                 </div>
+</Link>
+                                <Link to="/au-calculator">
+
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
@@ -71,7 +76,10 @@ const Calculators = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div></Link>
+
+                                <Link to="/idfc-calculator">
+
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white  hover:shadow-lg p-5 rounded-md relative h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
@@ -92,7 +100,10 @@ const Calculators = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div></Link>
+
+                                <Link to="/sbisave-calculator">
+
                                 <div role="cell" className="bg-gray-100">
                                     <div className="bg-white  hover:shadow-lg p-5 rounded-md  h-full relative w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
@@ -113,7 +124,10 @@ const Calculators = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div></Link>
+
+                                <Link to="/sbiclick-calculator">
+
                                 <div role="cell" className="bg-gray-100">
                                     <div className="relative  hover:shadow-lg bg-white p-5 rounded-md  h-full w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
@@ -134,8 +148,11 @@ const Calculators = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
-                                <div role="cell" className="bg-gray-100 ">
+                                </div></Link>
+
+                                <Link to="/yes-calculator">
+
+                                <div role="cell" className="bg-gray-100">
                                     <div className="relative hover:shadow-lg bg-white p-5 rounded-md  h-full  w-full">
                                         {/* class="absolute inset-0 object-center object-cover h-full w-full"  */}
                                         <span>
@@ -155,7 +172,7 @@ const Calculators = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                </div></Link>
                             </div>
                         </div>
                     </div>

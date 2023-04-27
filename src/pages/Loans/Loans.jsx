@@ -73,7 +73,7 @@ const Loans = () => {
 
 {/* Loans' card area start */}
 <div className="w-4/5 mx-auto h-auto mt-4 pt-3 rounded-lg text-center font-semibold uppercase bg-gradient-to-b from-gray-200 to-gray-100">
-        <p className='text-blue-900 text-lg'>we are here to  help you. <br /> choose the kind of loan</p>
+        <p className='text-blue-900 text-lg'>we are here to help you. <br /> choose the kind of loan</p>
     </div>
 <div className="bg-gray-100 rounded-lg mx-auto w-4/5">
     
@@ -82,27 +82,28 @@ const Loans = () => {
    <Link to="/Personalloan">
         <img src={PL} alt=""  className='rounded-xl flex justify-center text-6xl  shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>PERSONAL LOAN</p>
-    </Link>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl flex mx-auto mt-3 w-auto">
   Apply Now
-</button>   </div>
+</button>  
+    </Link>
+    </div>
     <div className="m-4 grid">
       <Link to="/Homeloan">
         <img src={HL} alt=""  className='rounded-xl flex justify-center text-6xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>HOME LOAN</p>
-        </Link>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl flex mx-auto mt-3 w-auto">
   Apply Now
 </button>
+        </Link>
     </div>
     <div className="m-4 grid">
     <Link to="/Businessloan">
         <img src={BL} alt=""  className='rounded-xl flex justify-center text-6xl shadow-lg'/>
         <p className='text-blue-800 font-semibold text-center mt-4'>BUSINESS LOAN</p>
-        </Link>
-        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl mx-auto mt-3 w-auto">
+        <button class="bg-blue-400 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-2xl flex mx-auto mt-3 w-auto">
   Apply Now
 </button>
+        </Link>
     </div>
   </div>
 </div>
